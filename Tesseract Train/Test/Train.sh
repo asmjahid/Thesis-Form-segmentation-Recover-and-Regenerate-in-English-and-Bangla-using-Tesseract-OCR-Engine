@@ -1,0 +1,28 @@
+lan="eng"
+
+for i in *.tif
+do
+	filename="${i%.*}" > /dev/null 2>&1
+	echo "File name $filename"
+	tesseract $i $filename box.train
+done
+
+
+unicharset_extractor *.box
+
+
+
+mftraining -F font_properties -U unicharset -O ${lan}.unicharset *.tr
+cntraining *.tr
+
+
+mv shapetable ${lan}.shapetable
+mv normproto ${lan}.normproto
+mv inttemp ${lan}.inttemp
+mv pffmtable ${lan}.pffmtable
+
+
+combine_tessdata eng.
+sudo mv eng.traineddata /usr/local/share/tessdata/
+rm $lan.*
+
