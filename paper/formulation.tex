@@ -1,0 +1,109 @@
+\chapter {Problem Formulation}
+\label{chap:formulation}
+To solve a problem, first we have to formulate it with respect to some objectives. After some knowledge about structural protein in background study in Chapter \ref{background_study} and \ref{interaction_network} and about some previous research in protein folding field in Chapter \ref{literature_review} we can formulate the amino acid interaction network prediction problem in this chapter. 
+As we have discuss in Chapter \ref{interaction_network}, we can define a protein structure as a network or graph where amino acid atoms are vertices of the graph and different type of bond and function or in a simple word, interaction, between two amino acids in a protein structure are edges of the graph. In a protein structure, some amino acids highly interacts with each other and forms a group or strong network, called Secondary Structure Element (SSE), and this interaction network is called SSE-IN. A protein can have hundreds of SSE-IN. Amino acids in a SSE-IN is loosely connected with other SSE-IN in a protein. In this research we are going to predict the network and its interactions from a associated known or similar protein family in Protein Data Bank.
+
+From the above discussion in terms of mathematics and graph theory, we can define the problem as prediction of a graph $\mathcal{G}$ consist of $\mathcal{N}$ vertices $\mathcal{V}$ and $\mathcal{E}$ edges. If two amino acids interact with each other in protein we mention it as a edge $(u,v) \in \mathcal{E}, u \in \mathcal{V}, v \in \mathcal{V}$ of the graph. A SSE-IN is a highly dense sub-graph $\mathcal{G}_{SSE-IN}$ with edge set $\mathcal{E}_{SSE-IN}$. Probability of the edge $(u,v) \in \mathcal{E}_{SSE-IN A}, u \in \mathcal{V}_{SSE-IN A} v \in \mathcal{V}_{SSE-IN A}$ is very high and probability of the edge $(u,v) \notin \mathcal{E}_{SSE-IN A}, u \in \mathcal{V}_{SSE-IN A} v \in \mathcal{V}_{SSE-IN B}$ is very low, where $\mathcal{V}_{SSE-IN A}$ and $\mathcal{V}_{SSE-IN B}$ are respectively the vertex set of SSE-IN A and SSE-IN B.
+
+In the Chapter \ref{interaction_network}, we have discussed about some properties of a network like average mean degree, average distance etc. These properties of a network are topological properties which are uses to limit the predicted network from forming pandemic one.
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{1dtp}
+\caption {SSE-IN of 1DTP protein. Green edges are to be predicted by ant colony algorithm}
+\label {fig:1dtp}
+\end{figure}
+To predict the network we have to solve three problems,
+\begin{enumerate}
+\item Find a associate SCOP protein family from the given protein sequence.
+\item Predict a network of amino acid secondary structure element (SSE) from the known SCOP protein family.
+\item Predict interactions between amino acids in the network, including internal edges of SSE-IN and external edges.
+\end{enumerate}
+We can formulate these problem respectively as,
+\begin{enumerate}
+\item Topological coordination of graph.
+\item Multi-objective optimization using Genetic Algorithm.
+\item Ant Colony Optimization.
+\end{enumerate}
+Before proposing a algorithm to solve these problem we are to formulate these problems. 
+
+\section {Topological property}
+We have discussed about topological measurements of a network in section \ref{subsec:topological_measures}. From these discussion we can infer that distance between vertices in a secondary structure element (SSE) should maintain almost same property like average mean degree, average mean distance between vertices. On the other hand vertices between two different SSE should show different property. From these topological properties of a network we can define how many similar sub-graph like SSE have in the network or in the protein network. From these measurement we can find a associate SCOP family in PDB which has same number of SSE and which should be the first assumption of the network.
+
+\section{Multi-objective Optimization}
+\label {sec:mult_op}
+It is very difficult to define real world problems in terms of a single objective. A multi-objective optimization problem deals with more than one objective functions that are to be minimized or maximized. These objectives can be conflicting, subject to certain constraints and often lead to choosing the best trade-off among them. Two ways of multiple-objective optimization are known, one of which is combining each individual objectives into a single composite objective. Problem lies in selecting how to combine these objectives.  Various fitness functions are introduced for representing the objectives. Utility measure for those functions can be used. No one solution can be found which is best among all the others in all objectives. Therefore set of good solutions are taken.
+
+Another way of optimizing multi-objective is determining the Pareto Optimal solution set. In a Pareto Optimal set, all solutions are non-dominated with respect to each other.  We say that a solution is called non-dominated and can be considered as Pareto optimal when it is not worse in any of the objectives than the other solutions and best in at least one objective compared to others. 
+
+\subsection{Formulation of Multi-objective Optimization}
+Let us define an individual $X$ having more than one objective functions to be optimized, as an $n$-dimensional vector with $n$ variables $x_1, x_2,..., x_n$. Now if we want to make a composite objective using these single objectives, we can multiply the variables with a weight and take the weighted sum of those objectives. 
+
+The second approach is using the Pareto optimal solution set. Let us define the fitness values for each single objective as $z_1, z_2,..., z_n$. To find the Pareto optimal set, we must find all the individuals which are non-dominated with respect to other ones. An individual $X$ is said to dominate another individual $Y$ and denoted as $X \prec Y$ if and only if $z_i(X) \geq z_j(Y)$ where $i,j= 0,1,..., k$ and $k$ is the number of objectives and $z_i(X) > z_j(Y)$ for at least one objective function.
+
+For a given Pareto set, the values of the respective objective functions in the problem domain are said to be Pareto front. However, identifying the actual Pareto optimal set is not feasible at all due to the size of the problem domain. Therefore, we try to find the best possible solutions.  It is desirable that the best possible solutions must satisfy the following three criteria:
+\begin{enumerate}
+\item It must be close to the actual solution.
+\item The solutions must be distributed over the whole problem domain.
+\item It must ensure that it captures the whole range of the Pareto front and thereby provide solutions even at the extreme end.
+\end{enumerate}
+
+We can define the prediction of interaction network as a optimization problem. We are to find a network which is as close as possible with the associate SCOP protein family, which we have found from the topological conformation.
+We have three different and conflicting objectives $z_{o_{1}}, z_{o_{2}}, z_{o_{3}}$ for the interaction network prediction problem. These are $z_{o_{1}}$ is distance between two amino acids, $z_{o_{2}}$ is the relative torsion angle, a value between 0 to 1 and $z_{o_{3}}$ is binary value 0 or 1, where 0 reflecting hydrophilicity and 1 is hydrophobicity of the protein SSE-IN in the network. We are to find a network from the given protein sequence, which is a optimized and as much related as possible to the associated SCOP protein family. But if we consider only the distances between amino acids, we may miss one of the most controlling property of protein the torsion angle. On the other hand, as we know the core of a protein is hydrophobic and the outer is is hydrophilic, we can assume that two amino acids with same hydrophobicity property are related. So we are to consider these three property of protein to predict the interaction network. Optimization in one objective may lead to a situation where other objectives becomes worst. So to find a optimal solution we have to make trade off between objectives.
+
+From the above formulation about interaction network prediction of protein and multi-objective optimization, we can define the interaction network prediction problem as a multi-objective optimization problem.
+
+\section { Ant Colony Optimization (ACO)}
+\label{sec:ant_colony}
+Ant colony optimization (ACO) is one of the most recent techniques for approximate optimization. The inspiring source of ACO algorithms are real ant colonies. More specifically, ACO is inspired by the ants' foraging behaviour. At the core of this behaviour is the indirect communication between the ants by means of chemical pheromone trails, which enables them to find short paths between their nest and food sources. This characteristic of real ant colonies is exploited in ACO algorithms in order to solve, for example, discrete optimization problems.
+
+Depending on the point of view, ACO algorithms may belong to different classes of approximate algorithms. Seen from the artificial intelligence (AI) perspective, ACO algorithms are one of the most successful strands of swarm intelligence \cite{bonabeau1999swarm,bonabeau2000inspiration}. The goal of swarm intelligence is the design of intelligent multi-agent systems by taking inspiration from the collective behaviour of social insects such as ants, termites, bees, wasps, and other animal societies such as flocks of birds or fish schools. Examples of “swarm intelligent” algorithms other than ACO are those for clustering and data mining inspired by ants' cemetery building behaviour \cite{handl2006ant}, those for dynamic task allocation inspired by the behaviour of wasp colonies \cite{campos2000dynamic}, and particle swarm optimization \cite{kennedy2010particle}.
+\begin{figure}
+\centering
+\begin{tabular}{c c}
+\subfloat [All ants are in nest. There is no pheromone in the environment.] { \label{fig:aco_examplea} \includegraphics[width=0.5\textwidth]{aco_examplea}}
+&
+\subfloat [The foraging starts. In probability, 50\% of the ants take the shorter path (symbolized by circles), and 50\% take the long path to the food source (symbolized by rhombs).]{ \label{fig:aco_exampleb} \includegraphics[width=0.5\textwidth]{aco_exampleb}}
+\\
+\subfloat [The ants that have taken the shorter path have arrived earlier at the food source. Therefore, when returning, the probability to take again the shorter path is higher.]{ \label{fig:aco_examplec} \includegraphics[width=0.5\textwidth]{aco_examplec}}
+&
+\subfloat [The pheromone trail on the shorter path receives, in probability, a stronger reinforcement, and the probability to take this path grows. Finally, due to the evaporation of the pheromone on the long path, the whole colony will, in probability, use the shorter path.]{\label{fig:aco_exampled} \includegraphics[width=0.5\textwidth]{aco_exampled}}
+\end {tabular}
+\caption{An experimental setting that demonstrates the shortest path finding capability of ant colonies. Between the ants' nest and the only food source exist two paths of different lengths. In the four graphics, the pheromone trails are shown as dashed lines whose thickness indicates the trails' strength.} 
+\label{fig:aco_example}
+\end{figure}
+Marco Dorigo and colleagues introduced the first ACO algorithms in the early 1990's \cite{dorigo1992optimization,dorigo1991positive,dorigo1996ant}. The development of these algorithms was inspired by the observation of ant colonies. Ants are social insects. They live in colonies and their behaviour is governed by the goal of colony survival rather than being focused on the survival of individuals. The behaviour that provided the inspiration for ACO is the ants' foraging behaviour, and in particular, how ants can find shortest paths between food sources and their nest. When searching for food, ants initially explore the area surrounding their nest in a random manner. While moving, ants leave a chemical pheromone trail on the ground. Ants can smell pheromone. When choosing their way, they tend to choose, in probability, paths marked by strong pheromone concentrations. As soon as an ant finds a food source, it evaluates the quantity and the quality of the food and carries some of it back to the nest. During the return trip, the quantity of pheromone that an ant leaves on the ground may depend on the quantity and quality of the food. The pheromone trails will guide other ants to the food source. It has been shown in \cite{deneubourg1990self} that the indirect communication between the ants via pheromone trails\textendash known as \textit{stigmergy}-enables them to find shortest paths between their nest and food sources. This is explained in an idealized setting in Figure \ref{fig:aco_example}.
+
+As a first step towards an algorithm for discrete optimization we present in the following a discretized and simplified model of the phenomenon as explained in Figure \ref{fig:aco_example}. According to Blum \textit{et al.} in \cite{blum2005ant} the model consists of a graph $G = (V ,E)$, where $V$ consists of two nodes, namely $v_s$ (representing the nest of the ants), and $v_d$ (representing the food source). Furthermore, $E$ consists of two links, namely $e_1$ and $e_2$, between $v_s$ and $v_d$. To $e_1$ we assign a length of $l_1$, and to $e_2$ a length of $l_2$ such that $l_2 > l_1$. In other words, $e_1$ represents the short path between $v_s$ and $v_d$, and $e_2$ represents the long path. Real ants deposit pheromone on the paths on which they move. Thus, the chemical pheromone trails are modeled as follows. We introduce an artificial pheromone value ${\tau}_i$  for each of the two links $e_i$, $i = 1, 2$. Such a value indicates the strength of the pheromone trail on the corresponding path. Finally, we introduce $n_a$ artificial ants. Each ant behaves as follows:
+
+Starting from $v_s$ (i.e., the nest), an ant chooses with probability
+\begin{equation}
+\label{eq:probability1}
+ p_i = \frac{{\tau}_i}{{\tau}_1 + {\tau}_2}, i = 1, 2,
+ \end{equation}
+between path $e_1$ and path $e_2$ for reaching the food source $v_d$. Obviously, if ${\tau}_1 > {\tau}_2$, the probability of choosing $e_1$ is higher, and vice versa. For returning from $v_d$ to $v_s$, an ant uses the same path as it chose to reach $v_d$, and it changes the artificial pheromone value associated to the used edge. More in detail, having chosen edge $e_i$ an ant changes the artificial pheromone value ${\tau}_i$ as follows:
+\begin{equation}
+\label{eq:pheromone1}
+{\tau}_i \leftarrow {\tau}_i + \frac{Q}{l_i}
+\end{equation}
+where the positive constant $Q$ is a parameter of the model. In other words, the amount of artificial pheromone that is added depends on the length of the chosen path: the shorter path, the higher the amount of added pheromone.
+
+The foraging of an ant colony is in this model iteratively simulated as follows: At each step (or iteration) all the ants are initially placed in node $v_s$. Then, each ant moves from $v_s$ to $v_d$ as outlined above. As mentioned in the caption of Figure \ref{fig:aco_exampled}, in nature the deposited pheromone is subject to an evaporation over time. We simulate this pheromone evaporation in the artificial model as follows:
+\begin{equation}
+\label{eq:pheromone2}
+{\tau}_i \leftarrow (1-\rho) \cdot {\tau}_i, i = 1, 2.
+\end{equation}
+The parameter $\rho \in (0,1]$ is a parameter that regulates the pheromone evaporation. Finally, all ants conduct their return trip and reinforce their chosen path as outlined above.
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{aco_metahuristic}
+\caption {Working procedure of ACO meta-heuristic}
+\label {fig:aco_metahuristic}
+\end{figure}
+
+ACO algorithm is basically works as shown in Figure \ref{fig:aco_metahuristic}. To solve a CO problem, to assemble solutions to the CO problem first one has to find or derive a finite set of solution components $\mathcal{S}$ and second he has to define a set of pheromone values $\mathcal{T}$. This set of values are commonly called the \textit{pheromone model}, which is technically a parameterized probabilistic model. The ACO meta-heuristic have two major central components named solution components and pheromone model. The pheromone values ${\tau}_i \in \mathcal{T}$ are usually associated to solution components. The pheromone model probabilistically generate solutions to the problem under consideration by assembling them from the set of solution components. In general, the ACO approach attempts to solve an optimization problem by iterating the following two steps according to \cite{blum2005ant}:
+\begin{enumerate}
+\item candidate solutions are constructed using a pheromone model, that is, a parameterized probability distribution over the solution space.
+\item the candidate solutions are used to modify the pheromone values in a way that is deemed to bias future sampling toward high quality solutions.
+\end{enumerate}
+
+In a predicted amino acid interaction network, all the interaction have to predict again to mark the edges of the network. We have to predict the inter-SSE-IN and intra-SSE-IN edges and should not distract much from the known associate SCOP protein family. As we have to maintain the three objectives $z_{o_{1}}, z_{o_{2}}, z_{o_{3}}$, we are to combine these objective to give weight and find paths in interaction network. Edges in these paths will be the predicted interactions of network. We have to choose paths probabilistically. Ant colony optimization is one of the best optimization techniques suited for this problem.

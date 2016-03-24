@@ -1,0 +1,167 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9)
+entering extended mode
+(E:\Dropbox\writing\Report_Seminar\thesis.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"))
+(E:\Dropbox\writing\Report_Seminar\otagothesis.sty)
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg")
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty")
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"))))
+("C:\Program Files\MiKTeX 2.9\tex\latex\moreverb\moreverb.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty")
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3names.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3bootstrap.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3basics.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3expan.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3tl.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3seq.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3int.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3quark.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3prg.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3clist.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3token.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3prop.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3msg.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3file.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3skip.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3keys.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3fp.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3box.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3coffins.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3color.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3luatex.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3candidates.sty")
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator-langu
+age-mappings.tex"))) (E:\Dropbox\writing\Report_Seminar\thesis.aux
+(E:\Dropbox\writing\Report_Seminar\intro.aux)
+(E:\Dropbox\writing\Report_Seminar\background_study.aux)
+(E:\Dropbox\writing\Report_Seminar\literature_review.aux)
+(E:\Dropbox\writing\Report_Seminar\objective.aux)
+(E:\Dropbox\writing\Report_Seminar\progress.aux)
+(E:\Dropbox\writing\Report_Seminar\conclusion.aux)
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
+-basic-dictionary\translator-basic-dictionary-English.dict")
+("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\config\siunitx-abbreviations.cf
+g") <logo.pdf, id=1, 597.23125pt x 845.1575pt> <use logo.pdf> [1{C:/ProgramData
+/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Dropbox/writing/Report_Seminar/logo.p
+df>] (E:\Dropbox\writing\Report_Seminar\declaration.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+
+Overfull \hbox (13.32219pt too wide) in paragraph at lines 7--18
+ [] 
+) [2] (E:\Dropbox\writing\Report_Seminar\approval.tex) [3]
+(E:\Dropbox\writing\Report_Seminar\acknowledgements.tex) [4]
+(E:\Dropbox\writing\Report_Seminar\abstract.tex) [5]
+(E:\Dropbox\writing\Report_Seminar\thesis.toc) [6]
+(E:\Dropbox\writing\Report_Seminar\thesis.lot) [7]
+(E:\Dropbox\writing\Report_Seminar\thesis.lof) [8]
+(E:\Dropbox\writing\Report_Seminar\intro.tex
+Chapter 1.
+) [1] (E:\Dropbox\writing\Report_Seminar\background_study.tex
+Chapter 2.
+<AminoAcidball.png, id=40, 501.875pt x 357.335pt> <use AminoAcidball.png>
+<aminoacid.png, id=42, 429.10312pt x 286.06876pt> <use aminoacid.png>
+Overfull \hbox (7.83324pt too wide) in paragraph at lines 7--9
+ [][][] 
+[2 <E:/Dropbox/writing/Report_Seminar/AminoAcidball.png> <E:/Dropbox/writing/Re
+port_Seminar/aminoacid.png>]
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd")) [3] [4]
+(E:\Dropbox\writing\Report_Seminar\literature_review.tex
+Chapter 3.
+[5] <casp_evolution.png, id=61, 444.15938pt x 277.78781pt>
+<use casp_evolution.png>
+<casp9_performance.png, id=62, 465.99094pt x 416.30531pt>
+<use casp9_performance.png>
+Overfull \hbox (7.83324pt too wide) in paragraph at lines 12--14
+ [][][] 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6] [7 <E:/Dropbox/writing/Report_Seminar/casp_evolution.png> <E:/Dropbox/writi
+ng/Report_Seminar/casp9_performance.png>] [8]
+<inhibitor.png, id=72, 314.67563pt x 239.39438pt> <use inhibitor.png>
+<molecular_paper.png, id=73, 320.69812pt x 269.50688pt>
+<use molecular_paper.png>
+Overfull \hbox (7.83324pt too wide) in paragraph at lines 34--36
+ [][][] 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [9] [10 <E:/Dropbox/writing/Report_Seminar/inhibitor.png> <E:/Dropbox/writing
+/Report_Seminar/molecular_paper.png>]
+No file objective.tex.
+No file progress.tex.
+No file conclusion.tex.
+(E:\Dropbox\writing\Report_Seminar\thesis.bbl [11] [12] [13] [14]) [15]
+(E:\Dropbox\writing\Report_Seminar\thesis.aux
+(E:\Dropbox\writing\Report_Seminar\intro.aux)
+(E:\Dropbox\writing\Report_Seminar\background_study.aux)
+(E:\Dropbox\writing\Report_Seminar\literature_review.aux)
+(E:\Dropbox\writing\Report_Seminar\objective.aux)
+(E:\Dropbox\writing\Report_Seminar\progress.aux)
+(E:\Dropbox\writing\Report_Seminar\conclusion.aux)) )<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (23 pages, 945344 bytes).
+Transcript written on thesis.log.

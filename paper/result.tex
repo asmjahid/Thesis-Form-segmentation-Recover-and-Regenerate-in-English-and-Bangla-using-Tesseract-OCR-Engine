@@ -1,0 +1,55 @@
+\chapter {Performance Analysis}
+\label{chap:result}
+As we have described the proposed algorithm in the chapter \ref{chap:algorithm} and the algorithm is robust and covering more criteria comparing to other state of the art algorithms, the algorithm should also perform better than other algorithms. In this chapter we will discuss about result and performance comparison with this proposed algorithm and some previous algorithms. Before the performance analysis performance metrics will be discussed briefly.
+\section{Analysis of Genetic Algorithm as Multi-objective Optimization}
+In order to test the performance of proposed multi-objective genetic algorithm, we randomly pick three chromosomes from the final population and we compare their associated matrices to the sequence SSE-IN adjacency matrix. To evaluate the difference between two matrices, we use an error rate defined as the number of wrong elements divided by the size of the matrix. The dataset we use is composed of 698 proteins belonging to the All alpha class and 413 proteins belonging to the All beta class. A structural family has been associated to this dataset as in \cite{gaci2010build}. 
+
+\textit{All alpha} class has an average error rate of 14.6\% and for the \textit{All beta} class it is 13.1\% and the maximum error rate shown in the experiment is 22.9\%. Though, the error rate depends on other criteria like the three objectives described before but according to the result we can firmly assert that the error rate depends on the number of initial population, more the number of initial population less the error rate. With sufficient number of individuals in the initial population we can ensure the genetic diversity as well as the improved SSE-IN prediction. When the number of initial population is at least 15, the error rate is always less than 10\%.
+
+As compared to the work in \cite{gaci2010}, we can claim better and improved error rate in this part of SSE-IN prediction algorithm.
+
+\section {Analysis of Ant Colony Optimization}
+We have experimented and tested this part of our proposed method according to the associated family protein because the probability of adding edge is determined by the family occurrence matrix. We have used the same dataset of sequences whose family has been deduced.
+
+For each protein, we have done 150 simulations and when the topological properties are became compatible to the template properties of the protein we accepted the built SSE-IN. The results are shown in Tab. \ref{tab:result}. The score is the percentage of correctly predicted short cut edges between the sequence SSE-IN and the SSE-IN we have reconstructed \cite{gaci2010}. In most cases, the number of edges to add were accurate according to the plot \ref{fig:bar1}. From this we can percept that, global interaction scores depends on the local algorithm lead for each pair of SSEs in contact. The plot, in Figure \ref{fig:bar2}, confirms this tendency, if the local algorithm select at least 80\% of the correct short cut edges, the global intersection score stays better than the 80\% and evolves around 85\% for the All alpha class and 73\% for the All beta class. 
+
+After the discussion we can say that, though for the big protein of size more than 200 amino acids the average score decreases, but in an average the score remains for the global algorithm around 80\%.
+
+\begin{table}
+\centering
+\begin{tabular}{l c c c c c}
+\hline
+Class & SCOP Family & Number of Proteins & Protein Size & Score & Average Deviation \\ \hline
+All Alpha & 46688 & 17 & 27 - 46 & 83.973 & 3.277 \\
+     & 47472 & 10 & 98 - 125 & 73.587 & 12.635 \\
+	 & 46457 & 25 & 129 - 135 & 76.125 & 7.489 \\
+	 & 48112 & 11 & 194 - 200 & 69.234 & 14.008 \\
+	 & 48507 & 18 & 203 - 214 & 66.826 & 5.504 \\
+	 & 46457 & 16 & 241 - 281 & 63.281 & 17.025 \\
+	 & 48507 & 20 & 387 - 422 & 62.072 & 9.304 \\
+\hline
+All Beta & 50629 & 6 & 54 - 66 & 79.635 &  2.892 \\
+		 & 50813 & 11 & 90 - 111 & 74.006 & 4.428 \\
+		 & 48725 & 24 & 120 - 124 & 80.881 & 7.775 \\
+		 & 50629 & 13 & 124 - 128 & 76.379 & 9.361 \\
+		 & 50875 & 14 & 133 - 224 & 77.959 & 10.67 \\
+\hline
+\end{tabular}
+\caption{Folding a SSE-IN by an ant colony approach. The score measures the interaction between the effective short cut edges and the predicted one. For small proteins the scores are better than 75\% because the number of SSE is weak and the global algorithm is less dependent on local one. The algorithm parameter values are: $\alpha = 25, \beta = 12, \rho = 0.7, \Delta\tau=4000, e = 2, \lambda_{min}=0.8$.}
+\label{tab:result}
+\end{table}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{allalphabar}
+\caption{Precision of number of edges to be added in All alpha class}
+\label{fig:bar1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{allbetabar}
+\caption{Precision of number of edges to be added in All beta class}
+\label{fig:bar2}
+\end{figure}
+\section {Algorithm Complexity}
+Our proposed algorithm is independent of specific time bound. Both the optimization algorithm used as multi-objective genetic algorithm and ant colony algorithm, is iteration based. We can stop the algorithm at any time. Though the result of the algorithm depends on the number of iteration but if we give sufficient amount of iteration it provides good result. In compare to other state of art algorithms, those uses exponential complexity algorithm, our is linear in terms of time and memory.

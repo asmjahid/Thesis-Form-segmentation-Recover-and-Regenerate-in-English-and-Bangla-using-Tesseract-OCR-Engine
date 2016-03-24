@@ -1,0 +1,254 @@
+\chapter {Proposed Algorithm}
+\label {chap:algorithm}
+
+As discussed in the previous chapters we can formulate a protein into model or a graph of amino acids and as we have seen about multi-objective optimization problem in section \ref{sec:mult_op} and ant colony optimization (ACO) in section \ref{sec:ant_colony}, we can solve the protein folding problem using these two new and emerging algorithms. The multi-objective optimization algorithm will predict structural motifs of a protein and will give a network or graph of secondary structural element (SSE) of the protein. On the other hand, the ant colony optimization (ACO) algorithm will find the interactions between amino acids including the intra-SSE-IN and inter-SSE-IN interactions. In our algorithm we have considered a folded protein in the PDB as an unknown sequence if it has no SCOP v1.73 family classification. According to \cite{gaci2010build}, we can associate the most compatible and best fit structural family based on topological criteria like average diameter, average mean distance etc. In our research we considered an unknown sequence as protein of known amino acids sequence.
+
+Protein folding process is oriented and proteins do not explore entire conformational space as it follows the Levinthal hypothesis also called the kinetic hypothesis. To follow the kinetic hypothesis we limited the topological space by a related structural family of the given sequence \cite{gaci2010build} to fold a SSE-IN. 
+\section {Associate Protein Family}
+As a first step to predict a amino acid interaction network of protein, we have to choose an associate protein family, to which we are going to use as a reference structural motif. Though Protein Data Bank (PDB) contains thousands of proteins motifs to choose as a associate protein family, we can use already existing sequence alignment algorithms to find out close sequence from the PDB. We have chosen Basic Local Alignment Search Tool (BLAST) \footnote{blast.ncbi.nlm.nih.gov} tool to find the most similar protein family from PDB.
+
+\section {Prediction of SSE interaction network using Multi-objective Optimization}
+In chapter \ref{chap:formulation} we have defined that our first problem, predicting SSE interaction network as a multi-objective optimization. There are several ways to solve multi-objective optimization problem. In this research we have decided to use Genetic Algorithm(GA) as multi-objective optimization. The GA has to predict the adjacency matrix of unknown sequence when it is represented by chromosome.
+\subsection {Genetic Algorithms as Multi-objective Optimization}
+Genetic algorithm (GA) is much similar to the process of natural evolution. It generates useful solutions to optimization and search problems. Genetic algorithms can be considered as the subclass of evolutionary algorithms (EA).
+
+In genetic algorithm terminology, a solution is called individual or chromosome\cite{gen3}. The discrete units that make up the chromosome is called gene. The collection of chromosomes is known as population. A standard representation of the solution is as an array of bits. 
+Initially many individual solutions are randomly generated to form an initial population. As the generation evolves, the population is modifies by better individuals. The selection of individuals depends on their fitness value. 
+
+Variation on individuals is determined by two operators; crossover and mutation. In crossover, a pair of parent individuals are chosen and combined to produce an offspring. Iteratively applying this procedure results in getting better solutions in the population. Finally, each solution is subject to random mutation with a small independent probability. In mutation, some random genes are replaced. This process is repeated until stopping criteria is satisfied. We can apply this genetic algorithm for not only single objective optimization but also multi-objective optimization. 
+
+\subsubsection {Multi-objective Genetic Algorithms}
+Genetic Algorithms can provide very efficient solutions for multi-objective optimizations. A generic single objective GA can be modified to find a set of multiple non-dominated solutions in clustering method. 
+
+However, some well-known multi-objective GA’s are vector evaluated GA (VEGA)\cite{vega}, Niched Pareto Genetic Algorithm (NPGA)\cite{npga}, Non-dominated Sorting Genetic Algorithm (NSGA)\cite{nsga}, Weight Based Genetic Algorithm (WBGA)\cite{wbga}, Strength Pareto Evolutionary Algorithm (SPEA)\cite{spea} and more. These algorithms have their own mechanism.
+
+\subsubsection {Design Issue of Multi-objective GA}
+As every other algorithms including genetic algorithms for single objective, multi-objective genetic algorithms also have some design issue. It should have a good fitness function, should preserve the diversity in solutions and a good multi-objective genetic algorithm should maintain elitism.
+\paragraph {Fitness Function}
+\subparagraph {Weighted Sum Approach}
+The easiest way to solve multi-objective genetic algorithm is, weighted sum approach, where each objective function is multiplied with a weight. When multiple solutions are required, the same objective functions are multiplied with different weight combinations. The RWGA\cite{rwga} procedure follows the weighted sum approach.
+\paragraph {Altering objective function}
+In this process, the population $P$ is randomly divided into $k$ equal sized sub-population $P_1, P_2,..., P_k$ and each sub population is assigned a fitness value based on objective function $z$. Solution is selected after crossover and mutation. Algorithm VEGA \cite{vega} uses this procedure. The advantage is, it is easy to implement and computationally efficient. 
+\subparagraph {Pareto Ranking Approaches}
+Here, the individuals are ranked according to dominance rule. The population is copied to a temporary population set. From the temporary set, the most non-dominated individuals are given rank 1 and removed from the set. Then the second most non-dominated solutions are selected and given rank 2. This process continues until all the individuals are given a rank. Algorithm NSGA2\cite{nsga2} uses this approach to find the ranking. However, there are some other algorithms which uses a different method. The ranking is done as follows: \[r_2(x,t)=1+nq(x,t)\], where $nq(x,t)$ is the number of solutions that are dominating solution $x$ at generation $t$. In algorithm SPEA \cite{spea}, an external archive $E$ is maintained where the most non-dominated solutions found so far are stored. For each solution $y$ belongs to $E$, a strength value is defined as \[s(y,t)= \frac {np(y,t)}{Np} +1\] where $np$ is the number of solutions that $y$ dominates in $P$. The rank of the individual is then defined as: \[r_3(x,t)=1+\sum s(y,t)\] Accumulated ranking density strategy can also be used which is defined as: \[r_4(x,t)=1+ \sum r_4(y,t)\]
+
+\paragraph {Diversity Measure}
+Maintaining diversity in population is important in multi-objective GA because we need to find those solutions that are distributed over the problem domain uniformly. Following are the issues for diversity measurement.
+\subparagraph {Fitness Sharing}
+The idea of this process is as follows; at first, the euclidean distance between each individual pairs are calculated by the given formula: \[dz(x,y) = \sqrt {\sum\limits_{k=1}^K {(\frac {z_k(x) - z_k(y)} {z_k^{max} - z_k^{min}})}^2}\]
+where $x$ and $y$ are two solution pairs, $z_k^{max}$ and $z_k^{min}$  are maximum and minimum value of the objective function $z_k$. After that, the niche count is calculated. Decision variabls can also be used to calculated the distance between two solutions.
+
+The disadvantage of this approach is that, one has to address user-defined parameters for calculation. Algorithm MOGA\cite{moga} uses this diversity measure process.
+\subparagraph {Crowding Distance}
+Crowding distance method can also be used as a diversity measure. Here, the individuals are ranked and then crowding distance is calculated as follows: \[cd_k(x_{[i,k]}) = \frac {z_k(x_{[i+1,k]}) - z_k(x_{[i-1,k]})} {z_k^{max} - z_k^{min}}\]
+The main advantage of the crowding approach is that population density measure does not require a user-defined parameter. In NSGA-II \cite{nsga2}, this crowding distance measure is used as a tiebreaker in binary tournament selection technique in which two solutions $x$ and $y$ are randomly selected. If they are in the same non-dominated front, the solution with a higher crowding distance is the winner. Otherwise, the solution with the lowest rank is selected. SPEA2 \cite{spea2} also uses this as a diversity measure.
+
+\subparagraph {Cell based density}
+In this technique, the problem domain is divided into $k$ equal sized cells, and each individual belongs to one cell. According to the density of the cells, diversity of solutions is calculated. The algorithm PESA \cite{pesa} and RDGA \cite{rdga} uses this technique. The advantage of this technique is, the density measure for the whole problem domain can be represented using this technique.
+
+\paragraph {Elitism}
+In terms of single objective genetic algorithm, elitism is the best solutions found so far to survive to the next generation. In multi-objective genetic algorithm all the non-dominated solutions are elite solution. Normally there could be large number of elite solutions in multi-objective GA and it is impossible to save all the elite solutions. Most recent multi-objective GA’s like \cite{spea}, \cite{deb} and \cite {stateart}, implements elitism found far better accuracy with respect to non-elitist multi-objective GA’s like in \cite {reduce}. There are two approaches to achieve elitism
+\begin {itemize}
+\item maintaining elitist solutions in the population, and
+\item storing elitist solutions in an external archive and reintroduce them to the population
+\end {itemize}
+
+\subsubsection {Improved Non-dominated Sorting Genetic Algorithm (NSGA-II)}
+As Folino \textit{et al.} introduced in a new way for evolutionary clustering using the multi-objective genetic algorithm NSGA-II in \cite{dynmoga} and as an improvement of \cite{dynmoga} we are to implement an improved version of NSGA-II \cite{nsga2} in this paper to predict the amino acid interaction network.
+Deb et al. in \cite{nsga2} proposed this improve version of non-dominated sorting genetic algorithm in 2002. It uses non-dominated ranking approach for fitness function, crowding distance for diversity preservation and maintains elitism in population. Each time step it combines the current population and previous steps offspring and uses fast non-dominated sorting algorithm to identify the fronts. It takes the best $N$ individuals from the best fronts to the worst, breaking the list front tie with crowding distance, where $N$ is the population size. From this population it creates a mating pool by using binary tournament on crowding distance. $N$ new offspring are created from this mating pool by applying crossover and mutation on the individuals. 
+
+\subsection{Prediction of SSE Interaction Network using Genetic Algorithm}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{graph}
+\caption {Network of 7 nodes clustered into \{1,2,3,4\} and \{5,6,7\} and their genetic representation}
+\label {fig:graph}
+\end{figure}
+In this paper we proposed an evolutionary clustering algorithm to predict the SSE-IN, which is a modified algorithm of the second version of strength pareto evolutionary algorithm (SPEA2) in \cite{spea2}. As described before, SPEA2 preserve more better solutions than NSGA-II \cite{nsga2} and its diversity mechanism is better than the others, this is the reason to choose SPEA2 to implement the evolutionary clustering algorithm.
+\subsubsection {Genetic Representation}
+As proposed in \cite{dynmoga18}, we are using a local-based adjacency representation. In this representation an individual  of the population consist of $N$ genes $g_1,\ldots,g_N$, where $N$ is the number of nodes. Each gene can hold allele value in the range $\{1,\ldots,N\}$. Genes and alleles represents nodes in the graph $G = (V,E)$ modeling a network $N$. A value $j$ assigned in $i-th$ gene interpreted as a link between node $i$ and $j$ and in clustering node $i$ and $j$ will be in the same cluster as in Figure: \ref{fig:graph}. In decoding step all the components are identified and nodes participating in the same component are assigned to the same cluster.
+
+\subsubsection {Algorithm}
+It takes a dynamic network $\mathcal{N} = \{\mathcal{N}_1, \mathcal{N}_2,\ldots,\mathcal{N}_T\}$, the sequence of graphs $G = \{G_1,G_2,\ldots,G_T\}$ and the number of timestamps $T$ as input and gives a clustering of each network $\mathcal{N}_i$ of $\mathcal{N}$ as output.
+
+In the amino acid interaction network, total number of gene is the number SSE in the associate protein family found from the first step. Each SSE represents one gene or allele and it is the size that is the number of amino acids which compose the SSE. We represents a protein as an array of alleles. The position of an allele corresponds to the SSE position it represents in the sequence. At the same time, an incident matrix is associates for each genome.
+
+\paragraph {Initialization}
+For the first time-stamp of first input network there is no temporal relation with the previous network. The only objective function is snapshot quality or snapshot score. Thus we can apply any static clustering algorithm or trivial genetic algorithm to find the initial cluster. In this algorithm we used genetic algorithm to find the best cluster by maximizing the only objective function. As it is single objective algorithm we can find the single best cluster from this step.
+\paragraph {Population from Graph}
+As a first step in each time-stamp from 2nd time-stamp to $T$, it creates a population of random individuals. Each individual is a vector of length equal to number of nodes in the graph $G^t$. Genetic variant operators will be applied on this population for a fixed number of pass.
+\paragraph {Decoding}
+Each individual of the population and archive is decoded into component graph. As each individual gene is working as an adjacency list, if a node in $x$ of graph is reachable from $y$ by maintaining the edges in the individual, then $x$ and $y$ is in same cluster of component.
+\paragraph {Evaluation}
+After decoding step, each individual of the population and archive is evaluated to find the objective function values. In this algorithm the evaluation phase consist of calculate community score, which defines how better is the current clustering with respect to the given network and normalized mutual information ($NMI$), which defines the clustering fluctuation from the previous time-stamp. Both of the values are to be maximized.
+\paragraph {Assign Rank}
+Each individual of the population and archive a rank value, smaller the better. Each non-dominated individual gets the rank 0. After removing the 0 ranked individuals, give the rank 1 to the next non-dominated individuals and so on. After giving each individuals a rank value, the individuals is sorted according to the ascending rank. 
+\begin {equation}
+r(x) = \sum\nolimits_{x\prec y} s(y)
+\label {eq:rank}
+\end {equation}
+
+\paragraph {Fitness Function}
+There could be many individuals of in same area of solution space or objective space. If we take all these solution into account, we could loss diversity in the population. To remain the population diverse, we are using distance of $k-th$ nearest neighbor. The fitness value of each individual is the sum of its non-dominated rank and the inverse of the distance of $k-th$ nearest neighbours distance.  More the distance between solutions, better the fitness functions value.
+\begin{equation}
+m(x) = {({\sigma}_x^k + 1)}^{-1}
+\label{eq:density}
+\end{equation}
+where ${\sigma}_x^k$ is the distance between individual $x$ and its $k-th$ nearest neighbour. To calculate the distance between chromosome, we have to take into account the three objectives, atomic distance of amino acids, torsion angles and hydrophobicity.
+\paragraph {Population Selection}
+After evaluating fitness values of each of the population and archive, the best individuals are selected as a new population. From the total individuals of population and archive population size individuals are selected as new population. From the rank 0 to the highest rank, all the individuals are added if number of population of this rank is not exceeding the current population size. If it is exceeding, then some individuals are truncated according to the value of each individuals.
+\paragraph {Mating Pool Creation}
+After selecting the new population, a mating pool is created of pool size from the new population to apply the genetic variation operators. To choose the mating pool, binary tournament with replacement has been used in this algorithm. According to binary tournament, two individuals are randomly selected from the new population and the better fitness valued individual is chosen for the mating pool.
+\paragraph {Genetic Variation Operators}
+Genetic operators are used to create offspring from parent or mating pool. As other genetic algorithms, in this algorithm two widely used genetic variation operators have been used. These are crossover and mutation.
+\subparagraph {Crossover}
+Crossover is the operator which is used to create offspring from two parents. The offspring bear the genes of each parent. As a genetic variation operator there is very high probability to crossover occurs other than mutation. In this algorithm we are using uniform crossover. A random bit vector of length of number of the node in the current graph is created. If $i-th$ bit is 0 then the value of the $i-th$ gene comes from the first parent otherwise it comes from the $i-th$ gene of second parent. As each of the parents holding true adjacency information, the offspring will also hold it.\\
+\begin {table}
+\begin{center}
+\begin {tabular} { p{3 cm} l l l l l l l}
+%%\caption {Example of Uniform Crossover}
+\hline
+Parent1: & 4 & 3 & 2 & 2 & 6 & 5 & 6\\
+Parent2: & 3 & 3 & 1 & 5 & 4 & 7 & 6\\
+Mask : & 0 & 1 & 1 & 0 & 0 & 1 &1\\
+Offspring: & 4 & 3 & 1 & 2 & 6 &7 & 6\\
+\hline
+\end {tabular}
+\end{center}
+\caption {Example of Uniform Crossover}
+\end {table}
+\subparagraph {Mutation}
+One of the most widely used variation operator in genetic algorithm, which perform the operation in a single individual is mutation. Though the probability of mutation is normally very low, but it is the best way to make small variation in the individual. To mutate and create a offspring, some position of the of the individuals are chosen randomly and changed to other values. But the value should be one of its neighbour in the current graph.
+
+\paragraph {Topological operator}
+A topological operator is used to exclude incompatible population generated by the algorithm. We compute the diameter, the characteristic path length and the mean degree to evaluate the average topological properties of the family for the particular SSE number.
+\paragraph {Archive}
+There is an archive of individual which saves the best solutions as a property of elitism, which is the main differential property of SPEA2 algorithm. After variation operators over the offspring becomes the new population and the old populations are saved to the archive. To fit the archive size, the truncation mechanism used here also. By saving archive, this algorithm maintains the elitism.
+
+
+\begin{algorithm}
+\caption {Multi-objective genetic algorithm to predict SSE interaction network}
+\label{alg:multiobjective}
+\begin{algorithmic}[1]
+\STATE \textbf{Input:} A protein sequence, $T$ = total time steps, $N_E$ = Archive size, $N_P$ = Population Size
+\STATE \textbf{Output:} A predicted incident matrix $M$ and clustering for each network $\mathcal{N}^i$ of  $\mathcal{N}$
+\STATE Use BLAST to find a associate protein family of the given sequence from PDB.
+\STATE Generate initial cluster $\mathcal{CR}_1 = \{C_1^1,\ldots,C_k^1\}$ of the network $\mathcal{N}^1$ with number of vertex equal to number of SSE of the associate protein family
+\FOR{$t=2$ to $T$}
+\STATE Create initial population of random individual $P_0$ and set $E_0 = \emptyset, i = 0$
+\LOOP
+\STATE Decode each individual of $P_i \cup E_i$
+\STATE Evaluate each individual of $P_i \cup E_i$ to find rank and density value using Equation \ref{eq:rank} and \ref {eq:density}
+\STATE Assign fitness value to each individual, as the sum of rank and inverse of density value
+\STATE Copy all non-dominated solutions to $E_{i+1}$
+\IF{$|E_{i+1}| > N_E$}
+\STATE truncate $|E_{i+1}| - N_E$ solutions according to topological property
+\ELSE
+\STATE copy best $N_E - |E_{i+1}|$ dominated solutions according to their fitness value and topological property
+\ENDIF
+\IF {If stopping criteria satisfied}
+\RETURN non-dominated solutions in $E_{i+1}$
+\ELSE
+\STATE Select some individuals from| $E_{i+1}$ for mating pool as parents using binary tournament with replacement
+\STATE Apply crossover and mutation operators to the mating pool to create $N_P$ offspring solutions and copy to $P_{i+1}$
+\STATE $i:= i + 1$
+
+\ENDIF
+\ENDLOOP
+\STATE From the returned solution in $E$ take the best cluster according to the highest modularity value
+
+\ENDFOR
+\end{algorithmic}
+\end {algorithm}
+
+\section {Ant Colony Optimization (ACO) to Predict Interactions}
+After predicting the SSE-IN network we have to identify the interactions involve between the amino acids in the folded protein. We have used an ant colony optimization (ACO) approach to select and predict the edges which link different SSE's, considering about the correction of the matrix of motifs previously predicted. 
+
+We have build a two steps algorithm as the hierarchical structure of the SSE-IN. 
+\begin{itemize}
+\item In interaction, consider each pair of SSE's separately. This is the local step. We use an ant colony algorithm to identify the suitable interactions between amino acids belonging to these SSE's.
+\item A global ant colony algorithm is run to predict the interaction between amino acids from different SSE-IN.
+\end{itemize}
+\subsection {Parameters for Interaction Network Prediction}
+To predict the interactions, firstly we have to know how many edges to be add in the network and which nodes we should consider in interactions. To find and evaluate these parameters, the template proteins from the associate family is incorporated.
+
+Some template proteins is selected from the associate family whose SSE number is same as the sequence to predict the edge rate of the sequence and represent them as chromosome or array of alleles as in the multi-objective genetic algorithm. Thus, we build an comparative model to compute the edge ratio, which is used to fold the sequence SSE-IN.
+
+The average chromosome is calculated from all the template proteins in associate protein family. The distance between two chromosome is used as discussed in the previous section to compare the sequence with the average chromosome.  We add up the distance allele by allele to obtain a distance between the sequence and the average family chromosome. After that, the cumulated size is calculated by adding up the the chromosome cell values. If the distance is less than 20\% of the sequence cumulated size and the average family chromosome then the sequence is closer to the template protein. Then we compute the average edge rate in the closer protein to add the initial edges in the disconnected network of the sequence. If a sequence can not be found closer to the template one we add the sequence with the average family chromosome and starts again the same procedure.
+
+We do the same procedure to find the designation of the vertices, which vertices should interact with each other as they also use comparative model.
+
+To define, which edges link two SSE's, we consider the following problem.
+Let $ X = x_1, x_2, \ldots x_n$ and $Y = y_1, y_2, \ldots y_m$ be two SSEs in interaction. We want to add $e$ edges among the $n\times m$ possible combinations. For $i \in [1, n]$ and $j \in [1, m]$ the probability to interact the amino acid $x_i$ with $y_j$, is correlated with the occurrence matrix of the predicted edges ratios, represented by $Q(x_i, y_j)$ and we can assume $s_{ij} \sim Q(x_i, y_j)$. To add approximately $e$ edges, we need
+\begin{equation}
+\sum_{i=1}^n \sum_{j=1}^m s_{ij} = e 
+\end{equation}
+and
+\begin{equation}
+s_{ij} = \frac{e Q(x_i, y_j)} {\sum\nolimits_{p=1}^n \sum\nolimits_{q=1}^m Q(x_p, y_q)}
+\end{equation}
+\subsection {Algorithm}
+The prediction of interaction network consists of two approach, local and global algorithm.
+\subsubsection {Local Algorithm}
+The local algorithm is used to predict the suitable short cut edges between pair of SSEs in the network. Thus, we differentiate each pair of SSEs which have connection and build a graph where each vertex of the first SSE is connected to each vertex of the other SSE. The connection or the edges are weighted and the weight is $s_{ij}$, discussed before in this section. Then we used an ant colony approach consists of an ant number equals to the number of vertices in two SSE. The ant system has to reinforce the suitable edges between the SSEs. We use these edges in the global algorithm which describes in the next section.
+
+The local ant colony algorithm first creates $n$ ants which is total number of vertices in the two SSEs related in the search. For an ant to be positioned we choose a random vertex of the to SSE involved and place it. All the $n$ ants are positioned this way and two ants can share same vertex. An ant in vertex $i$ will choose the vertex $j$ with probability $p_{ij}$, defined as follows:
+\begin{equation}
+p_{ij} = \frac{{\tau_{ij}}^\alpha \cdot {s_{ij}}^\beta}{\sum\nolimits_{k\in V(i)} {\tau_{ij}}^\alpha \cdot {s_{ij}}^\beta}
+\end {equation}
+The weight $s_{ij}$ also called heuristic vector, calculated before. If the vertices $i$ and $j$ are in the same SSE, then the edge between these two vertices has weight equal to the average weight of the shortcut edges:
+\begin{equation}
+\overline{w} = \frac{1}{nm} \sum_{i=1}^n\sum_{j=1}^m s_{ij}
+\end{equation}
+After each move of an ant we update the pheromone value on the inter-SSE edges using the formula,
+\begin{equation}
+\tau_{ij} = (1 - \rho) \tau_{ij} + n_{ij} \Delta \tau
+\end{equation}
+where $n_{ij}$ is the number of ants that moved on the edge $(i, j)$ and $\Delta\tau$ is the quantity of pheromone dropped by each ant. As far as the edges belonging to the same SSE are concerned, we keep the pheromone rate on them equals to the average pheromone rate on the inter-SSE edges
+\begin{equation}
+\overline{\tau} = \frac{1}{nm} \sum_{i=1}^n\sum_{j=1}^m \tau_{ij}
+\end{equation}
+Ants move inside an SSE randomly, described above, on the other hand if they decide to change the SSE they are guided by the edge weight and the weight is guided by the pheromone value. The algorithms stops after a predefined number of iteration or the maximum pheromone rate is $e$ time bigger than the average pheromone rate on the edge. After the execution of the algorithm we keep the edges whose pheromone quantity exceeds a threshold $\lambda_{min}$.
+\begin{algorithm}
+\caption{Local algorithm to find Inter-SSE edges}
+\label{alg:local}
+\begin{algorithmic}[1]
+\STATE \textbf{Input:} The predicted network from the multiobjective genetic algorithm
+\STATE \textbf{Output:} Predicted inter-SSE edges 
+\STATE Create n ants, where n is the total number of nodes in process
+\WHILE {stopping criteria does not meet}
+\FORALL {ant $a$}
+\STATE moveAnt($a$)
+\ENDFOR
+\STATE updatePheromone()
+\ENDWHILE
+\STATE selectEdges($\lambda_{min}$)
+\end{algorithmic}
+\end{algorithm}
+\subsubsection{Global Algorithm}
+After the local algorithm execution, we get the SSE-IN composed of these specific inter-SSE edges. The global algorithm will keep the number of edges exactly $E_p$, which was predicted before. As the local one, the global algorithm uses the ant colony approach with the number of vertices equal to the SSE-IN vertex number. The ants movements contribute to emerge the specific short cuts whose only a number $E_p$ is kept. We rank the short cut edges as a function of the pheromone quantity to extract the $E_p$ final short cuts. Finally, we measure the resulting SSE-INs by topological metrics to accept it or not.
+\begin{algorithm}
+\caption{Global algorithm to predict edges into SSEs}
+\label{alg:global}
+\begin{algorithmic}[1]
+\STATE \textbf{Input:} The network with predicted edges $E_s$ from local algorithm and $E_p$, number edges to predict
+\STATE \textbf{Output:} The network with total $E_p$ edges
+\STATE buildSSEIN($E_s$)
+\STATE create $n$ ants
+\WHILE {stopping criteria does not meet}
+\FORALL {ant $a$}
+\STATE moveAnt($a$)
+\ENDFOR
+\STATE updatePheromone()
+\ENDWHILE
+\STATE selectEdges($E_p$)
+\end{algorithmic}
+\end{algorithm}
+
+We compute the diameter, the characteristic path length and the mean degree to evaluate the average topological properties of the family for a particular SSE number. Then, after we have built the sequence SSE-IN, we compare its topological properties with the template ones. We admit an error up to 20\% to accept the built sequence SSE-IN. If the built SSE-IN is not compatible, it is rejected. We compare the predicted value, denoted $E_p$ , with the real value, denoted $E_R$,
+\begin{equation}
+AC = 1 - \frac{|E_R - E_p|}{E_p}
+\end{equation}
+where AC is the accuracy of the prediction.

@@ -1,0 +1,36 @@
+\chapter{Introduction}
+\label{intro}
+Proteins are biological macromolecules performing a vast array of cellular functions within living organisms. The roles played by proteins are complex and varied from cell to cell and protein to protein. The best known role of proteins in a cell is performed as enzymes, which catalyze chemical reaction and increase speed several orders of magnitude, with a remarkable specificity. And speed of multiple chemical reactions is essential to the organism survival procedures like DNA replication, DNA repair and transcription. Proteins are storage house of a cell and transports small molecules or ions, control the passages of molecules through the cell membranes, and so forth. Hormone, another kind of protein, transmits information and allow the regulation of complex cellular processes.
+
+Genome sequencing projects generate an ever increasing number of protein sequences. For example, the Human Genome Project has identified over 30,000 genes \cite{Pennisi} which may encode about 100,000 proteins. One of the first tasks when annotating a new genome is to assign functions to the proteins produced by the genes. To fully understand the biological functions of proteins, the knowledge of their structure is essential.
+
+Proteins are amino acids chain bonded together in peptide bonds, and naturally adopt a native compact three-dimensional form. The process of forming three-dimensional structure of a protein is called protein folding and this is not fully understood yet in System Biology. The process is a result of interaction between amino acids which form chemical bond to make protein structure.
+
+In this research paper, we are going to see how protein structures are related with interaction network of amino acid and we will propose a new algorithm to predict a interaction network of amino acids using two new emerging optimization techniques, multi-objective optimization based on evolutionary clustering and ant colony optimization.
+\section {Objective}
+Uses of machine learning approaches like artificial neural network, support vector machine (SVM) and Baysian network in predicting protein structure was successful but in cost. These processes are too much complex and time consuming.  Time complexities of almost all of these approaches are exponential. This lacking draws the attention of predicting protein structure in evolutionary field. Because complexities of evolutionary approaches like genetic algorithm can be controlled through the number of intended generations.
+
+In \cite{gaci2010}, Gaci \textit{et al.} used genetic algorithm to predict the incident network of amino acids but their fitness function is just the distance between the amino acid atoms. But only distance could not define the interaction between amino acid. There are several other attribute like similarity in amino acid structure, hydrophilicity or hydrophobicity and different torsion angles which are described in chapter 2 can affect the interaction. Gaci \textit{et al.} \cite{gaci2010} also used ant colony approach to predict the interaction of amino acid. But it is a time consuming approach and have more chance to stuck in local minima or maxima.
+
+We can represent a protein as a network of amino acid and these amino acid interact with each other and forms a three dimensional structure. Objective of this research is find and efficient algorithm to predict the amino acid interaction network using a multi-objective evolutionary algorithm \cite{chakrabarti}, \cite{jain} and a probability based ant colony optimization approach. The multi-objective evolutionary approach is to consider all the attributes which affect interaction in amino acid network including distance.
+\section{Motivation}
+We can treat proteins as networks of interacting amino acids \cite{Dokholyan}, a directed graph, where amino acids are vertices and interaction between them are edges of the graph. 
+
+The three\textendash dimensional structure of a protein is represented by the coordinates of its amino acid atoms. The protein Data Bank (PDB) \cite{berman2000protein} contains all these information and regroups all experimentally solved protein structures. We can easily compute the distance between two amino acids and different torsion angles between atoms for example, $\phi$ and $\psi$ angles which define affinity. This distance and affinity predicts how these amino acids interact with each other. If there are $N$ amino acid to consider, we can make a $0$ $–$ $1$ matrix of size $N \times N$, which is called incident matrix. The incident matrix represents a graph of N vertices. From this incident matrix, the three\textendash dimensional structure of the protein can be predicted. There are some other attributes like hydrophobicity and hydrophilicity of amino acid also affect the interaction of amino acids.
+\section {Overview of this book}
+In this chapter we have introduced the problem of predicting amino acid interaction network in protein. Rest of the chapters are organized as follows.
+
+In Chapter \ref{background_study}, we will acquire some background knowledge by discussing about protein structure including amino acid, primary, secondary and tertiary structure of protein.
+
+In Chapter \ref{literature_review}, we are going to discuss about some existing researches on protein structure prediction and amino acid interaction network prediction.
+
+In Chapter \ref{interaction_network}, we will discuss about amino acid interaction network and verify network properties of amino acid in protein with PDB data.
+
+In Chapter \ref{chap:formulation}, we are going to formulate the amino acid interaction network prediction problem theoretically and mathematically. 
+
+In Chapter \ref{chap:algorithm}, we will present a new algorithm based on multi-objective optimization and ant colony optimization to predict the formulated problem of amino acid interaction network prediction.
+
+In Chapter \ref{chap:result}, we will analyze the algorithm with some PDB data and show the result.
+
+Finally, Chapter \ref{chap:final} concludes the document.
+
