@@ -1,0 +1,17 @@
+\chapter{Conclusion}
+\label{chap:final}
+This chapter summarizes the work presented in this thesis and figure out the advantages and limitations of the proposed algorithm. It also discussed about the scope of future works related to the proposed algorithm.
+\section {Discussion}
+We have proposed an computational solution to an biological problem. We have described how we can formulate a biological problem like folding protein into optimization and graph theory problem. The formulation consist of finding the interactions between secondary structure element (SSE) network and interaction between amino acids of the protein. The first problem was solve by an multi-objective genetic algorithm and the second one solve by ant colony optimization approach. 
+
+As discussed in the chapter \ref {chap:result}, we can claim that our proposed algorithm gives more accurate result in terms of accuracy and score to predict the amino acid interaction network.
+\section {Future Works}
+In this section a brief discussion on the improvement of this algorithm and probable future works.
+\begin {enumerate}
+\item Improvement in Genetic Representation:  As a genetic representation of the individuals of a network, we have used vector. Instead a matrix or adjacency list can be used. Obviously it will increase the complexity of the algorithm in terms of time and memory.
+\item Improvement in Data Structure: To preserve the diversity function we need k-th nearest neighbour of each individual. To find this we did not use any good data structure. We can use kd-tree to improve this.
+\item Improvement in functions: The objective function as well as other function like diversity measurement can be improved much.
+\item Parallelize: The proposed algorithm in this paper can be parallelized. Then it can be a fast and more accurate algorithm. The big limitation of this algorithm, run on large network, could be reduced by parallelizing this algorithm.
+\end {enumerate}
+Our next step would be, come up with better genetic representation, use of appropriate and advanced data structure and a powerful parallel algorithm.
+

@@ -111,6 +111,8 @@ the proper place of the text.
 \includegraphics[width=0.6\textwidth]{tesseractFlow}
 \caption {Tesseract Flow}
 \end{figure}
+\subsection{Working of Tesseract}
+
 \subsection{Limitations of Tesseract}
 \textbf{Tesseract is an OCR engine, not a complete OCR program.}
 Tesseract is an OCR engine rather than a fully featured program similar to commercial
