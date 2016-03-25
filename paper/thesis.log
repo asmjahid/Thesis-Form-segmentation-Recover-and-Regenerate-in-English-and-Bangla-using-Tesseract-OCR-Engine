@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  25 MAR 2016 15:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  25 MAR 2016 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,7 +1165,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 pdfTeX warning: pdflatex (file ./logo.pdf): PDF inclusion: found PDF version <1
 .6>, but at most version <1.5> allowed
-<logo.pdf, id=51, 682.34924pt x 883.3pt>
+<logo.pdf, id=63, 682.34924pt x 883.3pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
 Package pdftex.def Info: logo.pdf used on input line 73.
@@ -1253,7 +1253,7 @@ LaTeX Warning: Reference `chap:final' on page 3 undefined on input line 35.
 
  (./background_study.tex
 Chapter 2.
-<Blur.png, id=128, 405.76593pt x 127.22531pt>
+<Blur.png, id=143, 405.76593pt x 127.22531pt>
 File: Blur.png Graphic file (type png)
  <use Blur.png>
 Package pdftex.def Info: Blur.png used on input line 16.
@@ -1271,19 +1271,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 
-<Thresholding.png, id=133, 421.575pt x 316.18124pt>
+<Thresholding.png, id=148, 421.575pt x 316.18124pt>
 File: Thresholding.png Graphic file (type png)
  <use Thresholding.png>
 Package pdftex.def Info: Thresholding.png used on input line 31.
 (pdftex.def)             Requested size: 352.8155pt x 264.61588pt.
 
-[5 <./Blur.png>] <EdgeOriginal.jpg, id=140, 301.125pt x 182.6825pt>
+[5 <./Blur.png>] <EdgeOriginal.jpg, id=156, 301.125pt x 182.6825pt>
 File: EdgeOriginal.jpg Graphic file (type jpg)
 
 <use EdgeOriginal.jpg>
 Package pdftex.def Info: EdgeOriginal.jpg used on input line 42.
 (pdftex.def)             Requested size: 264.61331pt x 160.54643pt.
- <EdgeDetect.jpg, id=141, 301.125pt x 303.1325pt>
+ <EdgeDetect.jpg, id=157, 301.125pt x 303.1325pt>
 File: EdgeDetect.jpg Graphic file (type jpg)
 
 <use EdgeDetect.jpg>
@@ -1295,19 +1295,25 @@ Overfull \hbox (51.9377pt too wide) in paragraph at lines 42--44
  []
 
 [6 <./Thresholding.png (PNG copy)>]
-<ContureOriginal.jpg, id=146, 200.75pt x 206.7725pt>
+<ContureOriginal.jpg, id=162, 200.75pt x 206.7725pt>
 File: ContureOriginal.jpg Graphic file (type jpg)
  <use ContureOriginal.jpg>
 Package pdftex.def Info: ContureOriginal.jpg used on input line 54.
 (pdftex.def)             Requested size: 176.40439pt x 181.70795pt.
 
-<Conture.jpg, id=147, 200.75pt x 172.645pt>
+<Conture.jpg, id=163, 200.75pt x 172.645pt>
 File: Conture.jpg Graphic file (type jpg)
  <use Conture.jpg>
 Package pdftex.def Info: Conture.jpg used on input line 55.
 (pdftex.def)             Requested size: 176.40439pt x 151.7173pt.
-) [7 <./EdgeOriginal.jpg> <./EdgeDetect.jpg>] [8 <./ContureOriginal.jpg> <./Con
-ture.jpg>]
+ [7 <./EdgeOriginal.jpg> <./EdgeDetect.jpg>] [8 <./ContureOriginal.jpg> <./Cont
+ure.jpg>]
+Overfull \hbox (17.12624pt too wide) in paragraph at lines 79--80
+[]\OT1/cmr/m/n/12 The ar-chi-tec-ture of an OCR sys-tem varies from one sys-tem
+ to an-other as needed.Optical
+ []
+
+) [9]
 No file thesis.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
@@ -1315,7 +1321,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 09429C8EA6B2B448D53EF92E7EFC948E;626.
+(rerunfilecheck)             Checksum: 0212E978B63B55115A0D39ABEDC39FF4;837.
 
 
 LaTeX Warning: There were undefined references.
@@ -1325,10 +1331,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 31715 strings out of 494985
- 712144 string characters out of 6180356
- 883145 words of memory out of 5000000
- 34304 multiletter control sequences out of 15000+600000
+ 31722 strings out of 494985
+ 712222 string characters out of 6180356
+ 883146 words of memory out of 5000000
+ 34307 multiletter control sequences out of 15000+600000
  10511 words of font info for 38 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  63i,10n,74p,10418b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1337,10 +1343,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (16 pages, 270406 bytes).
+Output written on thesis.pdf (17 pages, 274994 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

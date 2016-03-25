@@ -9,3 +9,6 @@
 \contentsline {section}{\numberline {2.3}Thresholding}{5}{section.2.3}
 \contentsline {section}{\numberline {2.4}Edge Detection}{6}{section.2.4}
 \contentsline {section}{\numberline {2.5}Contour}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}Tesseract OCR engine}{8}{section.2.6}
+\contentsline {section}{\numberline {2.7}Why Tesseract}{9}{section.2.7}
+\contentsline {section}{\numberline {2.8}Optical character recognition systems}{9}{section.2.8}

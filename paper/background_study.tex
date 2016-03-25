@@ -56,3 +56,33 @@ A contour is a list of points that represent, in one way or another, a curve in 
 \caption {Find Contour}
 \label {fig:ContourDetection}
 \end{figure}
+
+\section{Tesseract OCR engine}
+Tesseract is an open source optical character recognition (OCR) engine. HP originally was originally started it as a project. Later it was modified, improved and taken over by Google and later released as open source in year 2005.
+
+Tesseract is considered as one of the most accurate free software OCR engines currently available. A large variety of other OCR software now uses it as a base. It is an excellent quality OCR program, with a large amount of flexibility, a solid codebase, and a large, engaged community of interested people around it.
+
+This thesis investigates the principles of optical character recognition used in the Tesseract OCR engine and techniques to improve its efficiency and runtime. 
+
+Optical character recognition (OCR) method has been used in converting printed text into editable text in various applications over a variety of devices such as Scanners, computers, tablets etc. But now Mobile is taking over the computer in all the domains but OCR still remains one not so conquered field. This paper focuses on improving the Tesseract OCR efficiency for Bangla. 
+
+This thesis presents a preprocessing technique being applied to the Tesseract Engine to improve the recognition of the characters keeping the runtime low.
+
+\section{Why Tesseract}
+The first relevant criterion in Tesseract is the fact that is free and open source (FOSS), which is an advantage and a key point in the research development.
+
+Usually, whenever Tesseract is compared to another free OCR tool, it is the best whether in terms of recognition rate or speed. Even, when it is compared with the Finereader commercial tool, Tesseract arrives to rub it and managed to overtake for handwritten writing.
+
+\section{Optical character recognition systems}
+An OCR system is a system that takes a text image as input and applies certain treatments through modules making up the system in order to output editable file with the same text.
+
+The architecture of an OCR system varies from one system to another as needed.Optical Character Recognition systems are usually composed of the following phases:
+
+\begin{itemize}
+\item Preprocessing phase: prepares the sensor data to the next phase. It is a set of treatments allowing image quality increasing.
+\item Segmentation phase: delimits document elements (line, word, character ). By applying good segmentation techniques, we can increase the performance of OCR systems.
+\item Feature extraction phase: defines features characterizing the delimited elements of a document. Feature extraction is one of the most important steps in developing a classification system. This step describes the various features characterizing the delimited elements of a document.
+\item Classification phase: recognizes and identifies each element. It is performed based on the extracted features.
+\item Post-processing phase: it is an optional phase. It may be automatic or manual.
+\end{itemize}
+Several approaches and techniques have been developed for each module.
