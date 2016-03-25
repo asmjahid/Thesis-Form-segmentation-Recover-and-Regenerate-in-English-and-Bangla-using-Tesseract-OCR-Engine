@@ -1,0 +1,7 @@
+\begin{figure}[h!]
+\centering
+\subfloat [Amino Acid]{\label{fig:AminoAcidball} \includegraphics[width=0.3\textwidth]{AminoAcidball}}
+\subfloat [Amino acid with different group]{\label{fig:aminoacid} \includegraphics[width=0.3\textwidth]{aminoacid}}
+\caption {Basic Structure of Amino Acid}
+\label {fig:Amino_Acid}
+\end{figure}

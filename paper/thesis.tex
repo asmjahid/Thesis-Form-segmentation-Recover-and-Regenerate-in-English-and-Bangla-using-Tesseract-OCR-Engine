@@ -23,9 +23,9 @@
 %%
 %% Load packages.
 %%
-\usepackage[bschons]{otagothesis}     %% Use Otago page layout
+\usepackage[interimsci]{otagothesis}     %% Use Otago page layout
 
-\usepackage[longnamesfirst,square]{natbib} %% Use Natural Sciences bibliography
+\usepackage[square,sort,comma,numbers]{natbib} %% Use Natural Sciences bibliography
 
 %%\usepackage{times}              %% Times PostScript font. Don't use
 				  %% if thesis contains lots of math.
@@ -42,7 +42,6 @@
 \usepackage{algorithmic}
 \usepackage{algorithm}
 \usepackage{pgfplots}
-\usepackage{lipsum}
 \usepackage{setspace}
 \newcommand{\ThesisName}{Form segmentation with tesseract}
 %%
@@ -88,9 +87,9 @@
 
 \include{background_study}
 
-%%\include{literature_review}
-%%\include {network}
-%%\include {formulation}
+\include{literature_review}
+%%\include{network}
+%%\include{formulation}
 %%\include{algorithm}
 %%\include{result}
 %%\include{conclusion}

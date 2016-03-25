@@ -1,0 +1,15 @@
+\begin{table}
+\centering
+\begin{tabular}{|c c c c c|}
+\hline
+x & x & x & x & x \\
+x & x & x & x & x \\
+x & x & x & x & x \\
+x & x & \textcolor{red}{a} & x & x \\
+x & x & x & x & x \\
+x & x & x & x & x \\
+\hline
+\end{tabular}
+\caption {Edge Ditection}
+\label {tab:Table1}
+\end{table}

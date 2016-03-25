@@ -1,0 +1,20 @@
+%%
+%% To add a new bibliographic item under emacs, type M-x bib TAB TAB.
+%% This will give you a list of possible entry types.  Click on the one
+%% you want using the middle mouse button to get a clean entry.
+%%
+%% The optional fields have OPT in front of them: delete the OPT if you
+%% fill in the field.
+%%
+%% Use double curly brackets {{}} when you want to maintain your own
+%% capitalisation, otherwise bibtex will follow its own rules.
+%%
+
+@inproceedings { moult1,
+author	    = {Moult, John},
+title	    = "A decade of CASP: progress, bottlenecks and prognosis in protein structure prediction",
+booktitle   = "Current Opinion in Structural Biology",
+volume	    = {15},
+year        = { 2005},
+pages       = {285–-289}
+}

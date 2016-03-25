@@ -21,6 +21,3 @@
 \@input{literature_review.aux}
 \bibstyle{unsrt}
 \bibdata{thesis}
-\bibcite{moult1}{{1}{}{{}}{{}}}
-\providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{22}{section.3.6}}

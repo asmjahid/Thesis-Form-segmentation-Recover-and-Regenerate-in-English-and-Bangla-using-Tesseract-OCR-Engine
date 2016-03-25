@@ -1,42 +1,191 @@
 \chapter {Literature Review}
 \label{literature_review}
-The folding process of amino acid interaction network is related to protein structure and protein folding process. Thus in this chapter we will discuss about some state of the art literature and algorithms on protein structure prediction and protein folding algorithms as well as about some previous work on amino acid interaction network, though there are few works on amino acid interaction.
-\section {Protein Structure Prediction}
-A grand challenge has been to develop a computer algorithm that can predict a protein’s 3D native structure from its amino acid sequence. On the one hand, knowledge of native structures is a starting point for understanding biological mechanisms and for discovering drugs that can inhibit or activate those proteins. On the other hand, we know 1000-fold more sequences than structures, and this gap is growing because of developments in high-throughput sequencing. So, there is considerable value in methods that could accurately predict structures from sequences.
+The From segmentation process is related to Edge Ditection, Finding contours and contours shapes.And Text ditection related to Tesseract and Tesseact training. Thus in this chapter we will discuss about some state of Image processing technique and Tesseract OCR applications.
+\section{Canny Edge Ditection}
+The Canny edge detector is an edge detection operator that uses a multi-stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986. Canny also produced a computational theory of edge detection explaining why the technique works.
+\subsection{Canny Edge Ditection Algorithm}
+\begin{enumerate}
+\item[\textbf{Step 1}] In order to implement the canny edge detector algorithm, a series of steps must be followed. The first step is to filter out any noise in the original image before trying to locate and detect any edges. And because the Gaussian filter can be computed using a simple mask, it is used exclusively in the Canny algorithm. Once a suitable mask has been calculated, the Gaussian smoothing can be performed using standard convolution methods. A convolution mask is usually much smaller than the actual image. As a result, the mask is slid over the image, manipulating a square of pixels at a time. The larger the width of the Gaussian mask, the lower is the detector's sensitivity to noise. The localization error in the detected edges also increases slightly as the Gaussian width is increased. The Gaussian mask used in my implementation is shown below. 
 
-Computer-based protein-structure prediction has been advanced by Moult and colleagues, in an event initiated in 1994 called CASP: Critical Assessment of protein Structure Prediction \cite{moult1,moult2}. Held every second summer, CASP is a community wide blind competition in which typically more than 100 different “target sequences” (of proteins whose structures are known but not yet publicly available) are made available to a community that numbers more than 150 research groups around the world. Each participating group applies some algorithmic scheme that aims to predict the 3D structures of these target proteins. After each CASP event, the true experimental structures are then revealed, group performances are evaluated, and community evaluations are published. 
-
-Currently, all successful structure-prediction algorithms are based on assuming that similar sequences lead to similar structures. These methods draw heavily on the PDB, which now contains more than 80,000 structures. However, many of these structures are similar, and the PDB contains only $\sim$4000 structural families and 1200 folds \cite{murzin}.
-CASP-wide progress over the past 18 years is summarized in Fig. \ref{fig:casp_evolution}. Prediction accuracies improved from CASP1 (1994) to CASP5 (2002) on the basis of several advances: (i) PDB expanded from ~1600 structures to 19,000 during that time. (ii) Better sequence search and alignment tools, such as Position-Specific Iterated Basic Local Alignment Search Tool (PSI-BLAST) \cite{altschul}, enabled the detection of more remote evolutionary relationships and more accurate sequence alignments. (iii) A strategy, called the “fragment assembly approach” \cite{jones,liam,simons,bonneau}, was developed that can often improve predictions when a similar sequence cannot be found in the PDB.
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\subfloat [A. Historical CASP Performance]{\label{fig:casp_evolution} \includegraphics[width=0.5\textwidth]{casp_evolution}}
-\subfloat [B. Performance in CASP9]{\label{fig:casp9_performance} \includegraphics[width=0.5\textwidth]{casp9_performance}}
-\caption {Historical and present performance in CASP. Model quality is judged by using GDT-TS \cite{zemla}, which is approximately the percentage of residues that are located in the correct position. (A) Evolution of accuracy over the history of CASP, spanning 18 years. Each target is classified according to an approximate measure of difficulty that incorporates both the structural and sequence similarity to proteins of known structure \cite{kryshtafovych}. Each dot represents the best prediction (across all participants) for a given target. (B) Summary of prediction accuracy in CASP9 \cite{mariani}. We highlight the performance of two of the best automated server algorithms. Selected predictions are superimposed on the corresponding native structures to give a visual sense of the accuracy level that can be expected.}
-\label {fig:casp_history}
+\label{fig:GaussainMask} 
+\includegraphics[width=0.5\textwidth]{GaussMask}
+\caption {Discrete Approximation to Gaussian function with $\sigma = 1.4$}
 \end{figure}
-If the target protein’s sequence is related to a sequence that is already in the PDB, predicting its structure is usually easy (Fig. \ref{fig:casp_history}). In such cases, target protein structures are predicted by using “template-based modelling” (also called homology modelling or comparative modelling). But when there is no protein in the PDB with a sequence resembling the target’s, accurately predicting the structure of the target is much more difficult. These latter predictions are called “free modelling” (also called ab initio or de novo prediction). One of the most successful free-modelling techniques is fragment assembly, described below. 
 
-In fragment assembly \cite{jones,liam,simons,bonneau}, a target protein sequence is de-constructed into small, overlapping fragments. A search of the PDB is performed to identify known structures of similar fragment sequences, which are then assembled into a full length prediction. The qualities of fragments and their assemblies are assessed by using some form of scoring function that aims to select more native-like protein structures from among the many possible combinations. Problems of folding physics described above share more commonality with free modeling than with template-based modelling.
 
-Since CASP6, although overall progress has slowed (Fig. \ref{fig:casp_evolution}), there has been systematic, incremental progress \cite{kryshtafovych}. The best groups can now on average produce models that are better than the single best template from the PDB. Progress has been made toward successfully combining multiple templates into a single prediction. Substantial improvements have been observed for free-modelling targets shorter than 100 amino acids, although no single group yet consistently produces accurate models. Larger free-modeling targets remain challenging. Several recent algorithmic developments\textendash to predict residue\textendash residue contacts from sequence alone \cite{morcos,marks,jones2} and to more sensitively and accurately identify remote homologs \cite{remmert}\textendash promise to further improve prediction accuracy.
-The performance of two of the best fully automated server predictors during CASP9 \cite{mariani} are shown in Fig. \ref{fig:casp9_performance}: HHPred, a pure template\textendash based modeling tool \cite{soding}, and ROSETTA, a hybrid tool that combines fragment assembly and template based modelling with all-atom refinement \cite{bradley}. For some fraction of CASP targets [$\sim$10\%, based on a cut-off of 85GlobalDistance Test–Total Score (GDT-TS) \cite{zemla2}, which is defined in Fig. \ref{fig:casp_history} , legend], the best predictions are now accurate enough to interpret biological mechanisms, to guide biochemical studies, or to initiate a drug discovery program (which requires structural errors of less than 2 to 3 \si{\angstrom}). However, it remains a challenge to predict the other 90\% of protein structures this accurately. In addition, it is also critical to improve physics-based technologies and to reduce our dependence on knowledge of existing structures, so that we can ultimately study protein motions, intrinsically disordered proteins, induced-fit binding of drugs, and membrane proteins and fold-able polymers, for which databases are too limited.
-\section {Protein Folding}
-Protein folding is a quintessential basic science. There has been no specific commercial target, yet the collateral pay-off's have been broad and deep. Specific technical advances are reviewed elsewhere \cite{dill}; below, we describe a few general outgrowths. 
-\subsection{Growth of protein\textendash structure databases}
-Today, more than 80,000 protein structures are known at atomic detail and publicly available through the PDB. New structures are being added at a rapid pace, supported by the National Institutes of Health (NIH)\textendash funded Protein Structure Initiative, which was developed in part to inform protein structure prediction.
-\subsection{Advances in computing technology}
-Understanding protein folding was a key motivation for IBM’s development of the Blue Gene supercomputer \cite{allen2001blue}, now also used to study the brain, materials, weather patterns, and quantum and nuclear physics. Protein folding has also driven key advances in distributed\textendash grid computing, such as in Folding@home, developed by Pande at Stanford, in which computer users all over the world donate their idle computer time to perform physical simulations of protein systems \cite{shirts2006screen}. Folding@home, which now has more than one million registered users and an average of 200,000 user\textendash donated CPUs available at any one time, provided some of the earliest simulations showing that MD simulations can accurately predict folding rates \cite{snow2002absolute}. The Anton computer from DE Shaw Research, custom designed to simulate biomolecules, gives several orders of magnitude better performance than conventional computers \cite{shaw2007anton}. Advances in computer technology have led to major advances in forcefields and to more reliable atomic\textendash level insights into biological mechanisms.
-\subsection {Improvements in bio-molecular forcefields}
-Computer processing power has advanced at the Moore’s law rate, doubling every $\sim$2 years. But equally important, forcefields have kept pace. Increased computer power leads to longer computed time scales, which puts more stringent demands on the accuracies of bio-molecular forcefields. In a pioneering paper in 1977, McCammon \textit{et al.} showed that the BPTI protein was stable in computer simulations during a computed time of 10 ps \cite{mccamm0n1977dynamics}. Today, small proteins are typically stable in explicit\textendash water simulations for 5 to 8 orders of magnitude longer\textendash microseconds to milliseconds of computed time \cite{shaw2010atomic}. Achieving such advances has required continuous improvements in forcefield accuracy.
-\subsection {New sociological structures in the scientific enterprise}
-Protein folding has driven innovations in how other field of science is done. CASP was among the first community-wide scientific competitions/collaborations, a paradigm for how grand\textendash challenge science can be advanced through an organized communal effort. Other such competitions have followed, including Critical Assessment of Prediction of Interactions (CAPRI) (predicting protein-protein docking) \cite{chen2003protein},SAMPL (predicting small-molecule solvation free energies, and ligand binding modes and affinities) \cite{guthrie2009blind}, and GPCR-Dock (predicting structures for G\textendash protein coupled receptors, a pharmaceutically important category of membrane proteins) \cite{michino2009community}, among many others. Protein folding has also pioneered “citizen science,” such as in Folding \cite{shirts2006screen} and Robetta@home and in a computer game called Foldit \cite{cooper2010predicting}, in which the public engages in protein folding on their home computers.
-\begin{figure}[h]
+\item[\textbf{Step 2}]After smoothing the image and eliminating the noise, the next step is to find the edge strength by taking the gradient of the image. The Sobel operator performs a 2-D spatial gradient measurement on an image. Then, the approximate absolute gradient magnitude (edge strength) at each point can be found. The Sobel operator uses a pair of 3x3 convolution masks, one estimating the gradient in the x-direction (columns) and the other estimating the gradient in the y-direction (rows). They are shown below:
+\begin{figure}[H]
 \centering
-\subfloat [Designed Proteins]{\label{fig:inhibitor} \includegraphics[width=0.5\textwidth]{inhibitor}}
-\subfloat [Designed Foldamers]{\label{fig:molecular_paper} \includegraphics[width=0.5\textwidth]{molecular_paper}}
-\caption {Designed proteins and foldamers. (A) A protein inhibitor that was designed by computer to bind to hem-agglutinin, an influenza protein. After design, the inhibitor was crystallized in a complex with hemagglutinin. The designed structure is in remarkably good agreement with experiment, particularly for the side chains involved in binding. (B) Peptoids are synthetic, fold-able, protein\textendash inspired polymers that have various applications. Shown here are peptoids that were designed as chains of alternating hydrophobic (gray) and either positively (blue) or negatively (red) charged side chains that spontaneously forms thin 2D structure called molecular paper.}
-\label {fig:protein_foldamers}
+\label{fig:Mask} 
+\includegraphics[width=0.6\textwidth]{Mask}
 \end{figure}
-\subsection {New materials: Sequence-specific fold-able polymers}
-The principles and algorithms developed for protein folding have led to non-biological, human-made proteins and to new types of polymeric materials. In particular, proteins have been designed that bind to and inhibit other proteins (fig. \ref{fig:inhibitor}) \cite{fleishman2011computational}, have new folds \cite{kuhlman2003design}, have new enzymatic activities \cite{siegel2010computational}, and act as potential new vaccines \cite{azoitei2011computation}. Also, a class of non-biological polymers has emerged, called “foldamers,” that are intended to mimic protein structures and functions \cite{gellman1998foldamers,horne2008foldamers,kirshenbaum1999designing,lee2005folding}. Foldamers already have broad ranging applications \cite{fowler2009structure,lee2008biomimetic,shah2008photoresponsive,nam2010free} as inhibitors of protein\textendash protein interactions, broad\textendash spectrum antibiotics, lung surfactant mimics, optical storage materials, a zinc-finger–like binder, an RNA protein binding disrupter for application in muscular dystrophy, gene transfection agents, and “molecular paper” (Fig. \ref{fig:molecular_paper}). Although such materials have potential applications in biomedicine and materials science, they also provide a way for us to test and deepen our understanding of protein folding.
+The magnitude, or EDGE STRENGTH, of the gradient is then approximated using the formula: $|G| = |Gx| + |Gy|$
+\item[\textbf{Step 3}]Finding the edge direction is trivial once the gradient in the x and y directions are known. However, you will generate an error whenever sumX is equal to zero. So in the code there has to be a restriction set whenever this takes place. Whenever the gradient in the x direction is equal to zero, the edge direction has to be equal to 90 degrees or 0 degrees, depending on what the value of the gradient in the y-direction is equal to. If GY has a value of zero, the edge direction will equal 0 degrees. Otherwise the edge direction will equal 90 degrees. The formula for finding the edge direction is just: $$\theta = tan^{-1} (Gy / Gx)$$
+
+\item[\textbf{Step 4}]Once the edge direction is known, the next step is to relate the edge direction to a direction that can be traced in an image. So if the pixels of a 5x5 image are aligned as follows: \\
+\begin{table}[H]
+\centering
+\begin{tabular}{|c c c c c|}
+\hline
+x & x & x & x & x \\
+x & x & x & x & x \\
+x & x & x & x & x \\
+x & x & \textcolor{red}{a} & x & x \\
+x & x & x & x & x \\
+x & x & x & x & x \\
+\hline
+\end{tabular}
+\caption {Edge Ditection}
+\label {tab:Table1}
+\end{table} 
+Then, it can be seen by looking at pixel "\textcolor{red}{a}", there are only four possible directions when describing the surrounding pixels - 0 degrees (in the horizontal direction), 45 degrees (along the positive diagonal), 90 degrees (in the vertical direction), or 135 degrees (along the negative diagonal). So now the edge orientation has to be resolved into one of these four directions depending on which direction it is closest to (e.g. if the orientation angle is found to be 3 degrees, make it zero degrees). Think of this as taking a semicircle and dividing it into 5 regions.
+\begin{figure}[H]
+\centering
+\label{fig:Canny1} 
+\includegraphics[width=0.6\textwidth]{Canny}
+\end{figure}
+Therefore, any edge direction falling within the \textcolor{yellow}{yellow range} (0 to 22.5 \& 157.5 to 180 degrees) is set to 0 degrees. Any edge direction falling in the \textcolor{green}{green range} (22.5 to 67.5 degrees) is set to 45 degrees. Any edge direction falling in the \textcolor{blue}{blue range} (67.5 to 112.5 degrees) is set to 90 degrees. And finally, any edge direction falling within the \textcolor{red}{red range} (112.5 to 157.5 degrees) is set to 135 degrees.
+\item[\textbf{Step 5}]After the edge directions are known, nonmaximum suppression now has to be applied. Nonmaximum suppression is used to trace along the edge in the edge direction and suppress any pixel value (sets it equal to 0) that is not considered to be an edge. This will give a thin line in the output image.
+\item[\textbf{Step 6}]Finally, hysteresis is used as a means of eliminating streaking. Streaking is the breaking up of an edge contour caused by the operator output fluctuating above and below the threshold. If a single threshold, T1 is applied to an image, and an edge has an average strength equal to T1, then due to noise, there will be instances where the edge dips below the threshold. Equally it will also extend above the threshold making an edge look like a dashed line. To avoid this, hysteresis uses 2 thresholds, a high and a low. Any pixel in the image that has a value greater than T1 is presumed to be an edge pixel, and is marked as such immediately. Then, any pixels that are connected to this edge pixel and that have a value greater than T2 are also selected as edge pixels. If you think of following an edge, you need a gradient of T2 to start but you don't stop till you hit a gradient below T1.
+\section{Contours}
+Contours can be explained simply as a curve joining all the continuous points (along the boundary), having same color or intensity. The contours are a useful tool for shape analysis and object detection and recognition.
+\begin{itemize}
+\item For better accuracy, use binary images. So before finding contours, apply threshold or canny edge detection.
+\item findContours function modifies the source image. So if you want source image even after finding contours, already store it to some other variables.
+\item In OpenCV, finding contours is like finding white object from black background. So remember, object to be found should be white and background should be black.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\subfloat [Original Image]{\label{fig:Contour2} \includegraphics[width=0.5\textwidth]{shape}}
+\subfloat [Detected Contours]{\label{fig:DetectContour} \includegraphics[width=0.5\textwidth]{contours}}
+\caption {Find Courours}
+\label {fig:Amino_Acid}
+\end{figure}
+\end{enumerate}
+\section{Detecting shapes in images}
+Doing image processing and especially blob analysis it is often required to check some objects' shape and depending on it perform further processing of a particular object or not. For example, some applications may require finding only rectangle from all the detected objects, or quadrilaterals, rectangles, etc.
+\subsection{Detection quadrilaterals}
+Detection of quadrilaterals and triangles has pretty much the same idea - we are checking mean distance between provided shape's edge pixels and the edge of estimated quadrilateral/triangle. The only difference here is the way how to estimate parameters of the shape we want to recognize and how to check distance to the estimated shape.
+
+Let's start with quadrilaterals first. For a given shape we can make an assumption that it is a quadrilateral, find its four corners and then using similar method as we've used for circles we can check if our assumption is correct or not - check how good the shape fits into the quadrilateral with assumed parameters.
+\begin{figure}[H]
+\centering
+\label{fig:shape} 
+\includegraphics[width=0.6\textwidth]{shapefourcorner}
+\caption {Detection of quadrilaterals}
+\end{figure}
+As we can see on the image above, we may have different objects and quadrilateral finder provides different results for them. For shapes which really look like quadrilateral, the quadrilateral finder is able to find their corners more or less correctly (problem may occur in the case if object has rounded corners). But for other types of objects (circles, starts, etc.), quadrilateral finder does not provide any good result. And this is correct, since this routine supposes the given shape is really quadrilateral.
+
+Now, when we made the assumption that a subjected object is quadrilateral and we got its corner, we just need to see how good is the fit of the object into the quadrilateral with those found corner - we need to make sure there are no edge points of the given shape which are too far away from the edge of the assumed quadrilateral.
+\subsection{Detection Rectangles, squares, equilateral}
+Once we made a check for quadrilateral shape and got its 4 corners, we may do some further checks to detect sub-type of the quadrilateral: trapezoid, parallelogram, rectangle, rhombus or square. These checks are based on checking angles between opposite/adjacent sides and their length. First we check two opposite sides - if they are parallel, then we get at least trapezoid. Then we check two other sides - if they are parallel two, then we have parallelogram. If two adjacent sides are perpendicular, then we got rectangle. The last check is to compare length of two adjacent sides - if they are equal, then parallelogram becomes rhombus and rectangle becomes square. And of course we need to add small possible error, so if angle between lines equals to 2 degrees, they are still treated as parallel.
+\section{Tesseract OCR Engine}
+\subsection{What is Tesseract?}
+An Overview of the Tesseract OCR Engine describes Tesseract as: "Tesseract is an open source
+optical character recognition(OCR) engine. HP originally was originally started it as a project. Later it was modified, improved and taken over by Google and later released as open source
+in year 2005. It is now available at" (Smith, 2007) . It is very portable as compared to others
+and supports various platforms. Its focus is more towards providing less rejection and improved
+accuracy. Currently only command base version is available but there are many projects with UI
+built on top of it which could be forked. As of now Tesseract version 3.02 is released and
+available for use. Now Tesseract is developed and maintained by Google. It provides support for
+around 139 languages.
+\subsection{Architecture}
+Tesseract OCR is an elegant engine with various layers. It works in step by step manner as
+shown in the block diagram in fig:3.4 The first step in the cycle is to sense the color intensities of the image, named as adaptive thresholding, and converts the image into binary images.
+Second step is to do the connected component analysis of the image, which does the task of
+extracting character outlines. This step is the main process of this cycle as it does the OCR of
+image with white text and blacks rest of the image.
+Tesseract was probably the first to use these cycles to process the input image. After this the
+outlines extracted from image are converted into Blobs(Binary Long Objects). It is then organized as lines and regions and further analysis is for some fixed area. After extraction
+the extracted components are chopped into words and delimited with spaces. Recognition in text
+then starts which is a two pass process. As shown in fig 1, the first part is when attempt to
+recognize each word is made. Each satisfactory word is accepted and second pass is started to
+gather remaining words. This brings in the role of adaptive classifier. The adaptive classifier then will classify text in more accurate manner. The adaptive classifier needs to be trained beforehand
+to work accurately. When the classifier receives some data, it has to resolve the issues and assign
+the proper place of the text.
+
+\begin{figure}[H]
+\centering
+\label{fig:flow} 
+\includegraphics[width=0.8\textwidth]{tesseractFlow}
+\caption {Tesseract Flow}
+\end{figure}
+
+\subsection{Working of Tesseract}
+Tesseract works pretty much as a scanner. Its interface is pretty simple as it takes input o the command lines with very basic commands. We need to input any image with text in it.
+
+The basic Tesseract command takes only two arguments: First is input image that contains text and second argument is output text file which is usually text file.
+
+Tesseract by default picks the extension of output file as .txt. There no need to specify the explicitly the output file extension.Tesseract supports various languages. Each language comes with a trained language data file.
+
+The language file must be kept in a location Tesseract knows. When using in the project it is advised to keep it within the project folder. This folder is Tesseract home folder in your machine. In this research, we are aiming to extract English and Bangla characters from the images so we have to keep both Bangla and English data files.
+ 
+\subsection{How does Tesseract work?}
+\textbf{The following is a brief overview of how Tesseract works:}
+\begin{enumerate}
+\item Outlines are analysed and stored 
+\item Outlines are gathered together as Blobs
+\item Blobs are organized into text lines
+\item Text lines are broken into words 
+\item First pass of recognition process attempts to recognize each word in turn 
+\item Satisfactory words passed to adaptive trainer 
+\item Lessons learned by adaptive trainer employed in a second pass, which attempts
+recognize the words that were not recognized satisfactorily in the first pass 
+\item Fuzzy spaces resolved and text checked for small caps
+\item Digital texts are outputted 
+\end{enumerate}
+\textbf{During these processes, Tesseract uses:}
+\begin{enumerate}
+\item algorithms for detecting text lines from a skewed page 
+\item algorithms for detecting proportional and non proportional words (a proportional
+word is a word where all the letters are the same width) 
+\item algorithms for chopping joined characters and for associating broken characters 
+\item linguistic analysis to identify the most likely word formed by a cluster of
+characters 
+\item two character classifiers: a static classifier, and an adaptive classifier which
+employs training data, and which is better at distinguishing between upper and
+lower case letters 
+\end{enumerate}
+
+\subsection{Limitations of Tesseract}
+\textbf{Tesseract is an OCR engine, not a complete OCR program.}
+Tesseract is an OCR engine rather than a fully featured program similar to commercial
+OCR software such as Nuanceâ€™s Omnipage. It was originally intended to serve as a
+component part of other programs or systems. Although Tesseract works from the 
+command line, to be usable by the average user the engine must be integrated into
+other programs or interfaces, such as FreeOCR.net, WeOCR or OCRpous. Without
+integration into programs such as these, Tesseract has no page layout analysis, no
+output formatting and no graphical user interface (GUI).
+\section{Training Tesseract}
+The setup for English \& Bangla OCR within Tesseract is another important task. The way train the engine and input the dataset matters a lot.
+Training Tesseract for English \& Bangla includes four steps mainly and they are as follows:
+\subsection{Generating training images}
+Tesseract official website explains these steps very well "The first step is to determine the full
+character set to be used, and prepare a text or word processor file containing a set of examples"
+[31]. The two important points to remember for a training file are: Firstly make sure the file
+contains all the characters that we are expecting. Secondly there should be at least 5 samples.
+There should be more samples of the more frequent characters - at least 20 [31]. Keeping all this
+in mind let's explore how do we create box files.
+\subsection{Make box files}
+Box file is defined as a sample to match with the characters. We need a 'box' file for each
+training image. Tesseract official website defines the box file as "The box file is a text file that
+lists the characters in the training image, in order, one per line, with the coordinates of the
+bounding box around the image" [31]. Tesseract is not so intuitive about the sample data.
+Inconsistencies may lead to wrong interpretation of data.
+\subsection{Run Tesseract}
+In this step we run the Tesseract engines with the new training files. The purpose is to create the
+trained dataset which works as a rule engine. Also it creates log files.
+\subsection{Compute character set} 
+Guidelines from Tesseract website state that "Tesseract needs to know the set of possible characters it can output. To generate the unichar set data file, use the unicharset\textunderscore extractor program on the box files generated above":extractor language. fontname. box 
+One more requirement in this is, Tesseract needs to have access to character properties i.e.
+isalpha, isdigit, isupper, islower, ispunctuation [31].
+The system described in [30],[31] have classified Hindi OCR and its setup, training very nicely.
+The only limitation is that the system is for desktop. We have to build the similar system for
+mobile devices.
+\section{OpenCV}
+OpenCV[1] (Open Source Computer Vision) is a library of programming functions and algorithms
+[36]. Their main focus is to provide API mainly aimed at real-time computer vision. It was
+originally developed by Intel. OpenCV library is free for use for development (under the open
+source BSD license) [36]. The best feature is that the library is cross-platform . 
