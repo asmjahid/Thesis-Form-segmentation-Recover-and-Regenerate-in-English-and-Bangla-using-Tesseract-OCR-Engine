@@ -1,176 +1,58 @@
 \chapter {Background Study}
 \label{background_study}
-Base of a good research is the understanding of the background terms and definition. To understand the amino acid interaction network and its function in protein structure, one have to clearly understand about protein structure. In this chapter as background knowledge discovery we will discuss about amino acid and protein and its different types of structures.
-\section{Amino Acid}
-Amino acids are the building blocks of proteins. Protein is nothing but sequences of amino acids linked by peptide bonds. Amino acids are one of the most biologically important organic compounds made from amine ($-NH_2$) and carboxylic acid ($-COOH$) functional groups, along with a side\textendash chain specific to each amino acid. 
-\begin{figure}[h!]
+Base of a good research is the understanding of the background terms and definition. To understand the Image processing and character reorganisation, one have to clearly understand about Image filtering, Image Transformations and tesseract OCR Engine operation. In this chapter as background knowledge discovery we will discuss about some Image processing term and tesseract.
+
+\section{Gray Scale}
+In photography and computing, a grayscale or greyscale digital image is an image in which the value of each pixel is a single sample, that is, it carries only intensity information. Images of this sort, also known as black-and-white, are composed exclusively of shades of gray, varying from black at the weakest intensity to white at the strongest
+
+\section{Blur}
+Blurring is a very powerful operation used in image processing and procedural texture generation. Blurs involve calculating weighted averages of areas of pixels in a source image for each pixel of the final blurred image. Blurring images so they become fuzzy may not seem like a useful operation, but actually is very useful for generating background effects and shadows.
+
+\subsection{Gaussian smoothing}
+The Gaussian smoothing operator is a 2-D convolution operator that is used to `blur' images and remove detail and noise. The idea of Gaussian smoothing is to use this 2-D distribution as a `point-spread' function, and this is achieved by convolution. Since the image is stored as a collection of discrete pixels we need to produce a discrete approximation to the Gaussian function before we can perform the convolution. I Gaussian smoothing technique is widely used effect in graphics software, typically to reduce image noise and reduce detail.
+\begin{figure}[H]
 \centering
-\subfloat [Amino Acid]{\label{fig:AminoAcidball} \includegraphics[width=0.3\textwidth]{AminoAcidball}}
-\subfloat [Amino acid with different group]{\label{fig:aminoacid} \includegraphics[width=0.3\textwidth]{aminoacid}}
-\caption {Basic Structure of Amino Acid}
-\label {fig:Amino_Acid}
+\label{fig:Blur} 
+\includegraphics[width=0.8\textwidth]{Blur.png}
+\caption {Gaussian smoothing}
 \end{figure}
-The properties of each amino acid are determined by its specific side chain. After water, amino acids comprise the second largest component of human muscle, cells and other tissues in the form of proteins. The key components of an amino acid are carbon, hydrogen, oxygen and nitrogen, other elements are found in the side\textendash chains of certain amino acids. Though, according to \cite{wagner1983new}, about 500 amino acids are known, there are 20 different, naturally occurring amino acids. Amino acid names are often abbreviated as either three letters or single letter. 
+
+\section{Thresholding}
+Thresholding is one of the most basic techniques for what is called Image Segmentation. When the threshold technique is applied on an image, we get segments inside the image and each of segments are represent something.
 \begin{itemize}
-\item  Alanine (Ala / A)
-\item Arginine (Arg / R)
-\item Asparagine (Asn / N)
-\item Aspartic Acid (Asp / D)
-\item Cysteine (Cys / C)
-\item Glutamic Acid (Glu / E)
-\item Glutamine (Gln / Q)
-\item Glycine (Gly / G)
-\item Histidine (His / H)
-\item Isoleucine (Ile / I)
-\item Leucine (Leu / L)
-\item Lysine (Lys / K)
-\item Methionine (Met / M)
-\item Phenylalanine (Phe / F)
-\item Proline (Pro / P)
-\item Serine (Ser / S)
-\item Threonine (Thr / T)
-\item Tryptophan (Trp / W)
-\item Tryosine (Tyr / Y)
-\item Valine (Val / V)
+\item Thresholding is a simple way of segmentation.
+\item We separate out various regions of an image regarding to objects which we want to analyze. The object pixels and the background pixels are the backbone of this separation.
+\item To differentiate the pixels we are interested in from the rest, we perform a comparison of each pixel intensity value with respect to a threshold.
+\item Once we have separated properly the important pixels, we can set them with a determined value to identify.
 \end{itemize}
 
-Each amino acid has the same fundamental structure, differing only in the side\textendash chain, designated by R\textendash group. The carbon atom to which the amino group, carboxyl group, and side chain (R\textendash group) are attached is the alpha carbon ($C_{\alpha}$). The alpha carbon is the common reference point for coordinates of an amino acid structure. 
-The side chains vary in shape, size, charge and polarity. Due to the variety in side chains, properties of amino acid vary. Among the 20 amino acids, Serine (Ser), Threonine (Thr), Asparagine (Asn), Tyrosine (Tyr), Cysteine (Cys) and Glutamine (Gln) are polar residue and Alanine (Ala), Glycine (Gly), Valine (Val), Isoleucine (Ile), Proline (Pro), Leucine (Leu), Methionine (Met), Tryptophan (Trp) and Phenylalanine (Phe) are non\textendash polar residue. The side chains of polar amino acids have partial positive and negative charges and are attracted to water and found mostly in the surface of protein. On the other hand, there are three amino acids that have basic side chains at neutral $pH$. These are arginine (Arg), lysine (Lys), and histidine (His). Their side chains contain nitrogen and resemble ammonia, which is a base. Their $pKa$'s are high enough that they tend to bind protons, gaining a positive charge in the process. Two amino acids have acidic side chains at neutral $pH$. These are aspartic acid or aspartate (Asp) and glutamic acid or glutamate (Glu). Their side chains have carboxylic acid groups whose $pKa$'s are low enough to lose protons, becoming negatively charged in the process.   The nine non\textendash polar amino acids are hydrophobic. Side chains of these amino acids are composed mostly of carbon and hydrogen, have small dipole moments, and tend to be repelled from water. This fact has important implications for protein’s tertiary structure. 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
-\subfloat [Polar Residue]{\label{fig:polar_residue} \includegraphics[width=0.6\textwidth]{polar_residue}}
+\label{fig:Thresholding} \includegraphics[width=0.8\textwidth]{Thresholding}
+\caption {Thresholding}
+\end{figure}
 
-\subfloat [Non\textendash Polar Residue]{\label{fig:non_polar_residue} \includegraphics[width=0.7\textwidth]{non-polar_residue}}
 
-\subfloat [Acidic Residue]{\label{fig:acidic_residue} \includegraphics[width=0.5\textwidth]{acidic_residue}}
-\subfloat [Basic Residue]{\label{fig:basic_residue} \includegraphics[width=0.5\textwidth]{basic_residue}}
-\caption {Amino Acid residue with different property}
-\label {fig:amino_acid_residue}
-\end{figure}
-Most protein molecules have a hydrophobic core, which is not accessible to solvent and a polar surface in contact with the environment. While the core is built up with hydrophobic amino acid residues, polar and charged amino acids preferentially cover the surface of the molecule and are in contact with solvent due to their ability to form hydrogen bonds. Very often they also interact with each other : positively and negatively charged amino acids form so called salt bridges, while polar amino acid side chains may form side chain\textendash side chain or side chains\textendash main chain hydrogen bonds (with polar amide carbonyl groups). It has been observed that all polar groups capable of forming hydrogen bonds in proteins do form such bonds. Since these interactions are often crucial for the stabilization of the protein three\textendash dimensional structure, they are normally conserved. 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{amino_acid_property}
-\caption {Amino Acid Property Diagram}
-\label {fig:amino_acid_property}
-\end{figure}
-In the figure \ref{fig:amino_acid_property} we can see some statistics on the distribution of the different amino acids within protein molecules.
+\section{Edge Detection}
+In digital image processing, edge detection is an important subject matter. Edge detection is a crucial step in object recognition. It is a process of finding sharp discontinuities in an image. The discontinuities are abrupt changes in pixel intensity which characterize boundaries of objects in a scene. In short, the goal of edge detection is to produce a line drawing of the input image.
+The Canny operator is also known as the optimal detector, developed by John F. Canny in 1986.  There are multiple steps to implement the Canny operator. First, a Gaussian filters is used to smooth the image to remove noise in an image. Second, compute the gradient magnitude. Third, apply the algorithm to remove the pixels that are not part of an edge. Last step is involved with the use of hysteresis thresholding along edges. Hysteresis is based on two thresholds which are upper and lower. If a pixel gradient is higher than the upper threshold, then the pixel will be marked as an edge and if a pixel gradient is below the lower threshold, then the pixel will be marked as a non-edge.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{buried2}
-\caption {Different types of amino acid with fraction buried in protein}
-\label {fig:buried2}
+\subfloat [Original Image]{\label{fig:EdgeOriginal} \includegraphics[width=0.6\textwidth]{EdgeOriginal}}
+\subfloat [Edge Detected Image]{\label{fig:EdgeDetection} \includegraphics[width=0.5\textwidth]{EdgeDetect}}
+\caption {Edge Detection}
+\label {fig:EdgeDetection}
 \end{figure}
-The figure \ref{fig:buried2} demonstrates that while a high fraction of the hydrophobic amino acids are buried within the core of the structure, this number gradually decreases for amino acids with polar groups and reaches a minimum for charged residues (the vertical axis shows the fraction of highly buried residues, while the horizontal axis shows the amino acid names in one\textendash letter code).
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{peptide_bond}
-\caption {Formation of peptide bond}
-\label {fig:peptide_bond}
-\end{figure}
-\section{Protein Structure}
-To make a protein, these amino acids are joined together in a polypeptide chain through the formation of a peptide bond. A peptide bond or amide bond is a covalent chemical bond formed between two molecules when the carboxyl group of one molecule reacts with the amino group of the other molecule, causing the release of a molecule of water ($H_2O$), hence the process is a dehydration synthesis reaction (also known as a condensation reaction), and usually occurs between amino acids. Inside cells, peptide bonds are formed within ribosomes (a macromolecule inside cell) during a process called translation.  During protein synthesis or translation, amino acids are covalently bonded to each other through a peptide bond as in the figure \ref{fig:peptide_bond}.
-Peptide chains that are less than 40\textendash 50 amino acids or residues are often referred to as a polypeptide chains since they are too small to form a functional domain. Larger than this size, they are called proteins. Proteins are nothing more than long polypeptide chains.
 
-\subsection{Protein Primary Structure}
-The structure, function and general properties of a protein are all determined by the sequence of amino acids that makes up the primary sequence. The primary structure of a protein is the linear sequence of its amino acid structural units and it is a part of whole protein structure.
-\begin{figure}
-\centering
-\subfloat [Amino acid chain as protein primary structure]{\label{fig:Protein_Primary_Structure} \includegraphics[width=0.5\textwidth]{Protein_Primary_Structure}}
+\section{Contour}
+Although algorithms like the Canny edge detector can be used to find the edge pixels that separate different segments. The next step is to be able to assemble those edge pixels into contours.
+A contour is a list of points that represent, in one way or another, a curve in an image. This representation can be different depending on the circumstance at hand. There are many ways to represent a curve. Contours are represented in OpenCV by sequences in which every entry in the sequence encodes information about the location of the next point on the curve.
 
-\subfloat [Amino acid's are connected with peptide bond in protein primary structure]{\label{fig:Protein_Primary_Structure2} \includegraphics[width=0.8\textwidth]{Protein_Primary_Structure2}}
-\caption {Protein Primary Structure}
-\label {fig:Primary_Structure}
-\end{figure}
-Though polypeptides are unbranched polymers, so their primary structure can often be specified by the sequence of amino acids along their backbone. But proteins can become cross\textendash linked, most commonly by disulfide bonds.
-\subsection{Protein Secondary Structure}
-\subsubsection{Torsion Angle}
-The two torsion angles of the polypeptide chain, also called Ramachandran angles, describe the rotations of the polypeptide backbone around the bonds between $N-C\alpha$ (called Phi, $\phi$) and $C\alpha-C$ (called Psi, $\psi$). Torsion angles are among the most important local structural parameters that control protein folding \textendash  essentially, if we have a way to predict torsion angles for a particular protein, we would be able to predict its 3D structure. The reason is that these angles provide the flexibility required to for folding the polypeptide backbone, since the third possible torsion angle within the protein backbone (called omega, $\omega$) is essentially flat and fixed to 180 degrees. This is due to the partial double\textendash bond character of the peptide bond, which restricts rotation around $C-N$ bond, placing two successive alpha\textendash carbons and $C$, $O$, $N$ and $H$ between them in one plane. Thus rotation of the main chain or backbone of a protein can be described as the rotation of the peptide bond planes relative to each other.
-\begin{figure}
+\begin{figure}[H]
 \centering
-\subfloat [Torsion Angle]{\label{fig:torsion_angle} \includegraphics[width=0.4\textwidth]{torsion_angle}}
-\subfloat [Dihedral Angle]{\label{fig:dihedral_angle} \includegraphics[width=0.3\textwidth]{dihedral}}
-\caption {Torsion Angles}
-\label {fig:torsion_angle}
+\subfloat [Original Image]{\label{fig:ContourOriginal} \includegraphics[width=0.4\textwidth]{ContureOriginal}}
+\subfloat [Contour Detect]{\label{fig:Contour} \includegraphics[width=0.4\textwidth]{Conture}}
+\caption {Find Contour}
+\label {fig:ContourDetection}
 \end{figure}
-Torsion angles are dihedral angles, which defined by 4 points in space. In proteins the two torsion angles $\phi$ and $\psi$ describe the rotation of the polypeptide chain around the two bonds on both sides of the alpha carbon atom. The standard IUPAC definition of a dihedral angle is illustrated in the figure \ref{fig:dihedral_angle}. $A$, $B$, $C$ and $D$ illustrated the position of the 4 atoms used to define the dihedral angle. The rotation takes place around the central $B-C$ bond. The view on the right is along the $B-C$ bond with atom $A$ placed at 12 o’clock. The deviation of the $A-B$ and $C-D$ bonds from each other is measured by the deviation of $D$ from $A$, where positive angle referred to as a clockwise rotation.
-The Ramachandran plot provides an easy way to view the distribution of torsion angles of a protein structure. It also provides an overview of allowed and disallowed regions of torsion angle values, serving as an important factor in the assessment of the quality of protein three\textendash dimensional structures. The torsion angels in proteins are restricted to certain values, since some angles will result in sterical clashes between main chain and side chain atoms in polypeptide. For each type of the secondary structure elements there is a characteristic range of torsion angle values, which can clearly be seen on the Ramachnadran plot: on the left plot the region marked $\alpha$ is for alpha\textendash helices and $\beta$ is for beta\textendash sheet.
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{ramachndra}
-\caption {Ramachandra Plot}
-\label {fig:ramachandra_plot}
-\end{figure}
-The horizontal axis on the plot are $\phi$ value, while the vertical shows $\psi$ values. Each dot on the Ramachandran plot shows the $\phi$ and $\psi$ values for an amino acid in a protein. Notice that the counting in the left hand corner starts from $-180$ and extends to $+180$ for both vertical and horizontal axes. This is a convenient presentation and allows clear distinction of the characteristic regions of $\alpha-$helices and $\beta-$sheets. The regions on the plot with the highest density of dots are the so\textendash called allowed regions of the Ramachandran plot, also called low\textendash energy regions. Some values of $\phi$ and $\psi$ are forbidden since some atoms will come too close to each other, resulting in a so\textendash called "steric clash". We know that when two atoms are too close to each other the energy of the system gets too high. For a high\textendash quality experimental structure these regions are usually empty or almost empty \textendash very few amino acid residues in proteins have their torsion angles within these regions. But there are exclusions from this rule \textendash sometimes such values can be found and they most probably will result in some strain in the polypeptide chain. In such cases additional interactions will be present to stabilize such structures. They may have functional significance and may be conserved within a protein family \cite{pal2002residues}.
-\subsubsection{Secondary Structure}
-The primary sequence or main chain of the protein must organize itself to form a compact structure. This is done in an elegant fashion by forming secondary structure elements (SSE). The two most common secondary structure elements (SSE) are alpha helices and beta sheets, formed by repeating amino acids with the same torsion ($\phi$, $\psi$) angles. There are other secondary structure elements such as turns, coils, $3_{10}$\textendash helix etc.
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{alpha_helix}
-\caption {Protein Alpha Helix}
-\label {fig:alpha_helix}
-\end{figure}
-When looking at the helix in the figure \ref{fig:alpha_helix}, notice how the carbonyl oxygen atoms $C=O$ point in one direction, towards the amide $NH$ groups, 4 residues away $(i, i+4)$ in the helix. Together these groups form a hydrogen bond, one of the main forces of secondary structure stabilization in proteins. Hydrogen bonds are shown on the right in figure \ref{fig:alpha_helix} as dashed lines.
-For a hydrogen bond to be formed, two electronegative atoms (in the case of an alpha\textendash helix the amide $N$, and the carbonyl $O$) have to interact with the same hydrogen. The hydrogen is covalently attached to one of the atoms (called the hydrogen\textendash bond donor), but interacts electrostatically with the other (the hydrogen bond acceptor, $O$). In proteins essentially all groups capable of forming $H-$bonds (both main chain and side chain, independently of whether the residues is within a secondary structure or some other type of structure) are usually $H-$bonded to each\textendash other or to water molecules. Due to their electronic structure, water molecules may accept 2 hydrogen bonds, and donate 2, thus being simultaneously engaged in a total of 4 hydrogen bonds. Water molecules may also be involved in the stabilization of protein structure by making hydrogen bonds with the main chain and side chain groups in proteins and even linking different protein groups together. In addition, water is often found to be involved in ligand binding to proteins, mediating ligand interactions with protein polar groups. It is useful to remember that the energy of a hydrogen bond, depending on the distance between the donor and the acceptor and the angle between them, is in the range of $2-10$ kcal/mol. Other types of helices in proteins include the $3_{10}$ helix, which is stabilized by hydrogen bonds of the type $(i, i+3)$ and the p\textendash helix, which is stabilized by hydrogen bonds of the type $(i, i+5)$. The $3_{10}$ helix has a smaller radius, compared to the alpha\textendash helix, while the pi\textendash helix is wider.
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{beta_sheet}
-\caption {Protein Beta Sheet}
-\label {fig:beta_sheet}
-\end{figure}
-Hydrogen bonds also stabilize another type of secondary structure in proteins, namely beta\textendash sheets. An example of a beta\textendash sheet with the stabilizing hydrogen bonds shown as dashed lines is presented on the figure \ref{fig:beta_sheet}.
-From the figure \ref{fig:beta_sheet}, the hydrogen bonds link together different segments of the protein structure. By other words, they are not formed between adjacent residues, as in alpha\textendash helices. Rather, different segments of the amino acid sequence, called beta\textendash strands) come together to form a beta\textendash sheet. Thus, a beta\textendash sheet consists of several beta\textendash strands, kept together by a network of hydrogen bonds.
-\begin{figure}
-\centering
-\subfloat [Parallel beta sheet]{\label{fig:beta_ribbon} \includegraphics[width=0.4\textwidth]{beta_ribbon}}
-~
-\subfloat [Anti\textendash parallel beta sheet]{\label{fig:frataxin_antiparallel} \includegraphics[width=0.4\textwidth]{frataxin_antiparallel}}
-\caption {3D Beta Sheet in ribbon representation}
-\label {fig:beta_sheet_3d}
-\end{figure}
-The same beta\textendash sheet is shown on the figure \ref{fig:beta_sheet_3d}, this time in the context of the 3D structure to which it belongs and in a so\textendash called "ribbon" representation (protein colored according to secondary structure \textendash  beta\textendash sheets in yellow and helices in magenta). The arrows show the direction of the beta\textendash sheet, which is from the $N-$ to the $C-$terminus. When the arrows point in the same direction, we call such a beta\textendash sheet parallel and when they point in opposite directions, the beta\textendash sheet is anti\textendash parallel.
-\subsection{Secondary Structure Element Interaction Network (SSE-IN)}
-\label{subsec:ssein}
-After secondary structure the next level of protein structure can be described as the structural motif level, also called super\textendash secondary structure of tertiary structure, which show the connectivity between the secondary structure elements. As mentioned before, in protein structure helices and strands are connected to each other and combined in many different ways. From known protein three dimensional structures we have learned that there is a limited number of possible ways in which secondary structure elements are combined in nature.
-
-These secondary structure elements (SSE) connect with each other with different bonds to create tertiary structure of protein. This creates the interaction network of secondary structure element which is called SSE-IN.
-\begin{figure}
-\centering
-\subfloat [Anti-Parallel 4-helix bundle] {\includegraphics[width=0.3\textwidth]{helix_bundle_antiparallel}}
-~~~
-\subfloat [4-helix bundle with 2 anti-parallel and 2 parallel helices] {\includegraphics[width=0.3\textwidth]{helix_bundle_parallel}}
-\caption {Alpha Helix Bundle}
-\label {fig:helix_bundle}
-\end{figure}
-Probably the simplest protein structural motif can be seen in a helical bundle, shown on the schematic view in figure \ref{fig:helix_bundle}. Helix bundles are very common in protein structures and are very often found as separate domains within larger, multi\textendash domain protein molecules.
-Another common connectivity type may be found in a parallel beta\textendash sheet. In this case connections between the strands do not need to be of the type "short loops". When a segment of a structure is not ordered in any secondary structure type, the connectivity is called coiled regions. However, connectivity between strands in a parallel beta\textendash sheet may also be provided by helices, building the so\textendash called helix\textendash strand\textendash helix motif. In the example below both alpha\textendash helices and coiled regions connect the strands in a parallel beta\textendash sheet (figure \ref{fig:flavodoxin}).
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{flavodoxin}
-\caption {Schematic representation of the parallel $\beta-$sheet (yellow on the structural figure) in flavodoxin. Helices have been omitted form this schematic picture}
-\label {fig:flavodoxin}
-\end{figure}
-\subsection {Protein Folding and Classification}
-Protein fold assignment will often reveal evolutionary relationships, which sometimes are difficult to detect at sequence level, it helps in better understanding of protein function, its biological activity and role in living organisms. The relationship between amino acid sequence and protein three dimensional structure is not unique: different sequences, sometimes totally unrelated sequences may have similar 3D structure. By other words, the degree of conservation of the three\textendash dimensional structure is much higher than the degree of conservation of the amino acid sequence. 
-Three\textendash dimensional structures sometimes may differ substantially from each other, at the sequence and even and at the structural level, but still have the same type of fold. The protein fold can be defined simply, a certain way of arrangement of secondary structure elements in space.
-As the number of amino acid sequence is huge, one would expect a high number of different folds. But in reality it is not like that. The number of folds is limited. Nature has re\textendash used the same folding types again and again for performing totally new functions. Some people would refer to the common ancestor, from which all other organisms have originated.
-$SCOP$ and $CATH$ are the two databases generally accepted as the two main authorities in the world of fold classification. According to SCOP there are 1393 different folds. Also notice the graph in figure \ref{fig:scop}, the last time a new fold was identified was 2008.
-\begin{figure}
-\centering
-\subfloat [SCOP]{\label{fig:scop} \includegraphics[width=0.8\textwidth]{scop}}
-
-\subfloat [CATH]{\label{fig:cath} \includegraphics[width=0.8\textwidth]{cath}}
-\caption {Yearly Growth of Total Structure}
-\label {fig:Graph}
-\end{figure}
-The next graph in figure \ref{fig:cath} shows the folds identified by CATH database, a total of 1282 folds.
-Apparently the two databases use slightly different fold definitions and protein fold classification, which results in different total numbers of protein folds. It is also interesting to note that during the recent years essentially no new folds have emerged.
-\subsection{Protein Tertiary Structure}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{haemoglobin}
-\caption {Tertiary Structure of Haemoglobin}
-\label {fig:haemoglobin}
-\end{figure}
-Folded protein bind together to form dimer, trimer or higher order structures. These are called tertiary structure of protein. In figure \ref{fig:haemoglobin}, there is a tertiary structure of haemoglobin protein. Tertiary structure is the final shape of protein structure hierarchy. This final shape is determined by a variety of bonding interactions between the "side chains" on the amino acids. The tertiary structure of a protein is defined by its three-dimensional structure through the atomic coordinates. Tertiary structure is formed by the packing of protein secondary structure elements into compact globular units called protein domains \cite{branden1991introduction}. A whole protein might comprise one or several such domains, and its tertiary structure can refer to each individual domain as well as to the complete configuration of the whole protein, provided it contains a single, contiguous polypeptide chain backbone.
