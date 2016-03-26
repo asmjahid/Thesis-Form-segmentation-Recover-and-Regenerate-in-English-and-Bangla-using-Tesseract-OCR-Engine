@@ -1,10 +1,73 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{moult1}
-John Moult.
-\newblock A decade of casp: progress, bottlenecks and prognosis in protein
-  structure prediction.
-\newblock In {\em Current Opinion in Structural Biology}, volume~15, pages
-  285–--289, 2005.
+\bibitem{Segmentation}
+Dr. Jenila Livingston~L.M. Santosh.
+\newblock Text detection from documented image using image segmentation.
+\newblock {\em INTERNATIONAL JOURNAL OF TECHNOLOGY ENHANCEMENTS AND EMERGING
+  ENGINEERING RESEARCH}, 1, 2013.
+
+\bibitem{GrayScale}
+Wiki.
+\newblock Grayscale.
+\newblock \url{https://en.wikipedia.org/wiki/Grayscale}.
+
+\bibitem{GaussianSmoothing}
+OpenCv.
+\newblock Smoothing images.
+\newblock
+  \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html}.
+
+\bibitem{Thresholding}
+Wiki.
+\newblock Thresholding.
+\newblock \url{https://en.wikipedia.org/wiki/Thresholding_(image_processing)}.
+
+\bibitem{EdgeDetection}
+Robin S~M Chrystie.
+\newblock Edge detection in image processing.
+\newblock
+  \url{http://cuens.soc.srcf.net/img/Academic_Material/Edge_Detection.pdf}.
+
+\bibitem{CannyEdgeDetection}
+OpenCV.
+\newblock Canny edge detection in opencv.
+\newblock \url{http://docs.opencv.org/trunk/da/d22/tutorial_py_canny.html}.
+
+\bibitem{TesseractORCEngine}
+Ray Smith.
+\newblock An overview of the tesseract ocr engine.
+\newblock
+  \url{http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33418.pdf}.
+
+\bibitem{TesseractORCEngineOfficialWeb}
+Tesseract.
+\newblock Documentation.
+\newblock \url{https://github.com/tesseract-ocr/tesseract/wiki/Documentation}.
+
+\bibitem{CannyEdgeDetection3}
+Wiki.
+\newblock Canny edge detector.
+\newblock \url{https://en.wikipedia.org/wiki/Canny_edge_detector}.
+
+\bibitem{CannyEdgeDetection1}
+Canny edge detector.
+\newblock \url{http://homepages.inf.ed.ac.uk/rbf/HIPR2/canny.htm}.
+
+\bibitem{CannyEdgeDetection2}
+OpenCV.
+\newblock Canny edge detector.
+\newblock
+  \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}.
+
+\bibitem{Contours}
+OpenCV.
+\newblock Contours.
+\newblock
+  \url{http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html}.
+
+\bibitem{DetectingShape}
+Detecting simple shapes in an image.
+\newblock
+  \url{http://opencv-code.com/tutorials/detecting-simple-shapes-in-an-image/}.
 
 \end{thebibliography}

@@ -9,12 +9,98 @@
 %% Use double curly brackets {{}} when you want to maintain your own
 %% capitalisation, otherwise bibtex will follow its own rules.
 %%
+@article{Segmentation,
+    author = "Santosh, Dr. Jenila Livingston L.M.",
+    title  =  "Text Detection From Documented Image Using
+Image Segmentation",
+    journal = "INTERNATIONAL JOURNAL OF TECHNOLOGY ENHANCEMENTS AND EMERGING ENGINEERING RESEARCH",
+    volume =       "1",
+    number =       "",
+    pages =        "",
+    year =         "2013",
+    DOI =          ""
+}
 
-@inproceedings { moult1,
-author	    = {Moult, John},
-title	    = "A decade of CASP: progress, bottlenecks and prognosis in protein structure prediction",
-booktitle   = "Current Opinion in Structural Biology",
-volume	    = {15},
-year        = { 2005},
-pages       = {285–-289}
+@online{GrayScale,
+    author    	= {Wiki},
+    title     	= {Grayscale},
+    howpublished= "\url{https://en.wikipedia.org/wiki/Grayscale}",
+    keywords  	= {Image processing ,GrayScale}
+}
+
+@online{GaussianSmoothing,
+    author    		= {OpenCv},
+    title     		= {Smoothing Images},
+    howpublished	= "\url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html}",
+    keywords  = 	{Image Processing,Blur}
+}
+
+@online{Thresholding,
+    author    		= {Wiki},
+    title     		= {Thresholding},
+    howpublished       	= "\url{https://en.wikipedia.org/wiki/Thresholding_(image_processing)}",
+    keywords  		= {Image Processing,Thresholding}
+}
+
+@online{EdgeDetection,
+    author =       "Robin S M Chrystie",
+    title =        "Edge Detection in Image Processing",
+    howpublished = "\url{http://cuens.soc.srcf.net/img/Academic_Material/Edge_Detection.pdf}",
+    keywords =     "Image processing"
+}
+
+@online{CannyEdgeDetection,
+    author    = "OpenCV",
+    title     = "Canny Edge Detection in OpenCV",
+    howpublished = "\url{http://docs.opencv.org/trunk/da/d22/tutorial_py_canny.html}",
+    keywords  = "Imageprocessing,canny"
+}
+@online{TesseractORCEngine,
+	author 	= "Ray Smith ",
+	title	= "An Overview of the Tesseract OCR Engine ",
+	howpublished ="\url{http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33418.pdf}",
+	keywords = "OCR"
+
+}
+@online{TesseractORCEngineOfficialWeb,
+	author 	= "Tesseract",
+	title	= "Documentation",
+	howpublished ="\url{https://github.com/tesseract-ocr/tesseract/wiki/Documentation}",
+	keywords = "OCR"
+
+}
+@online{CannyEdgeDetection1,
+	author 	= "",
+	title	= "Canny Edge Detector",
+	howpublished ="\url{http://homepages.inf.ed.ac.uk/rbf/HIPR2/canny.htm}",
+	keywords = "Image Processing"
+
+}
+@online{CannyEdgeDetection2,
+	author 	= "OpenCV",
+	title	= "Canny Edge Detector",
+	howpublished ="\url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}",
+	keywords = "Image Processing"
+
+}
+@online{CannyEdgeDetection3,
+	author 	= "Wiki",
+	title	= "Canny Edge Detector",
+	howpublished ="\url{https://en.wikipedia.org/wiki/Canny_edge_detector}",
+	keywords = "Image Processing"
+
+}
+@online{Contours,
+	author 	= "OpenCV",
+	title	= "Contours",
+	howpublished ="\url{http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html}",
+	keywords = "Image Processing"
+
+}
+@online{DetectingShape,
+	author 	= "",
+	title	= "Detecting simple shapes in an image",
+	howpublished ="\url{http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html}",
+	keywords = "Image Processing"
+
 }
