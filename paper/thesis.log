@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  26 MAR 2016 20:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  26 MAR 2016 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1166,8 +1166,8 @@ Package pdftex.def Info: logo.pdf used on input line 72.
 (pdftex.def)             Requested size: 109.89651pt x 142.26378pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] (./declaratio
-n.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>] [2] (./declar
+ation.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--8
 
  []
@@ -1177,38 +1177,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--8
 
  []
 
-) [2
+)pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \frontstuff
+                 [2
 
 ] (./approval.tex
+Overfull \hbox (11.10826pt too wide) in paragraph at lines 1--7
+\OT1/cmr/m/n/12 us-ing Tesser-act OCR En-gine." sub-mit-ted by Tan-vir Hasan, R
+eg.NO.12101005,
+ []
+
+
 Overfull \hbox (12.81746pt too wide) in paragraph at lines 9--30
  [] 
  []
 
-) [3
+[3
 
-] (./acknowledgements.tex) [4
+]) [4] (./acknowledgements.tex) [5
 
-] (./abstract.tex) [5
+] (./abstract.tex) [6
 
-] (./thesis.toc [6
+] (./thesis.toc
+[7
 
 
 ])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-
-[7] (./thesis.lot)
+ [8] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [8
+ [9
 
 ] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [9
+ [10
 
 ]
 \openout2 = `intro.aux'.
@@ -1242,7 +1253,7 @@ Missing character: There is no Å in font cmr12!
 
  (./background_study.tex
 Chapter 2.
-<Blur.png, id=337, 405.76593pt x 127.22531pt>
+<Blur.png, id=345, 405.76593pt x 127.22531pt>
 File: Blur.png Graphic file (type png)
  <use Blur.png>
 Package pdftex.def Info: Blur.png used on input line 16.
@@ -1260,19 +1271,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 
-<Thresholding.png, id=346, 421.575pt x 316.18124pt>
+<Thresholding.png, id=353, 421.575pt x 316.18124pt>
 File: Thresholding.png Graphic file (type png)
  <use Thresholding.png>
 Package pdftex.def Info: Thresholding.png used on input line 31.
 (pdftex.def)             Requested size: 352.8155pt x 264.61588pt.
 
-[5 <./Blur.png>] <EdgeOriginal.jpg, id=355, 301.125pt x 182.6825pt>
+[5 <./Blur.png>] <EdgeOriginal.jpg, id=362, 301.125pt x 182.6825pt>
 File: EdgeOriginal.jpg Graphic file (type jpg)
 
 <use EdgeOriginal.jpg>
 Package pdftex.def Info: EdgeOriginal.jpg used on input line 43.
 (pdftex.def)             Requested size: 264.61331pt x 160.54643pt.
- <EdgeDetect.jpg, id=356, 301.125pt x 303.1325pt>
+ <EdgeDetect.jpg, id=363, 301.125pt x 303.1325pt>
 File: EdgeDetect.jpg Graphic file (type jpg)
 
 <use EdgeDetect.jpg>
@@ -1284,13 +1295,13 @@ Overfull \hbox (51.9377pt too wide) in paragraph at lines 43--45
  []
 
 [6 <./Thresholding.png (PNG copy)>]
-<ContureOriginal.jpg, id=363, 200.75pt x 206.7725pt>
+<ContureOriginal.jpg, id=370, 200.75pt x 206.7725pt>
 File: ContureOriginal.jpg Graphic file (type jpg)
  <use ContureOriginal.jpg>
 Package pdftex.def Info: ContureOriginal.jpg used on input line 55.
 (pdftex.def)             Requested size: 176.40439pt x 181.70795pt.
 
-<Conture.jpg, id=364, 200.75pt x 172.645pt>
+<Conture.jpg, id=371, 200.75pt x 172.645pt>
 File: Conture.jpg Graphic file (type jpg)
  <use Conture.jpg>
 Package pdftex.def Info: Conture.jpg used on input line 56.
@@ -1307,7 +1318,7 @@ Overfull \hbox (17.12624pt too wide) in paragraph at lines 80--81
 
  (./literature_review.tex
 Chapter 3.
-<GaussMask.jpg, id=387, 411.5375pt x 297.11pt>
+<GaussMask.jpg, id=395, 411.5375pt x 297.11pt>
 File: GaussMask.jpg Graphic file (type jpg)
  <use GaussMask.jpg>
 Package pdftex.def Info: GaussMask.jpg used on input line 13.
@@ -1317,7 +1328,7 @@ Package pdftex.def Info: GaussMask.jpg used on input line 13.
 
 
 ]
-<Mask.jpg, id=394, 353.06906pt x 170.13562pt>
+<Mask.jpg, id=401, 353.06906pt x 170.13562pt>
 File: Mask.jpg Graphic file (type jpg)
  <use Mask.jpg>
 Package pdftex.def Info: Mask.jpg used on input line 22.
@@ -1327,18 +1338,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--42
 
  []
 
-<Canny.jpg, id=400, 242.40562pt x 145.29282pt>
+<Canny.jpg, id=407, 242.40562pt x 145.29282pt>
 File: Canny.jpg Graphic file (type jpg)
  <use Canny.jpg>
 Package pdftex.def Info: Canny.jpg used on input line 47.
 (pdftex.def)             Requested size: 264.61331pt x 158.62318pt.
- [12 <./Canny.jpg>] <shape.JPG, id=411, 713.66624pt x 484.81125pt>
+ [12 <./Canny.jpg>] <shape.JPG, id=418, 713.66624pt x 484.81125pt>
 File: shape.JPG Graphic file (type jpg)
  <use shape.JPG>
 Package pdftex.def Info: shape.JPG used on input line 61.
 (pdftex.def)             Requested size: 220.50885pt x 149.79428pt.
 
-<contours.JPG, id=412, 694.595pt x 478.78876pt>
+<contours.JPG, id=419, 694.595pt x 478.78876pt>
 File: contours.JPG Graphic file (type jpg)
  <use contours.JPG>
 Package pdftex.def Info: contours.JPG used on input line 62.
@@ -1348,14 +1359,14 @@ Overfull \hbox (7.83324pt too wide) in paragraph at lines 61--63
  [][][][] 
  []
 
-[13] <shapefourcorner.png, id=421, 361.35pt x 271.0125pt>
+[13] <shapefourcorner.png, id=428, 361.35pt x 271.0125pt>
 File: shapefourcorner.png Graphic file (type png)
 
 <use shapefourcorner.png>
 Package pdftex.def Info: shapefourcorner.png used on input line 77.
 (pdftex.def)             Requested size: 264.61331pt x 198.4619pt.
  [14 <./shape.JPG> <./contours.JPG>] [15 <./shapefourcorner.png>] <tesseractFlo
-w.png, id=437, 589.20125pt x 576.1525pt>
+w.png, id=445, 589.20125pt x 576.1525pt>
 File: tesseractFlow.png Graphic file (type png)
 
 <use tesseractFlow.png>
@@ -1371,13 +1382,13 @@ Missing character: There is no ô in font cmr12!
 
 (./algorithm.tex
 Chapter 4.
-<from.png, id=487, 636.3775pt x 176.66pt>
+<from.png, id=495, 636.3775pt x 176.66pt>
 File: from.png Graphic file (type png)
  <use from.png>
 Package pdftex.def Info: from.png used on input line 8.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
 
-<GrayImage.jpg, id=488, 1272.755pt x 353.32pt>
+<GrayImage.jpg, id=496, 1272.755pt x 353.32pt>
 File: GrayImage.jpg Graphic file (type jpg)
  <use GrayImage.jpg>
 Package pdftex.def Info: GrayImage.jpg used on input line 16.
@@ -1386,7 +1397,7 @@ Package pdftex.def Info: GrayImage.jpg used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GaussianBlur.jpg, id=490, 1272.755pt x 353.32pt>
+<GaussianBlur.jpg, id=498, 1272.755pt x 353.32pt>
 File: GaussianBlur.jpg Graphic file (type jpg)
  <use GaussianBlur.jpg>
 Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
@@ -1396,7 +1407,7 @@ Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
 
 
 
- <./from.png>] <Threshold.jpg, id=497, 1272.755pt x 353.32pt>
+ <./from.png>] <Threshold.jpg, id=505, 1272.755pt x 353.32pt>
 File: Threshold.jpg Graphic file (type jpg)
 
 <use Threshold.jpg>
@@ -1406,7 +1417,7 @@ Package pdftex.def Info: Threshold.jpg used on input line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Canny2.jpg, id=499, 1272.755pt x 353.32pt>
+<Canny2.jpg, id=507, 1272.755pt x 353.32pt>
 File: Canny2.jpg Graphic file (type jpg)
  <use Canny2.jpg>
 Package pdftex.def Info: Canny2.jpg used on input line 41.
@@ -1444,24 +1455,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
 (./literature_review.aux) (./algorithm.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 67A33D1A7CE8587239786BECBCE5C7BA;3071
-(rerunfilecheck)             After:  09CAFAB674ABCA0AE44D08CE112AED6E;3071.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 09CAFAB674ABCA0AE44D08CE112AED6E;3071.
  ) 
 Here is how much of TeX's memory you used:
- 31838 strings out of 494985
- 714713 string characters out of 6180356
+ 31839 strings out of 494985
+ 714719 string characters out of 6180356
  858403 words of memory out of 5000000
  34286 multiletter control sequences out of 15000+600000
  10858 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 63i,10n,74p,10418b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,10n,74p,10418b,933s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1472,10 +1476,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt12.pfb>
-Output written on thesis.pdf (36 pages, 996313 bytes).
+Output written on thesis.pdf (38 pages, 998267 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 562 compressed objects within 6 object streams
- 149 named destinations out of 1000 (max. 500000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 570 compressed objects within 6 object streams
+ 150 named destinations out of 1000 (max. 500000)
  476 words of extra memory for PDF output out of 10000 (max. 10000000)
 
