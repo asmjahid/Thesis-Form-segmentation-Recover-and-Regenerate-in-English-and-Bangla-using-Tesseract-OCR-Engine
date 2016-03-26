@@ -9,7 +9,7 @@
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.3\textwidth]{AminoAcidball}
+\includegraphics[width=0.3\textwidth]{AminoAcidball
 \caption {Basic Structure of Amino Acid}
 \label {fig:Amino_Acid}
 \end{figure}

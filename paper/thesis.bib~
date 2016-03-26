@@ -55,11 +55,16 @@ Image Segmentation",
     howpublished = "\url{http://docs.opencv.org/trunk/da/d22/tutorial_py_canny.html}",
     keywords  = "Imageprocessing,canny"
 }
-@online{TesseractORCEngine,
+@article{TesseractORCEngine,
 	author 	= "Ray Smith ",
-	title	= "An Overview of the Tesseract OCR Engine ",
-	howpublished ="\url{http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33418.pdf}",
-	keywords = "OCR"
+	title	= "An Overview of the Tesseract OCR Engine. In proceedings of Document
+analysis and Recognition",
+	journal = " IEEE Ninth International Conference",
+    	volume =       "",
+    	number =       "",
+    	pages =        "",
+    	year =         "2007",
+    	DOI = ""
 
 }
 @online{TesseractORCEngineOfficialWeb,
@@ -100,7 +105,52 @@ Image Segmentation",
 @online{DetectingShape,
 	author 	= "",
 	title	= "Detecting simple shapes in an image",
-	howpublished ="\url{http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html}",
+	howpublished ="\url{http://opencv-code.com/tutorials/detecting-simple-shapes-in-an-image/}",
+	keywords = "Image Processing"
+
+}
+@article{TesseractORCEngine2,
+	author 	= "Chirag Patel, Atul Patel and Dharmendra Patel",
+	title	= "Optical Character Recognition by Open source OCR Tool Tesseract: A Case Study",
+	journal = "International Journal of Computer Applications 55(10):50-56, October 2012. Published by Foundation of Computer Science, New York, USA.",
+    	volume =       "",
+    	number =       "",
+    	pages =        "",
+    	year =         "2013",
+    	DOI = ""
+
+}
+@online{TesseractTrain,
+	author 	= "Tesseract",
+	title	= "TrainingTesseract",
+	howpublished ="\url{https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract}",
+	keywords = "OCR"
+
+}
+@book{OpenCVBook,
+    title={Learning OpenCV},
+    author={Gary Bradski and Adrian Kaehler},
+    isbn={ 978-0-596-51613-0},
+    series={International series of monographs on physics},
+    year={2008},
+    publisher={O’Reilly Media, Inc.},
+    keywords = {Image Processing}
+}
+@article{OCR,
+    author =       "Sravan Ch,ShivankuMahna,NirbhayKashyap",
+    title =        "Optical Character Recognition on Handheld Devices",
+    journal =      "International Journal of Computer Applications (0975 – 8887)",
+    volume =       "115",
+    number =       "22",
+    pages =        "",
+    year =         "2015",
+    DOI =          "",
+    keywords =     "OCR"
+}
+@online{DetectingShape,
+	author 	= "",
+	title	= "Training Tesseract",
+	howpublished ="\url{https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract}",
 	keywords = "Image Processing"
 
 }

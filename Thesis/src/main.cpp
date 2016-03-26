@@ -48,7 +48,7 @@ public:
 
 class ImageMap
 {
-    
+
 private:
     Mat A,B;
     string Field,Value;
@@ -84,10 +84,10 @@ public:
 
 class ImageProcess
 {
-    
+
 private:
     Mat Img,Gray,Blur;
-    
+
     /*
      getOriginalSegment return original image segment from given conture.
      First parameter original image matrix.
@@ -111,12 +111,16 @@ private:
     {
         //imshow("original", Img);
         cvtColor( Img, Gray, CV_BGR2GRAY );
+        //imwrite("GrayImage.jpg",Gray);
         //imshow("Gray", Gray);
         //blur(Gray,Blur, Size(3,3));
         GaussianBlur(Gray, Blur, Size(3,3), 0);
+        //imwrite("GaussianBlur.jpg",Blur);
         //imshow("Blur", Blur);
         threshold(Blur, Blur,200, 255,THRESH_BINARY_INV); //Threshold the gray
+        //imwrite("Threshold.jpg",Blur);
         Canny(Blur, Blur, 200, 255);
+        //imwrite("Canny.jpg",Blur);
         //imshow("Canny", Blur);
         vector<vector<Point> >contours;
         vector<Vec4i>hierarchy;
@@ -131,7 +135,7 @@ private:
         double dy2 = pt2.y - pt0.y;
         return (dx1*dx2 + dy1*dy2)/sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
     }
-    
+
     bool isRectangle(vector<Point>contour)
     {
         vector<Point>approx;
@@ -139,13 +143,13 @@ private:
         if (approx.size() == 4 && fabs(contourArea(Mat(approx))) > 1000 && isContourConvex(Mat(approx)))
         {
             double maxCosine = 0;
-            
+
             for( int j = 2; j < 5; j++ )
             {
                 double cosine = fabs(angle(approx[j%4], approx[j-2], approx[j-1]));
                 maxCosine = MAX(maxCosine, cosine);
             }
-            
+
             return ( maxCosine < 0.3 );
         }
         return false;
@@ -206,24 +210,46 @@ public:
         return ret;
     }
 };
-
-
-
-
-int main( )
+class WriteFile
 {
+    FILE *fp;
+    string getPlainString(string s)
+    {
+        string temp="";
+        for(int i=0;i<s.size();i++)
+        {
+            if(s[i]=='\n')continue;
+            temp+=s[i];
+        }
+        return temp;
+    }
+    public:
+    WriteFile(string name,vector<ImageMap>I)
+    {
+        fp=fopen(name.c_str(),"w");
+        for(int i=0;i<I.size();i++)
+        {
+
+            fprintf(fp,"%s %s\n",getPlainString(I[i].getField()).c_str(),getPlainString(I[i].getValue()).c_str());
+        }
+        fclose(fp);
+    }
+};
+
+
+
+int main(int argc,char *argv[] )
+{
+    cout<<"total "<<argc<<endl;
+    string Fname=argv[1];
+    Fname=Fname.substr(0,Fname.find('.'))+".txt";
+    cout<<Fname<<endl;
+    if(argc!=2)return 0;
     Mat src,gray;
     Mat Blur;
-    src = imread("form.png", 1);
+    src = imread(argv[1], 1);
     ImageProcess A(src);
     vector<ImageMap>I=A.getMap();
-    for(int i=0;i<I.size();i++)
-    {
-        imshow("field", I[i].getMap().first);
-        imshow("value", I[i].getMap().second);
-        cout<<I[i].getField()<<" "<<I[i].getValue()<<endl;
-        //waitKey(0);
-    }
-    //waitKey(0);
+    WriteFile(Fname,I);
     return 0;
 }

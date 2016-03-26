@@ -31,4 +31,16 @@
 \BOOKMARK [2][-]{subsection.3.5.3}{Run Tesseract}{section.3.5}% 31
 \BOOKMARK [2][-]{subsection.3.5.4}{Compute character set}{section.3.5}% 32
 \BOOKMARK [1][-]{section.3.6}{OpenCV}{chapter.3}% 33
-\BOOKMARK [0][-]{section.3.6}{References}{}% 34
+\BOOKMARK [0][-]{chapter.4}{Proposed Algorithm}{}% 34
+\BOOKMARK [1][-]{section.4.1}{Data Extracting}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.1.1}{Convert RGB to Gray Image}{section.4.1}% 36
+\BOOKMARK [2][-]{subsection.4.1.2}{Image Smoothing}{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.3}{Thresholding}{section.4.1}% 38
+\BOOKMARK [2][-]{subsection.4.1.4}{Edge Detection}{section.4.1}% 39
+\BOOKMARK [2][-]{subsection.4.1.5}{Finding Contour}{section.4.1}% 40
+\BOOKMARK [2][-]{subsection.4.1.6}{Select only rectangle shape region}{section.4.1}% 41
+\BOOKMARK [2][-]{subsection.4.1.7}{Store only unique region}{section.4.1}% 42
+\BOOKMARK [2][-]{subsection.4.1.8}{Mapping From Field and Value}{section.4.1}% 43
+\BOOKMARK [1][-]{section.4.2}{Data Reorganization}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.3}{Tesseract Training}{chapter.4}% 45
+\BOOKMARK [0][-]{Item.24}{References}{}% 46

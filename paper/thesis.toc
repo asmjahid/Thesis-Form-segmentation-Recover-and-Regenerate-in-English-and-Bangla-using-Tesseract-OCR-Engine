@@ -2,33 +2,45 @@
 \contentsline {section}{\numberline {1.1}Objective}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motivation}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Overview of this book}{3}{section.1.3}
-\contentsline {chapter}{\numberline {2}Background Study}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Gray Scale}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Blur}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Gaussian smoothing}{6}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Thresholding}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Edge Detection}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Contour}{8}{section.2.5}
-\contentsline {section}{\numberline {2.6}Tesseract OCR engine}{9}{section.2.6}
-\contentsline {section}{\numberline {2.7}Why Tesseract}{10}{section.2.7}
-\contentsline {section}{\numberline {2.8}Optical character recognition systems}{10}{section.2.8}
-\contentsline {chapter}{\numberline {3}Literature Review}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Canny Edge Ditection}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Canny Edge Ditection Algorithm}{11}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Contours}{14}{Item.1}
-\contentsline {section}{\numberline {3.3}Detecting shapes in images}{15}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Detection quadrilaterals}{15}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Detection Rectangles, squares, equilateral}{16}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Tesseract OCR Engine}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}What is Tesseract?}{17}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Architecture}{17}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Working of Tesseract}{18}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}How does Tesseract work?}{19}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Limitations of Tesseract}{20}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Training Tesseract}{20}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Generating training images}{20}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Make box files}{20}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Run Tesseract}{21}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Compute character set}{21}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}OpenCV}{21}{section.3.6}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{22}{section.3.6}
+\contentsline {chapter}{\numberline {2}Background Study}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Gray Scale}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Blur}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Gaussian smoothing}{5}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Thresholding}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Edge Detection}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Contour}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}Tesseract OCR engine}{8}{section.2.6}
+\contentsline {section}{\numberline {2.7}Why Tesseract}{9}{section.2.7}
+\contentsline {section}{\numberline {2.8}Optical character recognition systems}{9}{section.2.8}
+\contentsline {chapter}{\numberline {3}Literature Review}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Canny Edge Ditection}{10}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Canny Edge Ditection Algorithm}{10}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Contours}{13}{Item.1}
+\contentsline {section}{\numberline {3.3}Detecting shapes in images}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Detection quadrilaterals}{14}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Detection Rectangles, squares, equilateral}{15}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Tesseract OCR Engine}{16}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}What is Tesseract?}{16}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Architecture}{16}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Working of Tesseract}{17}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}How does Tesseract work?}{18}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Limitations of Tesseract}{19}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Training Tesseract}{19}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Generating training images}{19}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Make box files}{19}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Run Tesseract}{20}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Compute character set}{20}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}OpenCV}{20}{section.3.6}
+\contentsline {chapter}{\numberline {4}Proposed Algorithm}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Data Extracting}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Convert RGB to Gray Image}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Image Smoothing}{22}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Thresholding}{22}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Edge Detection}{23}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Finding Contour}{23}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Select only rectangle shape region}{23}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Store only unique region}{24}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.8}Mapping From Field and Value}{24}{subsection.4.1.8}
+\contentsline {section}{\numberline {4.2}Data Reorganization}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Tesseract Training}{25}{section.4.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{26}{Item.24}

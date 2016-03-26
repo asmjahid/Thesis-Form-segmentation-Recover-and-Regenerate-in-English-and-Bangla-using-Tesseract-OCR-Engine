@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  26 MAR 2016 14:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  26 MAR 2016 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,7 +1069,8 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./thesis.aux
-(./intro.aux) (./background_study.aux) (./literature_review.aux))
+(./intro.aux) (./background_study.aux) (./literature_review.aux)
+(./algorithm.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -1158,7 +1159,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 pdfTeX warning: pdflatex (file ./logo.pdf): PDF inclusion: found PDF version <1
 .6>, but at most version <1.5> allowed
-<logo.pdf, id=142, 682.34924pt x 883.3pt>
+<logo.pdf, id=191, 682.34924pt x 883.3pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
 Package pdftex.def Info: logo.pdf used on input line 72.
@@ -1236,37 +1237,17 @@ Missing character: There is no Å in font cmr12!
 
 
 
-] [2]
-
-LaTeX Warning: Reference `interaction_network' on page 3 undefined on input lin
-e 30.
-
-
-LaTeX Warning: Reference `chap:formulation' on page 3 undefined on input line 3
-2.
-
-
-LaTeX Warning: Reference `chap:algorithm' on page 3 undefined on input line 34.
-
-
-[3]
-
-LaTeX Warning: Reference `chap:result' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Reference `chap:final' on page 4 undefined on input line 38.
-
-) [4]
+] [2]) [3]
 \openout2 = `background_study.aux'.
 
  (./background_study.tex
 Chapter 2.
-<Blur.png, id=270, 405.76593pt x 127.22531pt>
+<Blur.png, id=337, 405.76593pt x 127.22531pt>
 File: Blur.png Graphic file (type png)
  <use Blur.png>
 Package pdftex.def Info: Blur.png used on input line 16.
 (pdftex.def)             Requested size: 352.8155pt x 110.62688pt.
- [5
+ [4
 
 
 
@@ -1279,19 +1260,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 
-<Thresholding.png, id=278, 421.575pt x 316.18124pt>
+<Thresholding.png, id=346, 421.575pt x 316.18124pt>
 File: Thresholding.png Graphic file (type png)
  <use Thresholding.png>
 Package pdftex.def Info: Thresholding.png used on input line 31.
 (pdftex.def)             Requested size: 352.8155pt x 264.61588pt.
 
-[6 <./Blur.png>] <EdgeOriginal.jpg, id=287, 301.125pt x 182.6825pt>
+[5 <./Blur.png>] <EdgeOriginal.jpg, id=355, 301.125pt x 182.6825pt>
 File: EdgeOriginal.jpg Graphic file (type jpg)
 
 <use EdgeOriginal.jpg>
 Package pdftex.def Info: EdgeOriginal.jpg used on input line 43.
 (pdftex.def)             Requested size: 264.61331pt x 160.54643pt.
- <EdgeDetect.jpg, id=288, 301.125pt x 303.1325pt>
+ <EdgeDetect.jpg, id=356, 301.125pt x 303.1325pt>
 File: EdgeDetect.jpg Graphic file (type jpg)
 
 <use EdgeDetect.jpg>
@@ -1302,62 +1283,62 @@ Overfull \hbox (51.9377pt too wide) in paragraph at lines 43--45
  [][][][] 
  []
 
-[7 <./Thresholding.png (PNG copy)>]
-<ContureOriginal.jpg, id=295, 200.75pt x 206.7725pt>
+[6 <./Thresholding.png (PNG copy)>]
+<ContureOriginal.jpg, id=363, 200.75pt x 206.7725pt>
 File: ContureOriginal.jpg Graphic file (type jpg)
  <use ContureOriginal.jpg>
 Package pdftex.def Info: ContureOriginal.jpg used on input line 55.
 (pdftex.def)             Requested size: 176.40439pt x 181.70795pt.
 
-<Conture.jpg, id=296, 200.75pt x 172.645pt>
+<Conture.jpg, id=364, 200.75pt x 172.645pt>
 File: Conture.jpg Graphic file (type jpg)
  <use Conture.jpg>
 Package pdftex.def Info: Conture.jpg used on input line 56.
 (pdftex.def)             Requested size: 176.40439pt x 151.7173pt.
- [8 <./EdgeOriginal.jpg> <./EdgeDetect.jpg>] [9 <./ContureOriginal.jpg> <./Cont
+ [7 <./EdgeOriginal.jpg> <./EdgeDetect.jpg>] [8 <./ContureOriginal.jpg> <./Cont
 ure.jpg>]
 Overfull \hbox (17.12624pt too wide) in paragraph at lines 80--81
 []\OT1/cmr/m/n/12 The ar-chi-tec-ture of an OCR sys-tem varies from one sys-tem
  to an-other as needed.Optical
  []
 
-) [10]
+) [9]
 \openout2 = `literature_review.aux'.
 
  (./literature_review.tex
 Chapter 3.
-<GaussMask.jpg, id=321, 411.5375pt x 297.11pt>
+<GaussMask.jpg, id=387, 411.5375pt x 297.11pt>
 File: GaussMask.jpg Graphic file (type jpg)
  <use GaussMask.jpg>
 Package pdftex.def Info: GaussMask.jpg used on input line 13.
 (pdftex.def)             Requested size: 220.50885pt x 159.19481pt.
- [11
+ [10
 
 
 
 ]
-<Mask.jpg, id=327, 353.06906pt x 170.13562pt>
+<Mask.jpg, id=394, 353.06906pt x 170.13562pt>
 File: Mask.jpg Graphic file (type jpg)
  <use Mask.jpg>
 Package pdftex.def Info: Mask.jpg used on input line 22.
 (pdftex.def)             Requested size: 264.61331pt x 127.51053pt.
- [12 <./GaussMask.jpg> <./Mask.jpg>]
+ [11 <./GaussMask.jpg> <./Mask.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 27--42
 
  []
 
-<Canny.jpg, id=333, 242.40562pt x 145.29282pt>
+<Canny.jpg, id=400, 242.40562pt x 145.29282pt>
 File: Canny.jpg Graphic file (type jpg)
  <use Canny.jpg>
 Package pdftex.def Info: Canny.jpg used on input line 47.
 (pdftex.def)             Requested size: 264.61331pt x 158.62318pt.
- [13 <./Canny.jpg>] <shape.JPG, id=344, 713.66624pt x 484.81125pt>
+ [12 <./Canny.jpg>] <shape.JPG, id=411, 713.66624pt x 484.81125pt>
 File: shape.JPG Graphic file (type jpg)
  <use shape.JPG>
 Package pdftex.def Info: shape.JPG used on input line 61.
 (pdftex.def)             Requested size: 220.50885pt x 149.79428pt.
 
-<contours.JPG, id=345, 694.595pt x 478.78876pt>
+<contours.JPG, id=412, 694.595pt x 478.78876pt>
 File: contours.JPG Graphic file (type jpg)
  <use contours.JPG>
 Package pdftex.def Info: contours.JPG used on input line 62.
@@ -1367,69 +1348,120 @@ Overfull \hbox (7.83324pt too wide) in paragraph at lines 61--63
  [][][][] 
  []
 
-[14] <shapefourcorner.png, id=354, 361.35pt x 271.0125pt>
+[13] <shapefourcorner.png, id=421, 361.35pt x 271.0125pt>
 File: shapefourcorner.png Graphic file (type png)
 
 <use shapefourcorner.png>
-Package pdftex.def Info: shapefourcorner.png used on input line 76.
+Package pdftex.def Info: shapefourcorner.png used on input line 77.
 (pdftex.def)             Requested size: 264.61331pt x 198.4619pt.
- [15 <./shape.JPG> <./contours.JPG>] [16 <./shapefourcorner.png>] <tesseractFlo
-w.png, id=368, 589.20125pt x 576.1525pt>
+ [14 <./shape.JPG> <./contours.JPG>] [15 <./shapefourcorner.png>] <tesseractFlo
+w.png, id=437, 589.20125pt x 576.1525pt>
 File: tesseractFlow.png Graphic file (type png)
 
 <use tesseractFlow.png>
-Package pdftex.def Info: tesseractFlow.png used on input line 112.
+Package pdftex.def Info: tesseractFlow.png used on input line 113.
 (pdftex.def)             Requested size: 352.8155pt x 345.00842pt.
- [17] [18 <./tesseractFlow.png>]
+ [16] [17 <./tesseractFlow.png>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [19] [20]) [21]
+ [18] [19]) [20]
+\openout2 = `algorithm.aux'.
+
+
+(./algorithm.tex
+Chapter 4.
+<from.png, id=487, 636.3775pt x 176.66pt>
+File: from.png Graphic file (type png)
+ <use from.png>
+Package pdftex.def Info: from.png used on input line 8.
+(pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
+
+<GrayImage.jpg, id=488, 1272.755pt x 353.32pt>
+File: GrayImage.jpg Graphic file (type jpg)
+ <use GrayImage.jpg>
+Package pdftex.def Info: GrayImage.jpg used on input line 16.
+(pdftex.def)             Requested size: 441.01772pt x 122.42386pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<GaussianBlur.jpg, id=490, 1272.755pt x 353.32pt>
+File: GaussianBlur.jpg Graphic file (type jpg)
+ <use GaussianBlur.jpg>
+Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
+(pdftex.def)             Requested size: 441.01772pt x 122.42386pt.
+
+[21
+
+
+
+ <./from.png>] <Threshold.jpg, id=497, 1272.755pt x 353.32pt>
+File: Threshold.jpg Graphic file (type jpg)
+
+<use Threshold.jpg>
+Package pdftex.def Info: Threshold.jpg used on input line 33.
+(pdftex.def)             Requested size: 441.01772pt x 122.42386pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Canny2.jpg, id=499, 1272.755pt x 353.32pt>
+File: Canny2.jpg Graphic file (type jpg)
+ <use Canny2.jpg>
+Package pdftex.def Info: Canny2.jpg used on input line 41.
+(pdftex.def)             Requested size: 441.01772pt x 122.42386pt.
+ [22 <./GrayImage.jpg> <./GaussianBlur.jpg>] [23 <./Threshold.jpg> <./Canny2.jp
+g>] [24]) [25]
 (./thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 \OT1/cmtt/m/n/12 imgproc / gausian _ median _ blur _ bilateral _ filter / gausi
 an _ median _ blur _
  []
 
+[26
 
-Underfull \hbox (badness 1092) in paragraph at lines 37--41
-[]\OT1/cmr/m/n/12 Ray Smith.  An overview of the tesser-act ocr en-gine.  []$\O
-T1/cmtt/m/n/12 http : / / static .
+
+
+]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmti12!
+Missing character: There is no Ä in font cmti12!
+Missing character: There is no ì in font cmti12!
+
+Underfull \hbox (badness 1596) in paragraph at lines 100--103
+[]\OT1/cmr/m/n/12 Training tesser-act.  []$\OT1/cmtt/m/n/12 https : / / github 
+. com / tesseract-[]ocr / tesseract / wiki /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
-\OT1/cmtt/m/n/12 googleusercontent . com / media / research . google . com / en
- / /pubs / archive /
- []
-
-[22
-
-
-
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./thesis.aux (./intro.aux) (./background_study.aux)
-(./literature_review.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1DEAAE19267920FAE68EADE2883B09DB;2229.
+(./literature_review.aux) (./algorithm.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 67A33D1A7CE8587239786BECBCE5C7BA;3071
+(rerunfilecheck)             After:  09CAFAB674ABCA0AE44D08CE112AED6E;3071.
  ) 
 Here is how much of TeX's memory you used:
- 31741 strings out of 494985
- 713261 string characters out of 6180356
+ 31838 strings out of 494985
+ 714713 string characters out of 6180356
  858403 words of memory out of 5000000
- 34235 multiletter control sequences out of 15000+600000
+ 34286 multiletter control sequences out of 15000+600000
  10858 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 63i,10n,74p,10418b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,10n,74p,10418b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1440,10 +1472,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt12.pfb>
-Output written on thesis.pdf (32 pages, 613049 bytes).
+Output written on thesis.pdf (36 pages, 996313 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
- 355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 638 PDF objects out of 1000 (max. 8388607)
+ 562 compressed objects within 6 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 476 words of extra memory for PDF output out of 10000 (max. 10000000)
 

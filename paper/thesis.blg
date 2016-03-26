@@ -4,6 +4,7 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: background_study.aux
 A level-1 auxiliary file: literature_review.aux
+A level-1 auxiliary file: algorithm.aux
 The style file: unsrt.bst
 Database file #1: thesis.bib
 Warning--entry type for "GrayScale" isn't style-file defined
@@ -16,59 +17,61 @@ Warning--entry type for "EdgeDetection" isn't style-file defined
 --line 45 of file thesis.bib
 Warning--entry type for "CannyEdgeDetection" isn't style-file defined
 --line 52 of file thesis.bib
-Warning--entry type for "TesseractORCEngine" isn't style-file defined
---line 58 of file thesis.bib
 Warning--entry type for "TesseractORCEngineOfficialWeb" isn't style-file defined
---line 65 of file thesis.bib
+--line 70 of file thesis.bib
 Warning--entry type for "CannyEdgeDetection1" isn't style-file defined
---line 72 of file thesis.bib
+--line 77 of file thesis.bib
 Warning--entry type for "CannyEdgeDetection2" isn't style-file defined
---line 79 of file thesis.bib
+--line 84 of file thesis.bib
 Warning--entry type for "CannyEdgeDetection3" isn't style-file defined
---line 86 of file thesis.bib
+--line 91 of file thesis.bib
 Warning--entry type for "Contours" isn't style-file defined
---line 93 of file thesis.bib
+--line 98 of file thesis.bib
 Warning--entry type for "DetectingShape" isn't style-file defined
---line 100 of file thesis.bib
-You've used 13 entries,
+--line 105 of file thesis.bib
+Warning--entry type for "TesseractTrain" isn't style-file defined
+--line 123 of file thesis.bib
+Warning--entry type for "TrainingTesseract" isn't style-file defined
+--line 150 of file thesis.bib
+You've used 18 entries,
             1791 wiz_defined-function locations,
-            503 strings with 5301 characters,
-and the built_in function-call counts, 1605 in all, are:
-= -- 128
-> -- 46
+            531 strings with 6058 characters,
+and the built_in function-call counts, 2295 in all, are:
+= -- 188
+> -- 71
 < -- 0
-+ -- 24
-- -- 11
-* -- 6
-:= -- 244
-add.period$ -- 37
-call.type$ -- 13
-change.case$ -- 13
++ -- 35
+- -- 17
+* -- 27
+:= -- 358
+add.period$ -- 52
+call.type$ -- 18
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 68
-empty$ -- 231
-format.name$ -- 11
-if$ -- 384
+cite$ -- 18
+duplicate$ -- 107
+empty$ -- 311
+format.name$ -- 17
+if$ -- 544
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 1
-newline$ -- 66
-num.names$ -- 11
-pop$ -- 63
+int.to.str$ -- 18
+missing$ -- 6
+newline$ -- 90
+num.names$ -- 15
+pop$ -- 81
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 65
+skip$ -- 85
 stack$ -- 0
 substring$ -- 0
-swap$ -- 13
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 11
-width$ -- 15
-write$ -- 117
-(There were 12 warnings)
+while$ -- 15
+width$ -- 20
+write$ -- 166
+(There were 13 warnings)

@@ -65,6 +65,7 @@ Contours can be explained simply as a curve joining all the continuous points (a
 \end{figure}
 \end{enumerate}
 \section{Detecting shapes in images}
+\label{Shape}
 Doing image processing and especially blob analysis it is often required to check some objects' shape and depending on it perform further processing of a particular object or not. For example, some applications may require finding only rectangle from all the detected objects, or quadrilaterals, rectangles, etc. \cite{DetectingShape}
 \subsection{Detection quadrilaterals}
 Detection of quadrilaterals and triangles has pretty much the same idea - we are checking mean distance between provided shape's edge pixels and the edge of estimated quadrilateral/triangle. The only difference here is the way how to estimate parameters of the shape we want to recognize and how to check distance to the estimated shape.
@@ -90,7 +91,7 @@ and supports various platforms. Its focus is more towards providing less rejecti
 accuracy. Currently only command base version is available but there are many projects with UI
 built on top of it which could be forked. As of now Tesseract version 3.02 is released and
 available for use. Now Tesseract is developed and maintained by Google. It provides support for
-around 139 languages.
+around 139 languages. \cite{TesseractORCEngine}
 \subsection{Architecture}
 Tesseract OCR is an elegant engine with various layers. It works in step by step manner as
 shown in the block diagram in fig:3.4 The first step in the cycle is to sense the color intensities of the image, named as adaptive thresholding, and converts the image into binary images.
@@ -104,7 +105,7 @@ then starts which is a two pass process. As shown in fig 1, the first part is wh
 recognize each word is made. Each satisfactory word is accepted and second pass is started to
 gather remaining words. This brings in the role of adaptive classifier. The adaptive classifier then will classify text in more accurate manner. The adaptive classifier needs to be trained beforehand
 to work accurately. When the classifier receives some data, it has to resolve the issues and assign
-the proper place of the text.
+the proper place of the text.\cite{TesseractORCEngine} \cite{TesseractORCEngine2}
 
 \begin{figure}[H]
 \centering
@@ -120,10 +121,10 @@ The basic Tesseract command takes only two arguments: First is input image that 
 
 Tesseract by default picks the extension of output file as .txt. There no need to specify the explicitly the output file extension.Tesseract supports various languages. Each language comes with a trained language data file.
 
-The language file must be kept in a location Tesseract knows. When using in the project it is advised to keep it within the project folder. This folder is Tesseract home folder in your machine. In this research, we are aiming to extract English and Bangla characters from the images so we have to keep both Bangla and English data files.
+The language file must be kept in a location Tesseract knows. When using in the project it is advised to keep it within the project folder. This folder is Tesseract home folder in your machine. In this research, we are aiming to extract English and Bangla characters from the images so we have to keep both Bangla and English data files. \cite{TesseractORCEngine}
  
 \subsection{How does Tesseract work?}
-\textbf{The following is a brief overview of how Tesseract works:}
+\textbf{The following is a brief overview of how Tesseract works\cite{TesseractORCEngineOfficialWeb}:}
 \begin{enumerate}
 \item Outlines are analysed and stored 
 \item Outlines are gathered together as Blobs
@@ -150,7 +151,7 @@ lower case letters
 \end{enumerate}
 
 \subsection{Limitations of Tesseract}
-\textbf{Tesseract is an OCR engine, not a complete OCR program.}
+\textbf{Tesseract is an OCR engine, not a complete OCR program.\cite{TesseractORCEngineOfficialWeb}}
 Tesseract is an OCR engine rather than a fully featured program similar to commercial
 OCR software such as Nuance’s Omnipage. It was originally intended to serve as a
 component part of other programs or systems. Although Tesseract works from the 
@@ -158,34 +159,33 @@ command line, to be usable by the average user the engine must be integrated int
 other programs or interfaces, such as FreeOCR.net, WeOCR or OCRpous. Without
 integration into programs such as these, Tesseract has no page layout analysis, no
 output formatting and no graphical user interface (GUI).
+
 \section{Training Tesseract}
-The setup for English \& Bangla OCR within Tesseract is another important task. The way train the engine and input the dataset matters a lot.
+The setup for English \& Bangla OCR within Tesseract is another important task. The way train the engine and input the dataset matters a lot.\cite{TesseractTrain}
 Training Tesseract for English \& Bangla includes four steps mainly and they are as follows:
 \subsection{Generating training images}
 Tesseract official website explains these steps very well "The first step is to determine the full
-character set to be used, and prepare a text or word processor file containing a set of examples"
-[31]. The two important points to remember for a training file are: Firstly make sure the file
+character set to be used, and prepare a text or word processor file containing a set of examples". The two important points to remember for a training file are: Firstly make sure the file
 contains all the characters that we are expecting. Secondly there should be at least 5 samples.
-There should be more samples of the more frequent characters - at least 20 [31]. Keeping all this
-in mind let's explore how do we create box files.
+There should be more samples of the more frequent characters - at least 20. Keeping all this
+in mind let's explore how do we create box files. \cite{TesseractTrain}
 \subsection{Make box files}
 Box file is defined as a sample to match with the characters. We need a 'box' file for each
 training image. Tesseract official website defines the box file as "The box file is a text file that
 lists the characters in the training image, in order, one per line, with the coordinates of the
-bounding box around the image" [31]. Tesseract is not so intuitive about the sample data.
-Inconsistencies may lead to wrong interpretation of data.
+bounding box around the image". Tesseract is not so intuitive about the sample data.
+Inconsistencies may lead to wrong interpretation of data.\cite{TesseractTrain}
 \subsection{Run Tesseract}
 In this step we run the Tesseract engines with the new training files. The purpose is to create the
-trained dataset which works as a rule engine. Also it creates log files.
+trained dataset which works as a rule engine. Also it creates log files.\cite{TesseractTrain}
 \subsection{Compute character set} 
 Guidelines from Tesseract website state that "Tesseract needs to know the set of possible characters it can output. To generate the unichar set data file, use the unicharset\textunderscore extractor program on the box files generated above":extractor language. fontname. box 
 One more requirement in this is, Tesseract needs to have access to character properties i.e.
-isalpha, isdigit, isupper, islower, ispunctuation [31].
-The system described in [30],[31] have classified Hindi OCR and its setup, training very nicely.
+isalpha, isdigit, isupper, islower, ispunctuation.
+The system described in have classified Hindi OCR and its setup, training very nicely.
 The only limitation is that the system is for desktop. We have to build the similar system for
-mobile devices.
+mobile devices.\cite{TesseractTrain}
 \section{OpenCV}
-OpenCV[1] (Open Source Computer Vision) is a library of programming functions and algorithms
-[36]. Their main focus is to provide API mainly aimed at real-time computer vision. It was
+OpenCV (Open Source Computer Vision) is a library of programming functions and algorithms. Their main focus is to provide API mainly aimed at real-time computer vision. It was
 originally developed by Intel. OpenCV library is free for use for development (under the open
-source BSD license) [36]. The best feature is that the library is cross-platform . 
+source BSD license). The best feature is that the library is cross-platform . \cite{TesseractTrain}
