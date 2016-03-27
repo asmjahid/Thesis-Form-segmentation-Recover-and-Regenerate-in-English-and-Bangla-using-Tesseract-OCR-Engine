@@ -1,55 +1,414 @@
 \chapter {Performance Analysis}
 \label{chap:result}
-As we have described the proposed algorithm in the chapter \ref{chap:algorithm} and the algorithm is robust and covering more criteria comparing to other state of the art algorithms, the algorithm should also perform better than other algorithms. In this chapter we will discuss about result and performance comparison with this proposed algorithm and some previous algorithms. Before the performance analysis performance metrics will be discussed briefly.
-\section{Analysis of Genetic Algorithm as Multi-objective Optimization}
-In order to test the performance of proposed multi-objective genetic algorithm, we randomly pick three chromosomes from the final population and we compare their associated matrices to the sequence SSE-IN adjacency matrix. To evaluate the difference between two matrices, we use an error rate defined as the number of wrong elements divided by the size of the matrix. The dataset we use is composed of 698 proteins belonging to the All alpha class and 413 proteins belonging to the All beta class. A structural family has been associated to this dataset as in \cite{gaci2010build}. 
+As we have described the proposed algorithm in the chapter \ref{chap:algorithm}. In this chapter we will discuss about result and performance.
+\section{Environments of Experiments}
+Text examples in public datasets usually occur within high-quality (high-resolution, well-focused) imagery. In our setting, text often occurs at lower-resolution and with significant blur. Our focus is to achieve text spotting in a real-time system moving through an environment. We first examine how much the information are attached with an analogue image than we detect the text and extract the data. Next, we train the data. Finally, we evaluate the accuracy.
+We tested with many different categories of the images such as images are taken with mobile camera, scanning images, DSLR camera and handy cam. The accuracy of the output varied greatly. Accuracy varies mainly for image quality. An image is taken with DSLR camera produce most accurate result. Because of it’s picture quality. Image of DSLR camera is less noise free. So, it’s easy to extract data and OCR can detect the data perfectly. For handy cam images accuracy is slightly get down. Because picture quality is not good as DSLR camera and there is more noise.
+If we use scanning images, it produce a good accuracy than handy cam. Because there is less noise than handy cam images. But for mobile camera images the accuracy level is not so good as regarding the other three image categories. For mobile camera there is more noise and image quality is not good.   
 
-\textit{All alpha} class has an average error rate of 14.6\% and for the \textit{All beta} class it is 13.1\% and the maximum error rate shown in the experiment is 22.9\%. Though, the error rate depends on other criteria like the three objectives described before but according to the result we can firmly assert that the error rate depends on the number of initial population, more the number of initial population less the error rate. With sufficient number of individuals in the initial population we can ensure the genetic diversity as well as the improved SSE-IN prediction. When the number of initial population is at least 15, the error rate is always less than 10\%.
+\section{Result for English form}
+We test our proposed algorithm in different type of sample form. The result depends on the tesseract training data. For english we train "Arial","Courier","Calibri","Times New Roman" fonts. Here we show our some output result and analysis of our training data.
+\subsection{Sample form 1}
 
-As compared to the work in \cite{gaci2010}, we can claim better and improved error rate in this part of SSE-IN prediction algorithm.
-
-\section {Analysis of Ant Colony Optimization}
-We have experimented and tested this part of our proposed method according to the associated family protein because the probability of adding edge is determined by the family occurrence matrix. We have used the same dataset of sequences whose family has been deduced.
-
-For each protein, we have done 150 simulations and when the topological properties are became compatible to the template properties of the protein we accepted the built SSE-IN. The results are shown in Tab. \ref{tab:result}. The score is the percentage of correctly predicted short cut edges between the sequence SSE-IN and the SSE-IN we have reconstructed \cite{gaci2010}. In most cases, the number of edges to add were accurate according to the plot \ref{fig:bar1}. From this we can percept that, global interaction scores depends on the local algorithm lead for each pair of SSEs in contact. The plot, in Figure \ref{fig:bar2}, confirms this tendency, if the local algorithm select at least 80\% of the correct short cut edges, the global intersection score stays better than the 80\% and evolves around 85\% for the All alpha class and 73\% for the All beta class. 
-
-After the discussion we can say that, though for the big protein of size more than 200 amino acids the average score decreases, but in an average the score remains for the global algorithm around 80\%.
-
-\begin{table}
+\begin{figure}[H]
 \centering
-\begin{tabular}{l c c c c c}
+\includegraphics[width=1\textwidth]{form1}
+\caption {Sample form 1}
+\label {fig:form1}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|}
 \hline
-Class & SCOP Family & Number of Proteins & Protein Size & Score & Average Deviation \\ \hline
-All Alpha & 46688 & 17 & 27 - 46 & 83.973 & 3.277 \\
-     & 47472 & 10 & 98 - 125 & 73.587 & 12.635 \\
-	 & 46457 & 25 & 129 - 135 & 76.125 & 7.489 \\
-	 & 48112 & 11 & 194 - 200 & 69.234 & 14.008 \\
-	 & 48507 & 18 & 203 - 214 & 66.826 & 5.504 \\
-	 & 46457 & 16 & 241 - 281 & 63.281 & 17.025 \\
-	 & 48507 & 20 & 387 - 422 & 62.072 & 9.304 \\
+character & Input Frequency & Output Frequency \\
 \hline
-All Beta & 50629 & 6 & 54 - 66 & 79.635 &  2.892 \\
-		 & 50813 & 11 & 90 - 111 & 74.006 & 4.428 \\
-		 & 48725 & 24 & 120 - 124 & 80.881 & 7.775 \\
-		 & 50629 & 13 & 124 - 128 & 76.379 & 9.361 \\
-		 & 50875 & 14 & 133 - 224 & 77.959 & 10.67 \\
+0 & 3  & 3 \\
+\hline
+1 & 5  & 7 \\
+\hline
+2 & 3  & 3 \\
+\hline
+5 & 2  & 2 \\
+\hline
+8 & 0  & 4 \\
+\hline
+: & 10 & 10 \\
+\hline
+A & 1  & 1 \\
+\hline
+B & 1  & 1 \\
+\hline
+C & 3  & 3 \\
+\hline
+D & 1  & 1 \\
+\hline
+E & 2  & 1 \\
+\hline
+F & 2  & 2 \\
+\hline
+G & 1  & 2 \\
+\hline
+H & 0  & 2 \\
+\hline
+I & 1  & 1 \\
+\hline
+N & 1  & 1 \\
+\hline
+P & 2  & 2 \\
+\hline
+R & 3  & 3 \\
+\hline
+S & 3  & 3 \\
+\hline
+T & 2  & 2 \\
+\hline
+Y & 9  & 9 \\
+\hline
+a & 5  & 5 \\
+\hline
+c & 3  & 3 \\
+\hline
+d & 18 & 18 \\
+\hline
+e & 10 & 8 \\
+\hline
+i & 2  & 1 \\
+\hline
+l & 6  & 6 \\
+\hline
+m & 8  & 7 \\
+\hline
+o & 6  & 6 \\
+\hline
+p & 3  & 3 \\
+\hline
+r & 11 & 11 \\
+\hline
+s & 5  & 5 \\
+\hline
+t & 10 & 10 \\
+\hline
+u & 1  & 1 \\
+\hline
+v & 1  & 1 \\
 \hline
 \end{tabular}
-\caption{Folding a SSE-IN by an ant colony approach. The score measures the interaction between the effective short cut edges and the predicted one. For small proteins the scores are better than 75\% because the number of SSE is weak and the global algorithm is less dependent on local one. The algorithm parameter values are: $\alpha = 25, \beta = 12, \rho = 0.7, \Delta\tau=4000, e = 2, \lambda_{min}=0.8$.}
-\label{tab:result}
+\caption { Comparison between Input and Output frequency}
+\label {tab:Table1}
 \end{table}
-\begin{figure}[h]
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{allalphabar}
-\caption{Precision of number of edges to be added in All alpha class}
-\label{fig:bar1}
+\includegraphics[width=1\textwidth]{Form1}
+\caption {Bar chart Input Output Frequency}
+\label {fig:bar1}
 \end{figure}
 
-\begin{figure}[h]
+\subsection{Sample form 2}
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{allbetabar}
-\caption{Precision of number of edges to be added in All beta class}
-\label{fig:bar2}
+\includegraphics[width=1\textwidth]{form2}
+\caption {Sample form 2}
+\label {fig:form2}
 \end{figure}
-\section {Algorithm Complexity}
-Our proposed algorithm is independent of specific time bound. Both the optimization algorithm used as multi-objective genetic algorithm and ant colony algorithm, is iteration based. We can stop the algorithm at any time. Though the result of the algorithm depends on the number of iteration but if we give sufficient amount of iteration it provides good result. In compare to other state of art algorithms, those uses exponential complexity algorithm, our is linear in terms of time and memory.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+character & Input Frequency & Output Frequency \\
+\hline
+0 & 2 & 1\\
+\hline
+1 & 5 & 7\\
+\hline
+2 & 3 & 3\\
+\hline
+3 & 4 & 4\\
+\hline
+8 & 0 & 4\\
+\hline
+: & 10 & 10\\
+\hline
+A & 1 & 1\\
+\hline
+B & 2 & 2\\
+\hline
+C & 3 & 3\\
+\hline
+D & 1 & 1\\
+\hline
+E & 2 & 1\\
+\hline
+F & 2 & 2\\
+\hline
+H & 0 & 1\\
+\hline
+I & 0 & 4\\
+\hline
+K & 2 & 2\\
+\hline
+N & 1 & 1\\
+\hline
+O & 0 & 1\\
+\hline
+P & 1 & 1\\
+\hline
+R & 2 & 2\\
+\hline
+S & 1 & 3\\
+\hline
+T & 2 & 2\\
+\hline
+Y & 1 & 2\\
+\hline
+a & 7 & 8\\
+\hline
+c & 4 & 5\\
+\hline
+d & 3 & 3\\
+\hline
+e & 18 & 18\\
+\hline
+i & 10 & 7\\
+\hline
+l & 5 & 1\\
+\hline
+m & 7 & 7\\
+\hline
+n & 7 & 6\\
+\hline
+o & 5 & 6\\
+\hline
+p & 12 & 4\\
+\hline
+r & 1 & 10\\
+\hline
+s & 3 & 4\\
+\hline
+t & 9 & 10\\
+\hline
+u & 3 & 3\\
+\hline
+\end{tabular}
+\caption {Comparison between Input and Output frequency}
+\label {tab:Table2}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{Form2}
+\caption {Bar chart Input Output Frequency}
+\label {fig:bar2}
+\end{figure}
+
+\subsection{Sample form 3}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{form3}
+\caption {Sample form 3}
+\label {fig:form3}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+character & Input Frequency & Output Frequency \\
+\hline
+0 & 2 & 1\\
+\hline
+1 & 5 & 7\\
+\hline
+2 & 3 & 3\\
+\hline
+4 & 2 & 2\\ 
+\hline
+6 & 2 & 2\\
+\hline
+8 & 0 & 4\\
+\hline
+: & 10 & 10\\
+\hline
+B & 1 & 1\\
+\hline
+C & 4 & 4\\
+\hline
+D & 1 & 1\\
+\hline
+E & 2 & 1\\
+\hline
+F & 1 & 1\\
+\hline
+H & 1 & 2\\
+\hline
+I & 0 & 2\\
+\hline
+N & 2 & 2\\
+\hline
+O & 0 & 1\\
+\hline
+P & 1 & 1\\
+\hline
+R & 2 & 2\\
+\hline
+S & 5 & 5\\
+\hline
+T & 2 & 2\\
+\hline
+U & 1 & 1\\
+\hline
+V & 0 & 2\\
+\hline
+Y & 1 & 2\\
+\hline
+a & 7 & 8\\
+\hline
+c & 6 & 6\\
+\hline
+d & 4 & 4\\
+\hline
+e & 21 & 21\\
+\hline
+i & 9 & 7\\
+\hline
+l & 4 & 1\\
+\hline
+m & 7 & 7\\
+\hline
+n & 7 & 7\\
+\hline
+o & 8 & 8\\
+\hline
+p & 3 & 3\\
+\hline
+r & 9 & 9\\
+\hline
+s & 5 & 5\\
+\hline
+t & 9 & 9\\
+\hline
+u & 1 & 1\\
+\hline
+y & 1 & 1\\
+\hline
+\end{tabular}
+\caption {Comparison between Input and Output frequency}
+\label {tab:Table3}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{Form3}
+\caption {Bar chart Input Output Frequency}
+\label {fig:bar3}
+\end{figure}
+
+
+\subsection{Sample form 4}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{form4}
+\caption {Sample form 4}
+\label {fig:form4}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+character & Input Frequency & Output Frequency \\
+\hline
+1 & 4  & 10\\
+\hline
+2 & 5  & 5\\
+\hline
+3 & 2  & 2\\
+\hline
+8 & 0  & 4\\
+\hline
+: & 10 & 10\\
+\hline
+A & 1  & 1\\
+\hline
+B & 1  & 2\\
+\hline
+C & 3  & 3\\
+\hline
+D & 1  & 1\\
+\hline
+E & 1  & 1\\
+\hline
+F & 1  & 1\\
+\hline
+H & 1  & 1\\
+\hline
+I & 2  & 2\\
+\hline
+N & 1  & 1\\
+\hline
+O & 2  & 2\\
+\hline
+P & 1  & 1\\
+\hline
+R & 3  & 3\\
+\hline
+S & 5  & 5\\
+\hline
+T & 2  & 2\\
+\hline
+Y & 2  & 2\\
+\hline
+a & 8  & 8\\
+\hline
+b & 1  & 1\\
+\hline
+c & c  & 6\\
+\hline
+d & 4  & 4\\
+\hline
+e & 17 & 19\\
+\hline
+f & 1  & 1\\
+\hline
+i & 6  & 6\\
+\hline
+l & 1  & 1\\
+\hline
+m & 7  & 7\\
+\hline
+n & 6  & 6\\
+\hline
+o & 2  & 8\\
+\hline
+p & 3  & 3\\
+\hline
+r & 8  & 8\\
+\hline
+s & 3  & 3\\
+\hline
+t & 9  & 10\\
+\hline
+u & 3  & 3\\
+\hline
+\end{tabular}
+\caption {Comparison between Input and Output frequency}
+\label {tab:Table4}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{Form4}
+\caption {Bar chart Input Output Frequency}
+\label {fig:bar4}
+\end{figure}
+
+
+\section{Result for Bangla form}
+The result of Bangla form depends on the tesseract training data same as English form. For Bangla we train "Siyam rupali" font. Here we show our some output result and analysis of our training data.
+\subsection{Sample form 1}
+\subsection{Sample form 2}

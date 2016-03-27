@@ -1,17 +1,27 @@
 \chapter{Conclusion}
 \label{chap:final}
 This chapter summarizes the work presented in this thesis and figure out the advantages and limitations of the proposed algorithm. It also discussed about the scope of future works related to the proposed algorithm.
-\section {Discussion}
-We have proposed an computational solution to an biological problem. We have described how we can formulate a biological problem like folding protein into optimization and graph theory problem. The formulation consist of finding the interactions between secondary structure element (SSE) network and interaction between amino acids of the protein. The first problem was solve by an multi-objective genetic algorithm and the second one solve by ant colony optimization approach. 
+\section{Discussion}
+From our experiments, we see that our methods could achieve the image segmentation purpose. For simple images with just a little texture inside, the result is quite good, and this method could also performs well on natural and landscape images. 
+The above tests are based on the luminance or RGB based similarity measurement. When we test our algorithm on the texture images with the same similarity 
+measurement, we found the result become worse. And the main reason is that the pixel value variance is really large in the texture region, which means pixels in the 
+same texture region may have small similarities and are segmented into different groups.
 
-As discussed in the chapter \ref {chap:result}, we can claim that our proposed algorithm gives more accurate result in terms of accuracy and score to predict the amino acid interaction network.
-\section {Future Works}
-In this section a brief discussion on the improvement of this algorithm and probable future works.
-\begin {enumerate}
-\item Improvement in Genetic Representation:  As a genetic representation of the individuals of a network, we have used vector. Instead a matrix or adjacency list can be used. Obviously it will increase the complexity of the algorithm in terms of time and memory.
-\item Improvement in Data Structure: To preserve the diversity function we need k-th nearest neighbour of each individual. To find this we did not use any good data structure. We can use kd-tree to improve this.
-\item Improvement in functions: The objective function as well as other function like diversity measurement can be improved much.
-\item Parallelize: The proposed algorithm in this paper can be parallelized. Then it can be a fast and more accurate algorithm. The big limitation of this algorithm, run on large network, could be reduced by parallelizing this algorithm.
-\end {enumerate}
-Our next step would be, come up with better genetic representation, use of appropriate and advanced data structure and a powerful parallel algorithm.
+This problem could be solved by using text on based similarity measurement,while the boundary position between segments are not so accurate determined due to the 
+averaging operation by the sliding window.We knew that estimating the region properties is really an importance process. The Luminance-based method performs well on simple images with just a little texture inside.
 
+And there’s bit of noise with the output. We’ve tried to reduce noise as much as possible but it's the particular area that we've still to work a lot.
+
+Character recognition techniques associate a symbolic identity with the image of character. Character recognition is commonly referred to as optical character recognition (OCR), as it deals with the recognition of optically processed characters.
+
+Optical character recognition has many different practical applications. As	observed from the experimental results,    Tesseract OCR engine fares reasonably with respect to the	core    recognition	accuracy	on    user-specific	handwritten   samples   of isolated/free-flow text. Developing high accuracy, multi-font language data for robust, end-to-end processing for Tesseract was not within the scope of this study.
+
+\section{Future Works}
+
+There are still some things we can do for future works. At first, we will improve the  stability of program. We want to modify the code of function to let programs more stable. Secondly, it’s a chance to get a better adaptive method for image segmentation even that we have an adaptive method already. The third one is to generate the post-processing mechanism for region merging. We can write a code about merging groups with the same texture into a single group.
+
+As the computer technology develops new methods for character recognition are still expected to be appeared and hope that new methods will decrease the computational restrictions. For the recognition of joined and split characters integration of segmentation and contextual analysis can be improve. An important future work can be implemented, is to improve the training process to be able to use real data for training instead of just synthetic data with character bounding boxes. This will greatly help to improve the accuracy on Bengali handwritten forms.
+
+Our work outputs multi-page TIFF format images and corresponding bounding box coordinates in the Tesseract training data format. So, to achieve more decent accuracy we need more training data. By adding more training data we’ll able to improve train data frequency, which we want do in near future.
+
+Each and every aspects of our thesis can be improved upon. We just used our techniques to get a decent results but every techniques can be modified to get better result. For our thesis work, we just combining our techniques all together in order to achieve a decent result. There are many changes we would like to experiment with in the future.
