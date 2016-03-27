@@ -1,0 +1,10 @@
+Name : Tanvir Hasan
+RoH : 5
+YRe8: 12101005
+Sec : A
+Pro8ramme : BscI En8ineerin8
+DeptI : Computer Science and
+Semester : First
+Year : First
+Total Credit : 21
+Tota1 Credit comp1ete : 21
