@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.30)  28 MAR 2016 00:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.30)  28 MAR 2016 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1576,7 +1576,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  35606 strings out of 493089
  834343 string characters out of 6134841
- 996876 words of memory out of 5000000
+ 996877 words of memory out of 5000000
  38300 multiletter control sequences out of 15000+600000
  10558 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
