@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  27 MAR 2016 22:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  27 MAR 2016 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,9 +1222,6 @@ Chapter 1.
 Missing character: There is no Ô in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Å in font cmr12!
-Missing character: There is no Ô in font cmr12!
-Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Å in font cmr12!
 [1
 
 
@@ -1234,7 +1231,7 @@ Missing character: There is no Å in font cmr12!
 
  (./background_study.tex
 Chapter 2.
-<Blur.png, id=460, 405.76593pt x 127.22531pt>
+<Blur.png, id=463, 405.76593pt x 127.22531pt>
 File: Blur.png Graphic file (type png)
  <use Blur.png>
 Package pdftex.def Info: Blur.png used on input line 16.
@@ -1252,19 +1249,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 
-<Thresholding.png, id=469, 421.575pt x 316.18124pt>
+<Thresholding.png, id=472, 421.575pt x 316.18124pt>
 File: Thresholding.png Graphic file (type png)
  <use Thresholding.png>
 Package pdftex.def Info: Thresholding.png used on input line 31.
 (pdftex.def)             Requested size: 352.8155pt x 264.61588pt.
 
-[5 <./Blur.png>] <EdgeOriginal.jpg, id=478, 301.125pt x 182.6825pt>
+[5 <./Blur.png>] <EdgeOriginal.jpg, id=481, 301.125pt x 182.6825pt>
 File: EdgeOriginal.jpg Graphic file (type jpg)
 
 <use EdgeOriginal.jpg>
 Package pdftex.def Info: EdgeOriginal.jpg used on input line 43.
 (pdftex.def)             Requested size: 264.61331pt x 160.54643pt.
- <EdgeDetect.jpg, id=479, 301.125pt x 303.1325pt>
+ <EdgeDetect.jpg, id=482, 301.125pt x 303.1325pt>
 File: EdgeDetect.jpg Graphic file (type jpg)
 
 <use EdgeDetect.jpg>
@@ -1276,13 +1273,13 @@ Overfull \hbox (51.9377pt too wide) in paragraph at lines 43--45
  []
 
 [6 <./Thresholding.png (PNG copy)>]
-<ContureOriginal.jpg, id=486, 200.75pt x 206.7725pt>
+<ContureOriginal.jpg, id=489, 200.75pt x 206.7725pt>
 File: ContureOriginal.jpg Graphic file (type jpg)
  <use ContureOriginal.jpg>
 Package pdftex.def Info: ContureOriginal.jpg used on input line 55.
 (pdftex.def)             Requested size: 176.40439pt x 181.70795pt.
 
-<Conture.jpg, id=487, 200.75pt x 172.645pt>
+<Conture.jpg, id=490, 200.75pt x 172.645pt>
 File: Conture.jpg Graphic file (type jpg)
  <use Conture.jpg>
 Package pdftex.def Info: Conture.jpg used on input line 56.
@@ -1303,13 +1300,13 @@ Chapter 3.
 
 
 
-] <GaussMask.jpg, id=519, 411.5375pt x 297.11pt>
+] <GaussMask.jpg, id=522, 411.5375pt x 297.11pt>
 File: GaussMask.jpg Graphic file (type jpg)
  <use GaussMask.jpg>
 Package pdftex.def Info: GaussMask.jpg used on input line 14.
 (pdftex.def)             Requested size: 220.50885pt x 159.19481pt.
 
-<Mask.jpg, id=520, 353.06906pt x 170.13562pt>
+<Mask.jpg, id=523, 353.06906pt x 170.13562pt>
 File: Mask.jpg Graphic file (type jpg)
  <use Mask.jpg>
 Package pdftex.def Info: Mask.jpg used on input line 23.
@@ -1319,18 +1316,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--43
 
  []
 
-<Canny.jpg, id=528, 242.40562pt x 145.29282pt>
+<Canny.jpg, id=531, 242.40562pt x 145.29282pt>
 File: Canny.jpg Graphic file (type jpg)
  <use Canny.jpg>
 Package pdftex.def Info: Canny.jpg used on input line 48.
 (pdftex.def)             Requested size: 264.61331pt x 158.62318pt.
- [12 <./Canny.jpg>] [13] <shape.JPG, id=549, 713.66624pt x 484.81125pt>
+ [12 <./Canny.jpg>] [13] <shape.JPG, id=552, 713.66624pt x 484.81125pt>
 File: shape.JPG Graphic file (type jpg)
  <use shape.JPG>
 Package pdftex.def Info: shape.JPG used on input line 63.
 (pdftex.def)             Requested size: 220.50885pt x 149.79428pt.
 
-<contours.JPG, id=550, 694.595pt x 478.78876pt>
+<contours.JPG, id=553, 694.595pt x 478.78876pt>
 File: contours.JPG Graphic file (type jpg)
  <use contours.JPG>
 Package pdftex.def Info: contours.JPG used on input line 64.
@@ -1340,14 +1337,14 @@ Overfull \hbox (7.83324pt too wide) in paragraph at lines 63--65
  [][][][] 
  []
 
-<shapefourcorner.png, id=552, 361.35pt x 271.0125pt>
+<shapefourcorner.png, id=555, 361.35pt x 271.0125pt>
 File: shapefourcorner.png Graphic file (type png)
  <use shapefourcorner.png>
 Package pdftex.def Info: shapefourcorner.png used on input line 78.
 (pdftex.def)             Requested size: 264.61331pt x 198.4619pt.
 
 [14 <./shape.JPG> <./contours.JPG>] [15 <./shapefourcorner.png>]
-<tesseractFlow.png, id=568, 589.20125pt x 576.1525pt>
+<tesseractFlow.png, id=571, 589.20125pt x 576.1525pt>
 File: tesseractFlow.png Graphic file (type png)
  <use tesseractFlow.png>
 Package pdftex.def Info: tesseractFlow.png used on input line 114.
@@ -1362,13 +1359,13 @@ Missing character: There is no ô in font cmr12!
 
  (./algorithm.tex
 Chapter 4.
-<from.png, id=618, 636.3775pt x 176.66pt>
+<from.png, id=621, 636.3775pt x 176.66pt>
 File: from.png Graphic file (type png)
  <use from.png>
 Package pdftex.def Info: from.png used on input line 8.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
 
-<GrayImage.jpg, id=619, 1272.755pt x 353.32pt>
+<GrayImage.jpg, id=622, 1272.755pt x 353.32pt>
 File: GrayImage.jpg Graphic file (type jpg)
  <use GrayImage.jpg>
 Package pdftex.def Info: GrayImage.jpg used on input line 16.
@@ -1377,7 +1374,7 @@ Package pdftex.def Info: GrayImage.jpg used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GaussianBlur.jpg, id=621, 1272.755pt x 353.32pt>
+<GaussianBlur.jpg, id=624, 1272.755pt x 353.32pt>
 File: GaussianBlur.jpg Graphic file (type jpg)
  <use GaussianBlur.jpg>
 Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
@@ -1387,7 +1384,7 @@ Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
 
 
 
- <./from.png>] <Threshold.jpg, id=628, 1272.755pt x 353.32pt>
+ <./from.png>] <Threshold.jpg, id=631, 1272.755pt x 353.32pt>
 File: Threshold.jpg Graphic file (type jpg)
 
 <use Threshold.jpg>
@@ -1397,7 +1394,7 @@ Package pdftex.def Info: Threshold.jpg used on input line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Canny2.jpg, id=630, 1272.755pt x 353.32pt>
+<Canny2.jpg, id=633, 1272.755pt x 353.32pt>
 File: Canny2.jpg Graphic file (type jpg)
  <use Canny2.jpg>
 Package pdftex.def Info: Canny2.jpg used on input line 41.
@@ -1419,7 +1416,7 @@ Missing character: There is no ô in font cmr12!
 
 
 
-] <form1.png, id=671, 636.3775pt x 176.66pt>
+] <form1.png, id=674, 636.3775pt x 176.66pt>
 File: form1.png Graphic file (type png)
  <use form1.png>
 Package pdftex.def Info: form1.png used on input line 15.
@@ -1429,13 +1426,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|\OT1/cmr/m/n/12 Output
  []
 
-[27 <./form1.png>] <Form1.jpg, id=677, 1124.2pt x 843.15pt>
+[27 <./form1.png>] <Form1.jpg, id=680, 1124.2pt x 843.15pt>
 File: Form1.jpg Graphic file (type jpg)
  <use Form1.jpg>
 Package pdftex.def Info: Form1.jpg used on input line 103.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
 
-[28] <form2.png, id=683, 954.56625pt x 264.99pt>
+[28] <form2.png, id=686, 954.56625pt x 264.99pt>
 File: form2.png Graphic file (type png)
  <use form2.png>
 Package pdftex.def Info: form2.png used on input line 112.
@@ -1445,13 +1442,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 []|\OT1/cmr/m/n/12 Output
  []
 
-[29 <./Form1.jpg> <./form2.png>] <Form2.jpg, id=689, 1124.2pt x 843.15pt>
+[29 <./Form1.jpg> <./form2.png>] <Form2.jpg, id=692, 1124.2pt x 843.15pt>
 File: Form2.jpg Graphic file (type jpg)
 
 <use Form2.jpg>
 Package pdftex.def Info: Form2.jpg used on input line 202.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
- [30] <form3.png, id=694, 954.56625pt x 264.99pt>
+ [30] <form3.png, id=697, 954.56625pt x 264.99pt>
 File: form3.png Graphic file (type png)
 
 <use form3.png>
@@ -1462,13 +1459,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--221
 []|\OT1/cmr/m/n/12 Output
  []
 
-[31 <./Form2.jpg> <./form3.png>] <Form3.jpg, id=700, 1124.2pt x 843.15pt>
+[31 <./Form2.jpg> <./form3.png>] <Form3.jpg, id=704, 1124.2pt x 843.15pt>
 File: Form3.jpg Graphic file (type jpg)
 
 <use Form3.jpg>
 Package pdftex.def Info: Form3.jpg used on input line 305.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
- [32] <form4.png, id=706, 954.56625pt x 264.99pt>
+ [32] <form4.png, id=709, 954.56625pt x 264.99pt>
 File: form4.png Graphic file (type png)
 
 <use form4.png>
@@ -1479,73 +1476,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--325
 []|\OT1/cmr/m/n/12 Output
  []
 
-[33 <./Form3.jpg> <./form4.png>] <Form4.jpg, id=712, 1124.2pt x 843.15pt>
+[33 <./Form3.jpg> <./form4.png>] <Form4.jpg, id=715, 1124.2pt x 843.15pt>
 File: Form4.jpg Graphic file (type jpg)
 
 <use Form4.jpg>
 Package pdftex.def Info: Form4.jpg used on input line 405.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
- [34] <formBen01.JPG, id=718, 615.0478pt x 177.66376pt>
+ [34] <formBen01.JPG, id=721, 615.0478pt x 177.66376pt>
 File: formBen01.JPG Graphic file (type jpg)
 
 <use formBen01.JPG>
-Package pdftex.def Info: formBen01.JPG used on input line 416.
+Package pdftex.def Info: formBen01.JPG used on input line 417.
 (pdftex.def)             Requested size: 441.01772pt x 127.39459pt.
- <Form1Ben.png, id=719, 1188.44pt x 448.67625pt>
+ <Form1Ben.png, id=722, 1188.44pt x 448.67625pt>
 File: Form1Ben.png Graphic file (type png)
 
 <use Form1Ben.png>
-Package pdftex.def Info: Form1Ben.png used on input line 422.
+Package pdftex.def Info: Form1Ben.png used on input line 423.
 (pdftex.def)             Requested size: 352.8155pt x 133.20042pt.
  [35 <./Form4.jpg>]
-<formBen02.JPG, id=724, 621.82312pt x 185.19188pt>
+<formBen02.JPG, id=727, 621.82312pt x 185.19188pt>
 File: formBen02.JPG Graphic file (type jpg)
  <use formBen02.JPG>
-Package pdftex.def Info: formBen02.JPG used on input line 429.
+Package pdftex.def Info: formBen02.JPG used on input line 430.
 (pdftex.def)             Requested size: 441.01772pt x 131.34584pt.
 
-<Form2Ben.png, id=725, 1195.46625pt x 444.66125pt>
+<Form2Ben.png, id=728, 1195.46625pt x 444.66125pt>
 File: Form2Ben.png Graphic file (type png)
  <use Form2Ben.png>
-Package pdftex.def Info: Form2Ben.png used on input line 435.
+Package pdftex.def Info: Form2Ben.png used on input line 436.
 (pdftex.def)             Requested size: 352.8155pt x 131.22821pt.
  [36 <./formBen01.JPG> <./Form1Ben.png> <./formBen02.JPG>]
-<formBen03.JPG, id=731, 626.34pt x 184.43906pt>
+<formBen03.JPG, id=734, 626.34pt x 184.43906pt>
 File: formBen03.JPG Graphic file (type jpg)
  <use formBen03.JPG>
-Package pdftex.def Info: formBen03.JPG used on input line 442.
+Package pdftex.def Info: formBen03.JPG used on input line 443.
 (pdftex.def)             Requested size: 441.01772pt x 129.87195pt.
 
-<Form3Ben.png, id=732, 1185.42876pt x 442.65375pt>
+<Form3Ben.png, id=735, 1185.42876pt x 442.65375pt>
 File: Form3Ben.png Graphic file (type png)
  <use Form3Ben.png>
-Package pdftex.def Info: Form3Ben.png used on input line 448.
+Package pdftex.def Info: Form3Ben.png used on input line 449.
 (pdftex.def)             Requested size: 352.8155pt x 131.74345pt.
 
-<formBen04.JPG, id=733, 621.07031pt x 194.22563pt>
+<formBen04.JPG, id=736, 621.07031pt x 194.22563pt>
 File: formBen04.JPG Graphic file (type jpg)
  <use formBen04.JPG>
-Package pdftex.def Info: formBen04.JPG used on input line 455.
+Package pdftex.def Info: formBen04.JPG used on input line 456.
 (pdftex.def)             Requested size: 441.01772pt x 137.91893pt.
 
-<Form4Ben.png, id=734, 1192.455pt x 424.58624pt>
+<Form4Ben.png, id=737, 1192.455pt x 424.58624pt>
 File: Form4Ben.png Graphic file (type png)
  <use Form4Ben.png>
-Package pdftex.def Info: Form4Ben.png used on input line 461.
+Package pdftex.def Info: Form4Ben.png used on input line 462.
 (pdftex.def)             Requested size: 352.8155pt x 125.62114pt.
  [37 <./Form2Ben.png> <./formBen03.JPG> <./Form3Ben.png>]
-<formBen05.JPG, id=741, 638.385pt x 213.04594pt>
+<formBen05.JPG, id=744, 638.385pt x 213.04594pt>
 File: formBen05.JPG Graphic file (type jpg)
  <use formBen05.JPG>
-Package pdftex.def Info: formBen05.JPG used on input line 468.
+Package pdftex.def Info: formBen05.JPG used on input line 469.
 (pdftex.def)             Requested size: 441.01772pt x 147.18063pt.
 
-<Form5Ben.png, id=742, 1183.42125pt x 407.5225pt>
+<Form5Ben.png, id=745, 1183.42125pt x 407.5225pt>
 File: Form5Ben.png Graphic file (type png)
  <use Form5Ben.png>
-Package pdftex.def Info: Form5Ben.png used on input line 474.
+Package pdftex.def Info: Form5Ben.png used on input line 475.
 (pdftex.def)             Requested size: 352.8155pt x 121.49284pt.
-) [38 <./formBen04.JPG> <./Form4Ben.png> <./formBen05.JPG>] [39 <./Form5Ben.png
+ [38 <./formBen04.JPG> <./Form4Ben.png> <./formBen05.JPG>]) [39 <./Form5Ben.png
 >]
 \openout2 = `conclusion.aux'.
 
@@ -1601,7 +1598,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9599E3203D8FAB1E2F43C4C4E286B2B7;4111.
+(rerunfilecheck)             Checksum: 09A28D3CC9CE28F79E1F66F9707E4BF9;4121.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1626,10 +1623,10 @@ ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 12.pfb>
-Output written on thesis.pdf (52 pages, 1809840 bytes).
+Output written on thesis.pdf (52 pages, 1811045 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 760 compressed objects within 8 object streams
+ 885 PDF objects out of 1000 (max. 8388607)
+ 763 compressed objects within 8 object streams
  209 named destinations out of 1000 (max. 500000)
  694 words of extra memory for PDF output out of 10000 (max. 10000000)
 
