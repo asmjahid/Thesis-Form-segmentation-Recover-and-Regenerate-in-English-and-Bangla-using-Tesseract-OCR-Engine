@@ -4,31 +4,23 @@
 using namespace std;
 int main(int argc,char *argv[])
 {
-     wprintf (L"Character: %lc %lc \n", L'ঈ', 2440);
-     return 0;
     map<char,int>Freq;
     FILE *fp=fopen(argv[1],"r");
-    char ch[200];
-    while(!feof(fp))
+    char c=fgetc(fp);
+    while(c!=EOF)
     {
-        fgets(ch,150,fp);
-        for(auto x:ch)
-        {
-            Freq[x]++;
-
-        }
+        Freq[c]++;
+        c=fgetc(fp);
     }
     for(auto x:Freq)
     {
         if(x.first==' ' or x.first=='\n')continue;
-        char ch[2];
-        ch[0]=x.first;
-        ch[1]=NULL;
-        printf("\'%s\'",ch);
+        cout<<"'"<<x.first<<"',";
     }
     cout<<endl;
     for(auto x:Freq)
     {
+        if(x.first==' ' or x.first=='\n')continue;
         cout<<"_  , "<<x.second<<";\n";
     }
     cout<<endl;
