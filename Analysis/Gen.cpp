@@ -15,7 +15,7 @@ int main(int argc,char *argv[])
     for(auto x:Freq)
     {
         if(x.first==' ' or x.first=='\n')continue;
-        cout<<"'"<<x.first<<"',";
+        cout<<"'"<<x.first<<"';";
     }
     cout<<endl;
     for(auto x:Freq)
