@@ -1,4 +1,4 @@
-\chapter{Proposed Algorithm}
+\chapter{Proposed Method}
 \label{chap:algorithm}
 This thesis is about implement a well define digital process to recognize hand writings from a registration form or any kind of forms which are mostly documentation of government or private institutions. Image recognition is a process, which usually consist of taking a picture, process the image then present the results.Whole work divide into two part as follow:
 \section{Data Extracting}

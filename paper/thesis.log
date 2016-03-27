@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.30)  27 MAR 2016 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.30)  27 MAR 2016 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,77 +1271,76 @@ Overfull \hbox (17.12624pt too wide) in paragraph at lines 80--81
 
  (./literature_review.tex
 Chapter 3.
-<GaussMask.jpg, id=512, 411.5375pt x 297.11pt>
+[10
+
+
+
+] <GaussMask.jpg, id=519, 411.5375pt x 297.11pt>
 File: GaussMask.jpg Graphic file (type jpg)
  <use GaussMask.jpg>
-Package pdftex.def Info: GaussMask.jpg used on input line 13.
+Package pdftex.def Info: GaussMask.jpg used on input line 14.
 (pdftex.def)             Requested size: 220.50885pt x 159.19481pt.
- [10
 
-
-
-]
-<Mask.jpg, id=519, 353.06906pt x 170.13562pt>
+<Mask.jpg, id=520, 353.06906pt x 170.13562pt>
 File: Mask.jpg Graphic file (type jpg)
  <use Mask.jpg>
-Package pdftex.def Info: Mask.jpg used on input line 22.
+Package pdftex.def Info: Mask.jpg used on input line 23.
 (pdftex.def)             Requested size: 264.61331pt x 127.51053pt.
  [11 <./GaussMask.jpg> <./Mask.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 27--42
+Underfull \hbox (badness 10000) in paragraph at lines 28--43
 
  []
 
-<Canny.jpg, id=525, 242.40562pt x 145.29282pt>
+<Canny.jpg, id=528, 242.40562pt x 145.29282pt>
 File: Canny.jpg Graphic file (type jpg)
  <use Canny.jpg>
-Package pdftex.def Info: Canny.jpg used on input line 47.
+Package pdftex.def Info: Canny.jpg used on input line 48.
 (pdftex.def)             Requested size: 264.61331pt x 158.62318pt.
- [12 <./Canny.jpg>] <shape.jpg, id=536, 713.66624pt x 484.81125pt>
+ [12 <./Canny.jpg>] [13] <shape.jpg, id=549, 713.66624pt x 484.81125pt>
 File: shape.jpg Graphic file (type jpg)
  <use shape.jpg>
-Package pdftex.def Info: shape.jpg used on input line 61.
+Package pdftex.def Info: shape.jpg used on input line 63.
 (pdftex.def)             Requested size: 220.50885pt x 149.79428pt.
 
-<contours.jpg, id=537, 694.595pt x 478.78876pt>
+<contours.jpg, id=550, 694.595pt x 478.78876pt>
 File: contours.jpg Graphic file (type jpg)
  <use contours.jpg>
-Package pdftex.def Info: contours.jpg used on input line 62.
+Package pdftex.def Info: contours.jpg used on input line 64.
 (pdftex.def)             Requested size: 220.50885pt x 151.99547pt.
 
-Overfull \hbox (7.83324pt too wide) in paragraph at lines 61--63
+Overfull \hbox (7.83324pt too wide) in paragraph at lines 63--65
  [][][][] 
  []
 
-[13] <shapefourcorner.png, id=546, 361.35pt x 271.0125pt>
+<shapefourcorner.png, id=552, 361.35pt x 271.0125pt>
 File: shapefourcorner.png Graphic file (type png)
-
-<use shapefourcorner.png>
-Package pdftex.def Info: shapefourcorner.png used on input line 77.
+ <use shapefourcorner.png>
+Package pdftex.def Info: shapefourcorner.png used on input line 78.
 (pdftex.def)             Requested size: 264.61331pt x 198.4619pt.
- [14 <./shape.jpg> <./contours.jpg>] [15 <./shapefourcorner.png>] <tesseractFlo
-w.png, id=562, 589.20125pt x 576.1525pt>
-File: tesseractFlow.png Graphic file (type png)
 
-<use tesseractFlow.png>
-Package pdftex.def Info: tesseractFlow.png used on input line 113.
+[14 <./shape.jpg> <./contours.jpg>] [15 <./shapefourcorner.png>]
+<tesseractFlow.png, id=568, 589.20125pt x 576.1525pt>
+File: tesseractFlow.png Graphic file (type png)
+ <use tesseractFlow.png>
+Package pdftex.def Info: tesseractFlow.png used on input line 114.
 (pdftex.def)             Requested size: 352.8155pt x 345.00842pt.
- [16] [17 <./tesseractFlow.png>]
+
+[16] [17 <./tesseractFlow.png>]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [18] [19]) [20]
 \openout2 = `algorithm.aux'.
 
-
-(./algorithm.tex
+ (./algorithm.tex
 Chapter 4.
-<from.png, id=612, 636.3775pt x 176.66pt>
+<from.png, id=618, 636.3775pt x 176.66pt>
 File: from.png Graphic file (type png)
  <use from.png>
 Package pdftex.def Info: from.png used on input line 8.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
 
-<GrayImage.jpg, id=613, 1272.755pt x 353.32pt>
+<GrayImage.jpg, id=619, 1272.755pt x 353.32pt>
 File: GrayImage.jpg Graphic file (type jpg)
  <use GrayImage.jpg>
 Package pdftex.def Info: GrayImage.jpg used on input line 16.
@@ -1350,7 +1349,7 @@ Package pdftex.def Info: GrayImage.jpg used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GaussianBlur.jpg, id=615, 1272.755pt x 353.32pt>
+<GaussianBlur.jpg, id=621, 1272.755pt x 353.32pt>
 File: GaussianBlur.jpg Graphic file (type jpg)
  <use GaussianBlur.jpg>
 Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
@@ -1360,7 +1359,7 @@ Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
 
 
 
- <./from.png>] <Threshold.jpg, id=622, 1272.755pt x 353.32pt>
+ <./from.png>] <Threshold.jpg, id=628, 1272.755pt x 353.32pt>
 File: Threshold.jpg Graphic file (type jpg)
 
 <use Threshold.jpg>
@@ -1370,7 +1369,7 @@ Package pdftex.def Info: Threshold.jpg used on input line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Canny2.jpg, id=624, 1272.755pt x 353.32pt>
+<Canny2.jpg, id=630, 1272.755pt x 353.32pt>
 File: Canny2.jpg Graphic file (type jpg)
  <use Canny2.jpg>
 Package pdftex.def Info: Canny2.jpg used on input line 41.
@@ -1392,7 +1391,7 @@ Missing character: There is no ™ in font cmr12!
 
 
 
-] <form1.png, id=665, 636.3775pt x 176.66pt>
+] <form1.png, id=671, 636.3775pt x 176.66pt>
 File: form1.png Graphic file (type png)
  <use form1.png>
 Package pdftex.def Info: form1.png used on input line 15.
@@ -1402,13 +1401,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|\OT1/cmr/m/n/12 Output
  []
 
-[27 <./form1.png>] <Form1.png, id=671, 636.3775pt x 176.66pt>
+[27 <./form1.png>] <Form1.png, id=677, 636.3775pt x 176.66pt>
 File: Form1.png Graphic file (type png)
  <use Form1.png>
 Package pdftex.def Info: Form1.png used on input line 103.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
 
-[28] <form2.png, id=677, 954.56625pt x 264.99pt>
+[28] <form2.png, id=683, 954.56625pt x 264.99pt>
 File: form2.png Graphic file (type png)
  <use form2.png>
 Package pdftex.def Info: form2.png used on input line 112.
@@ -1418,13 +1417,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 []|\OT1/cmr/m/n/12 Output
  []
 
-[29 <./Form1.png> <./form2.png>] <Form2.png, id=684, 954.56625pt x 264.99pt>
+[29 <./Form1.png> <./form2.png>] <Form2.png, id=690, 954.56625pt x 264.99pt>
 File: Form2.png Graphic file (type png)
 
 <use Form2.png>
 Package pdftex.def Info: Form2.png used on input line 202.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
- [30] <form3.png, id=689, 954.56625pt x 264.99pt>
+ [30] <form3.png, id=695, 954.56625pt x 264.99pt>
 File: form3.png Graphic file (type png)
 
 <use form3.png>
@@ -1435,13 +1434,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--221
 []|\OT1/cmr/m/n/12 Output
  []
 
-[31 <./Form2.png> <./form3.png>] <Form3.png, id=696, 954.56625pt x 264.99pt>
+[31 <./Form2.png> <./form3.png>] <Form3.png, id=702, 954.56625pt x 264.99pt>
 File: Form3.png Graphic file (type png)
 
 <use Form3.png>
 Package pdftex.def Info: Form3.png used on input line 305.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
- [32] <form4.png, id=701, 954.56625pt x 264.99pt>
+ [32] <form4.png, id=708, 954.56625pt x 264.99pt>
 File: form4.png Graphic file (type png)
 
 <use form4.png>
@@ -1452,68 +1451,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--325
 []|\OT1/cmr/m/n/12 Output
  []
 
-[33 <./Form3.png> <./form4.png>] <Form4.png, id=709, 954.56625pt x 264.99pt>
+[33 <./Form3.png> <./form4.png>] <Form4.png, id=715, 954.56625pt x 264.99pt>
 File: Form4.png Graphic file (type png)
 
 <use Form4.png>
 Package pdftex.def Info: Form4.png used on input line 405.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
- [34] <formBen01.jpg, id=715, 615.0478pt x 177.66376pt>
+ [34] <formBen01.jpg, id=721, 615.0478pt x 177.66376pt>
 File: formBen01.jpg Graphic file (type jpg)
 
 <use formBen01.jpg>
 Package pdftex.def Info: formBen01.jpg used on input line 416.
 (pdftex.def)             Requested size: 441.01772pt x 127.39459pt.
- <Form1Ben.png, id=716, 1188.44pt x 448.67625pt>
+ <Form1Ben.png, id=722, 1188.44pt x 448.67625pt>
 File: Form1Ben.png Graphic file (type png)
 
 <use Form1Ben.png>
 Package pdftex.def Info: Form1Ben.png used on input line 422.
 (pdftex.def)             Requested size: 352.8155pt x 133.20042pt.
- <formBen02.jpg, id=717, 621.82312pt x 185.19188pt>
+ <formBen02.jpg, id=723, 621.82312pt x 185.19188pt>
 File: formBen02.jpg Graphic file (type jpg)
 
 <use formBen02.jpg>
 Package pdftex.def Info: formBen02.jpg used on input line 429.
 (pdftex.def)             Requested size: 441.01772pt x 131.34584pt.
- <Form2Ben.png, id=718, 1195.46625pt x 444.66125pt>
+ <Form2Ben.png, id=724, 1195.46625pt x 444.66125pt>
 File: Form2Ben.png Graphic file (type png)
 
 <use Form2Ben.png>
 Package pdftex.def Info: Form2Ben.png used on input line 435.
 (pdftex.def)             Requested size: 352.8155pt x 131.22821pt.
  [35 <./Form4.png> <./formBen01.jpg> <./Form1Ben.png>]
-<formBen03.jpg, id=725, 626.34pt x 184.43906pt>
+<formBen03.jpg, id=731, 626.34pt x 184.43906pt>
 File: formBen03.jpg Graphic file (type jpg)
  <use formBen03.jpg>
 Package pdftex.def Info: formBen03.jpg used on input line 442.
 (pdftex.def)             Requested size: 441.01772pt x 129.87195pt.
 
-<Form3Ben.png, id=726, 1185.42876pt x 442.65375pt>
+<Form3Ben.png, id=732, 1185.42876pt x 442.65375pt>
 File: Form3Ben.png Graphic file (type png)
  <use Form3Ben.png>
 Package pdftex.def Info: Form3Ben.png used on input line 448.
 (pdftex.def)             Requested size: 352.8155pt x 131.74345pt.
  [36 <./formBen02.jpg> <./Form2Ben.png> <./formBen03.jpg>]
-<formBen04.jpg, id=732, 621.07031pt x 194.22563pt>
+<formBen04.jpg, id=738, 621.07031pt x 194.22563pt>
 File: formBen04.jpg Graphic file (type jpg)
  <use formBen04.jpg>
 Package pdftex.def Info: formBen04.jpg used on input line 455.
 (pdftex.def)             Requested size: 441.01772pt x 137.91893pt.
 
-<Form4Ben.png, id=733, 1192.455pt x 424.58624pt>
+<Form4Ben.png, id=739, 1192.455pt x 424.58624pt>
 File: Form4Ben.png Graphic file (type png)
  <use Form4Ben.png>
 Package pdftex.def Info: Form4Ben.png used on input line 461.
 (pdftex.def)             Requested size: 352.8155pt x 125.62114pt.
 
-<formBen05.jpg, id=734, 638.385pt x 213.04594pt>
+<formBen05.jpg, id=740, 638.385pt x 213.04594pt>
 File: formBen05.jpg Graphic file (type jpg)
  <use formBen05.jpg>
 Package pdftex.def Info: formBen05.jpg used on input line 468.
 (pdftex.def)             Requested size: 441.01772pt x 147.18063pt.
 
-<Form5Ben.png, id=735, 1183.42125pt x 407.5225pt>
+<Form5Ben.png, id=741, 1183.42125pt x 407.5225pt>
 File: Form5Ben.png Graphic file (type png)
  <use Form5Ben.png>
 Package pdftex.def Info: Form5Ben.png used on input line 474.
@@ -1572,15 +1571,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 905F179BAD86EF39C826CD954F39E388;4106.
+(rerunfilecheck)             Checksum: 9599E3203D8FAB1E2F43C4C4E286B2B7;4111.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35600 strings out of 493089
- 834292 string characters out of 6134841
+ 35606 strings out of 493089
+ 834343 string characters out of 6134841
  996879 words of memory out of 5000000
  38300 multiletter control sequences out of 15000+600000
  10558 words of font info for 38 fonts, out of 8000000 for 9000
@@ -1597,10 +1596,10 @@ texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (51 pages, 1552881 bytes).
+Output written on thesis.pdf (51 pages, 1553114 bytes).
 PDF statistics:
- 875 PDF objects out of 1000 (max. 8388607)
- 750 compressed objects within 8 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 757 compressed objects within 8 object streams
+ 208 named destinations out of 1000 (max. 500000)
  694 words of extra memory for PDF output out of 10000 (max. 10000000)
 

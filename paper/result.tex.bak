@@ -1,6 +1,6 @@
 \chapter {Performance Analysis}
 \label{chap:result}
-As we have described the proposed algorithm in the chapter \ref{chap:algorithm}. In this chapter we will discuss about result and performance.
+As we have described the proposed method in the chapter \ref{chap:algorithm}. In this chapter we will discuss about result and performance.
 \section{Environments of Experiments}
 Text examples in public datasets usually occur within high-quality (high-resolution, well-focused) imagery. In our setting, text often occurs at lower-resolution and with significant blur. Our focus is to achieve text spotting in a real-time system moving through an environment. We first examine how much the information are attached with an analogue image than we detect the text and extract the data. Next, we train the data. Finally, we evaluate the accuracy.
 We tested with many different categories of the images such as images are taken with mobile camera, scanning images, DSLR camera and handy cam. The accuracy of the output varied greatly. Accuracy varies mainly for image quality. An image is taken with DSLR camera produce most accurate result. Because of it’s picture quality. Image of DSLR camera is less noise free. So, it’s easy to extract data and OCR can detect the data perfectly. For handy cam images accuracy is slightly get down. Because picture quality is not good as DSLR camera and there is more noise.
@@ -94,14 +94,14 @@ u & 1  & 1 \\
 v & 1  & 1 \\
 \hline
 \end{tabular}
-\caption { Comparison between Input and Output frequency}
+\caption { Comparison between Input and Output frequency of Sample Input 1}
 \label {tab:Table1}
 \end{table}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{Form1}
-\caption {Bar chart Input Output Frequency}
+\caption {Bar chart Input Output Frequency of Sample form 1}
 \label {fig:bar1}
 \end{figure}
 
@@ -193,14 +193,14 @@ t & 9 & 10\\
 u & 3 & 3\\
 \hline
 \end{tabular}
-\caption {Comparison between Input and Output frequency}
+\caption {Comparison between Input and Output frequency of Sample Input 2}
 \label {tab:Table2}
 \end{table}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{Form2}
-\caption {Bar chart Input Output Frequency}
+\caption {Bar chart Input Output Frequency of Sample form 2}
 \label {fig:bar2}
 \end{figure}
 
@@ -296,14 +296,14 @@ u & 1 & 1\\
 y & 1 & 1\\
 \hline
 \end{tabular}
-\caption {Comparison between Input and Output frequency}
+\caption {Comparison between Input and Output frequency of Sample Input 3}
 \label {tab:Table3}
 \end{table}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{Form3}
-\caption {Bar chart Input Output Frequency}
+\caption {Bar chart Input Output Frequency of Sample form 3}
 \label {fig:bar3}
 \end{figure}
 
@@ -396,14 +396,14 @@ t & 9  & 10\\
 u & 3  & 3\\
 \hline
 \end{tabular}
-\caption {Comparison between Input and Output frequency}
+\caption {Comparison between Input and Output frequency of Sample Input 4}
 \label {tab:Table4}
 \end{table}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{Form4}
-\caption {Bar chart Input Output Frequency}
+\caption {Bar chart Input Output Frequency of Sample form 4}
 \label {fig:bar4}
 \end{figure}
 
@@ -420,7 +420,7 @@ The result of Bangla form depends on the tesseract training data same as English
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=.8\textwidth \frame]{Form1Ben}}
-\caption {Output Sample Bangla form 1}
+\caption {Output of Sample Bangla form 1}
 \label {fig:FormBanOut1}
 \end{figure}
 \subsection{Sample form 2}
@@ -433,20 +433,20 @@ The result of Bangla form depends on the tesseract training data same as English
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=.8\textwidth \frame]{Form2Ben}}
-\caption {Output Sample Bangla form 2}
+\caption {Output of Sample Bangla form 2}
 \label {fig:FormBanOut2}
 \end{figure}
 \subsection{Sample form 3}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{formBen03}
-\caption {Sample Bangla form 3}
+\caption {Sample of Bangla form 3}
 \label {fig:FormBan3}
 \end{figure}
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=.8\textwidth \frame]{Form3Ben}}
-\caption {Output Sample Bangla form 3}
+\caption {Output of Sample Bangla form 3}
 \label {fig:FormBanOut3}
 \end{figure}
 \subsection{Sample form 4}
@@ -459,7 +459,7 @@ The result of Bangla form depends on the tesseract training data same as English
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=.8\textwidth \frame]{Form4Ben}}
-\caption {Output Sample Bangla form 4}
+\caption {Output of Sample Bangla form 4}
 \label {fig:FormBanOut4}
 \end{figure}
 \subsection{Sample form 5}
@@ -472,6 +472,6 @@ The result of Bangla form depends on the tesseract training data same as English
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=.8\textwidth \frame]{Form5Ben}}
-\caption {Output Sample Bangla form 5}
+\caption {Output of Sample Bangla form 5}
 \label {fig:FormBanOut5}
 \end{figure}

@@ -15,7 +15,7 @@
 \contentsline {chapter}{\numberline {3}Literature Review}{10}{chapter.3}
 \contentsline {section}{\numberline {3.1}Canny Edge Ditection}{10}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Canny Edge Ditection Algorithm}{10}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Contours}{13}{Item.1}
+\contentsline {section}{\numberline {3.2}Contours}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Detecting shapes in images}{14}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Detection quadrilaterals}{14}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Detection Rectangles, squares, equilateral}{15}{subsection.3.3.2}
