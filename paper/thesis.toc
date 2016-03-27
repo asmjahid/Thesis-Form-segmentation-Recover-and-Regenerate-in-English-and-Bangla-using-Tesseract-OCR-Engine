@@ -51,9 +51,12 @@
 \contentsline {subsection}{\numberline {5.2.3}Sample form 3}{31}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Sample form 4}{33}{subsection.5.2.4}
 \contentsline {section}{\numberline {5.3}Result for Bangla form}{35}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sample form 1}{35}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Sample form 2}{35}{subsection.5.3.2}
-\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.6}
-\contentsline {section}{\numberline {6.1}Discussion}{36}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Works}{37}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{38}{section.6.2}
+\contentsline {subsection}{\numberline {5.3.1}Sample form 1}{36}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Sample form 2}{36}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Sample form 3}{37}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Sample form 4}{38}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Sample form 5}{38}{subsection.5.3.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}
+\contentsline {section}{\numberline {6.1}Discussion}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Works}{41}{section.6.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{42}{section.6.2}
