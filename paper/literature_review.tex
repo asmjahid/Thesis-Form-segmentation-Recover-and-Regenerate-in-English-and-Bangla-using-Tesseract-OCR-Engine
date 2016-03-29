@@ -1,8 +1,9 @@
 \chapter {Literature Review}
 \label{literature_review}
-The From segmentation process is related to Edge Ditection, Finding contours and contours shapes.And Text ditection related to Tesseract and Tesseact training. Thus in this chapter we will discuss about some state of Image processing technique and Tesseract OCR applications.
+The From segmentation process is related to edge ditection, finding contours and contours shapes,and text ditection related to Tesseract and Tesseact training. Thus in this chapter we will discuss about some state of the art image processing techniques and Tesseract OCR applications.
 \section{Canny Edge Ditection}
-The Canny edge detector is an edge detection operator that uses a multi-stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986. Canny also produced a computational theory of edge detection explaining why the technique works. \cite{EdgeDetection} \cite{CannyEdgeDetection3}
+\label{EdgeDitectionR}
+The Canny edge detector is an edge detection operator that uses a multi-stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986. Canny also produced a computational theory of edge detection explaining why the technique works \cite{EdgeDetection} \cite{CannyEdgeDetection3}.
 \subsection{Canny Edge Ditection Algorithm}
 Canny edge detection algorithm go through these following steps:
 \begin{enumerate}
@@ -92,10 +93,10 @@ and supports various platforms. Its focus is more towards providing less rejecti
 accuracy. Currently only command base version is available but there are many projects with UI
 built on top of it which could be forked. As of now Tesseract version 3.02 is released and
 available for use. Now Tesseract is developed and maintained by Google. It provides support for
-around 139 languages. \cite{TesseractORCEngine}
+around 139 languages \cite{TesseractORCEngine}.
 \subsection{Architecture}
 Tesseract OCR is an elegant engine with various layers. It works in step by step manner as
-shown in the block diagram in fig:3.4 The first step in the cycle is to sense the color intensities of the image, named as adaptive thresholding, and converts the image into binary images.
+shown in the block diagram in fig 3.4. The first step in the cycle is to sense the color intensities of the image, named as adaptive thresholding, and converts the image into binary images.
 Second step is to do the connected component analysis of the image, which does the task of
 extracting character outlines. This step is the main process of this cycle as it does the OCR of
 image with white text and blacks rest of the image.
@@ -106,11 +107,11 @@ then starts which is a two pass process. As shown in fig 1, the first part is wh
 recognize each word is made. Each satisfactory word is accepted and second pass is started to
 gather remaining words. This brings in the role of adaptive classifier. The adaptive classifier then will classify text in more accurate manner. The adaptive classifier needs to be trained beforehand
 to work accurately. When the classifier receives some data, it has to resolve the issues and assign
-the proper place of the text.\cite{TesseractORCEngine} \cite{TesseractORCEngine2}
+the proper place of the text\cite{TesseractORCEngine} \cite{TesseractORCEngine2}.
 
 \begin{figure}[H]
 \centering
-\label{fig:flow} 
+\label{flow} 
 \includegraphics[width=0.8\textwidth]{tesseractFlow}
 \caption {Tesseract Flow}
 \end{figure}
@@ -122,7 +123,7 @@ The basic Tesseract command takes only two arguments: First is input image that 
 
 Tesseract by default picks the extension of output file as .txt. There no need to specify the explicitly the output file extension.Tesseract supports various languages. Each language comes with a trained language data file.
 
-The language file must be kept in a location Tesseract knows. When using in the project it is advised to keep it within the project folder. This folder is Tesseract home folder in your machine. In this research, we are aiming to extract English and Bangla characters from the images so we have to keep both Bangla and English data files. \cite{TesseractORCEngine}
+The language file must be kept in a location Tesseract knows. When using in the project it is advised to keep it within the project folder. This folder is Tesseract home folder in your machine. In this research, we are aiming to extract English and Bangla characters from the images so we have to keep both Bangla and English data files \cite{TesseractORCEngine}.
  
 \subsection{How does Tesseract work?}
 \textbf{The following is a brief overview of how Tesseract works\cite{TesseractORCEngineOfficialWeb}:}
@@ -162,23 +163,23 @@ integration into programs such as these, Tesseract has no page layout analysis, 
 output formatting and no graphical user interface (GUI).
 
 \section{Training Tesseract}
-The setup for English \& Bangla OCR within Tesseract is another important task. The way train the engine and input the dataset matters a lot.\cite{TesseractTrain}
+The setup for English \& Bangla OCR within Tesseract is another important task. The way train the engine and input the dataset matters a lot\cite{TesseractTrain}.
 Training Tesseract for English \& Bangla includes four steps mainly and they are as follows:
 \subsection{Generating training images}
 Tesseract official website explains these steps very well "The first step is to determine the full
 character set to be used, and prepare a text or word processor file containing a set of examples". The two important points to remember for a training file are: Firstly make sure the file
 contains all the characters that we are expecting. Secondly there should be at least 5 samples.
 There should be more samples of the more frequent characters - at least 20. Keeping all this
-in mind let's explore how do we create box files. \cite{TesseractTrain}
+in mind let's explore how do we create box files \cite{TesseractTrain}.
 \subsection{Make box files}
 Box file is defined as a sample to match with the characters. We need a 'box' file for each
 training image. Tesseract official website defines the box file as "The box file is a text file that
 lists the characters in the training image, in order, one per line, with the coordinates of the
 bounding box around the image". Tesseract is not so intuitive about the sample data.
-Inconsistencies may lead to wrong interpretation of data.\cite{TesseractTrain}
+Inconsistencies may lead to wrong interpretation of data\cite{TesseractTrain}.
 \subsection{Run Tesseract}
 In this step we run the Tesseract engines with the new training files. The purpose is to create the
-trained dataset which works as a rule engine. Also it creates log files.\cite{TesseractTrain}
+trained dataset which works as a rule engine. Also it creates log files\cite{TesseractTrain}.
 \subsection{Compute character set} 
 Guidelines from Tesseract website state that "Tesseract needs to know the set of possible characters it can output. To generate the unichar set data file, use the unicharset\textunderscore extractor program on the box files generated above":extractor language. fontname. box 
 One more requirement in this is, Tesseract needs to have access to character properties i.e.

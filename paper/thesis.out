@@ -32,7 +32,7 @@
 \BOOKMARK [2][-]{subsection.3.5.4}{Compute character set}{section.3.5}% 32
 \BOOKMARK [1][-]{section.3.6}{OpenCV}{chapter.3}% 33
 \BOOKMARK [0][-]{chapter.4}{Proposed Method}{}% 34
-\BOOKMARK [1][-]{section.4.1}{Data Extracting}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.1}{Data Extraction}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.1.1}{Convert RGB to Gray Image}{section.4.1}% 36
 \BOOKMARK [2][-]{subsection.4.1.2}{Image Smoothing}{section.4.1}% 37
 \BOOKMARK [2][-]{subsection.4.1.3}{Thresholding}{section.4.1}% 38
