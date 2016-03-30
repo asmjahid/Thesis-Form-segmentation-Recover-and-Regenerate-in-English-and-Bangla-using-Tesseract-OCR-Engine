@@ -60,8 +60,8 @@ public:
         b.copyTo(B);
         imwrite("Field.jpg",A);
         imwrite("Value.jpg",B);
-        system("tesseract Field.jpg Field -l ben -psm 6 >/dev/null 2>&1");
-        system("tesseract Value.jpg Value -l ben -psm 6 >/dev/null 2>&1");
+        system("tesseract Field.jpg Field -l eng -psm 6 >/dev/null 2>&1");
+        system("tesseract Value.jpg Value -l eng -psm 6 >/dev/null 2>&1");
         FILE *fp;
         char STR[200];
         fp=fopen("Field.txt","r");

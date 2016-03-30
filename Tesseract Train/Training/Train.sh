@@ -23,6 +23,8 @@ mv pffmtable ${lan}.pffmtable
 
 
 combine_tessdata eng.
-sudo mv eng.traineddata /usr/local/share/tessdata/
+sudo chmod 777 eng.traineddata
+sudo cp eng.traineddata /usr/local/share/tessdata/
+sudo cp eng.traineddata ./../
 rm $lan.*
-
+rm unicharset
