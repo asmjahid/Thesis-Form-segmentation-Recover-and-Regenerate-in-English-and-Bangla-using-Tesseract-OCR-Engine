@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.30)  29 MAR 2016 21:40
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.15)  30 MAR 2016 02:49
->>>>>>> d9db880e347edd2b002b70b8be525ffefd1565b4
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.31)  2 APR 2016 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 4 languages loaded.
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -1256,13 +1252,13 @@ File: Thresholding.png Graphic file (type png)
 Package pdftex.def Info: Thresholding.png used on input line 31.
 (pdftex.def)             Requested size: 352.8155pt x 264.61588pt.
 
-[6 <./Blur.png>] <EdgeOriginal.jpg, id=486, 301.125pt x 182.6825pt>
+[6 <./Blur.png>] <EdgeOriginal.jpg, id=487, 301.125pt x 182.6825pt>
 File: EdgeOriginal.jpg Graphic file (type jpg)
 
 <use EdgeOriginal.jpg>
 Package pdftex.def Info: EdgeOriginal.jpg used on input line 43.
 (pdftex.def)             Requested size: 264.61331pt x 160.54643pt.
- <EdgeDetect.jpg, id=487, 301.125pt x 303.1325pt>
+ <EdgeDetect.jpg, id=488, 301.125pt x 303.1325pt>
 File: EdgeDetect.jpg Graphic file (type jpg)
 
 <use EdgeDetect.jpg>
@@ -1274,13 +1270,13 @@ Overfull \hbox (51.9377pt too wide) in paragraph at lines 43--45
  []
 
 [7 <./Thresholding.png (PNG copy)>]
-<ContureOriginal.jpg, id=495, 200.75pt x 206.7725pt>
+<ContureOriginal.jpg, id=496, 200.75pt x 206.7725pt>
 File: ContureOriginal.jpg Graphic file (type jpg)
  <use ContureOriginal.jpg>
 Package pdftex.def Info: ContureOriginal.jpg used on input line 55.
 (pdftex.def)             Requested size: 176.40439pt x 181.70795pt.
 
-<Conture.jpg, id=496, 200.75pt x 172.645pt>
+<Conture.jpg, id=497, 200.75pt x 172.645pt>
 File: Conture.jpg Graphic file (type jpg)
  <use Conture.jpg>
 Package pdftex.def Info: Conture.jpg used on input line 56.
@@ -1301,13 +1297,13 @@ Chapter 3.
 
 
 
-] <GaussMask.jpg, id=527, 411.5375pt x 297.11pt>
+] <GaussMask.jpg, id=528, 411.5375pt x 297.11pt>
 File: GaussMask.jpg Graphic file (type jpg)
  <use GaussMask.jpg>
 Package pdftex.def Info: GaussMask.jpg used on input line 15.
 (pdftex.def)             Requested size: 220.50885pt x 159.19481pt.
 
-<Mask.jpg, id=528, 353.06906pt x 170.13562pt>
+<Mask.jpg, id=529, 353.06906pt x 170.13562pt>
 File: Mask.jpg Graphic file (type jpg)
  <use Mask.jpg>
 Package pdftex.def Info: Mask.jpg used on input line 24.
@@ -1317,18 +1313,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--44
 
  []
 
-<Canny.jpg, id=536, 242.40562pt x 145.29282pt>
+<Canny.jpg, id=537, 242.40562pt x 145.29282pt>
 File: Canny.jpg Graphic file (type jpg)
  <use Canny.jpg>
 Package pdftex.def Info: Canny.jpg used on input line 49.
 (pdftex.def)             Requested size: 264.61331pt x 158.62318pt.
- [13 <./Canny.jpg>] [14] <shape.JPG, id=557, 713.66624pt x 484.81125pt>
+ [13 <./Canny.jpg>] [14] <shape.JPG, id=558, 713.66624pt x 484.81125pt>
 File: shape.JPG Graphic file (type jpg)
  <use shape.JPG>
 Package pdftex.def Info: shape.JPG used on input line 64.
 (pdftex.def)             Requested size: 220.50885pt x 149.79428pt.
 
-<contours.JPG, id=558, 694.595pt x 478.78876pt>
+<contours.JPG, id=559, 694.595pt x 478.78876pt>
 File: contours.JPG Graphic file (type jpg)
  <use contours.JPG>
 Package pdftex.def Info: contours.JPG used on input line 65.
@@ -1360,13 +1356,13 @@ Missing character: There is no ™ in font cmr12!
 
  (./algorithm.tex
 Chapter 4.
-<from.png, id=626, 636.3775pt x 176.66pt>
+<from.png, id=628, 636.3775pt x 176.66pt>
 File: from.png Graphic file (type png)
  <use from.png>
 Package pdftex.def Info: from.png used on input line 8.
 (pdftex.def)             Requested size: 441.01772pt x 122.42656pt.
 
-<GrayImage.jpg, id=627, 1272.755pt x 353.32pt>
+<GrayImage.jpg, id=629, 1272.755pt x 353.32pt>
 File: GrayImage.jpg Graphic file (type jpg)
  <use GrayImage.jpg>
 Package pdftex.def Info: GrayImage.jpg used on input line 16.
@@ -1375,7 +1371,7 @@ Package pdftex.def Info: GrayImage.jpg used on input line 16.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<GaussianBlur.jpg, id=629, 1272.755pt x 353.32pt>
+<GaussianBlur.jpg, id=631, 1272.755pt x 353.32pt>
 File: GaussianBlur.jpg Graphic file (type jpg)
  <use GaussianBlur.jpg>
 Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
@@ -1385,7 +1381,7 @@ Package pdftex.def Info: GaussianBlur.jpg used on input line 25.
 
 
 
- <./from.png>] <Threshold.jpg, id=637, 1272.755pt x 353.32pt>
+ <./from.png>] <Threshold.jpg, id=639, 1272.755pt x 353.32pt>
 File: Threshold.jpg Graphic file (type jpg)
 
 <use Threshold.jpg>
@@ -1395,7 +1391,7 @@ Package pdftex.def Info: Threshold.jpg used on input line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Canny2.jpg, id=640, 1272.755pt x 353.32pt>
+<Canny2.jpg, id=642, 1272.755pt x 353.32pt>
 File: Canny2.jpg Graphic file (type jpg)
  <use Canny2.jpg>
 Package pdftex.def Info: Canny2.jpg used on input line 41.
@@ -1414,7 +1410,7 @@ Missing character: There is no ™ in font cmr12!
 
 
 
-] <form1.png, id=680, 636.3775pt x 176.66pt>
+] <form1.png, id=682, 636.3775pt x 176.66pt>
 File: form1.png Graphic file (type png)
  <use form1.png>
 Package pdftex.def Info: form1.png used on input line 15.
@@ -1424,13 +1420,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|\OT1/cmr/m/n/12 Output
  []
 
-[28 <./form1.png>] <Form1.jpg, id=687, 1124.2pt x 843.15pt>
+[28 <./form1.png>] <Form1.jpg, id=689, 1124.2pt x 843.15pt>
 File: Form1.jpg Graphic file (type jpg)
  <use Form1.jpg>
 Package pdftex.def Info: Form1.jpg used on input line 103.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
 
-[29] <form2.png, id=692, 954.56625pt x 264.99pt>
+[29] <form2.png, id=694, 954.56625pt x 264.99pt>
 File: form2.png Graphic file (type png)
  <use form2.png>
 Package pdftex.def Info: form2.png used on input line 112.
@@ -1440,13 +1436,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 []|\OT1/cmr/m/n/12 Output
  []
 
-[30 <./Form1.jpg> <./form2.png>] <Form2.jpg, id=698, 1124.2pt x 843.15pt>
+[30 <./Form1.jpg> <./form2.png>] <Form2.jpg, id=700, 1124.2pt x 843.15pt>
 File: Form2.jpg Graphic file (type jpg)
 
 <use Form2.jpg>
 Package pdftex.def Info: Form2.jpg used on input line 202.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
- [31] <form3.png, id=704, 954.56625pt x 264.99pt>
+ [31] <form3.png, id=706, 954.56625pt x 264.99pt>
 File: form3.png Graphic file (type png)
 
 <use form3.png>
@@ -1457,13 +1453,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--221
 []|\OT1/cmr/m/n/12 Output
  []
 
-[32 <./Form2.jpg> <./form3.png>] <Form3.jpg, id=710, 1124.2pt x 843.15pt>
+[32 <./Form2.jpg> <./form3.png>] <Form3.jpg, id=712, 1124.2pt x 843.15pt>
 File: Form3.jpg Graphic file (type jpg)
 
 <use Form3.jpg>
 Package pdftex.def Info: Form3.jpg used on input line 305.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
- [33] <form4.png, id=715, 954.56625pt x 264.99pt>
+ [33] <form4.png, id=717, 954.56625pt x 264.99pt>
 File: form4.png Graphic file (type png)
 
 <use form4.png>
@@ -1474,68 +1470,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--325
 []|\OT1/cmr/m/n/12 Output
  []
 
-[34 <./Form3.jpg> <./form4.png>] <Form4.jpg, id=722, 1124.2pt x 843.15pt>
+[34 <./Form3.jpg> <./form4.png>] <Form4.jpg, id=724, 1124.2pt x 843.15pt>
 File: Form4.jpg Graphic file (type jpg)
 
 <use Form4.jpg>
 Package pdftex.def Info: Form4.jpg used on input line 405.
 (pdftex.def)             Requested size: 441.01772pt x 330.75699pt.
- [35] <formBen01.JPG, id=727, 615.0478pt x 177.66376pt>
+ [35] <formBen01.JPG, id=729, 615.0478pt x 177.66376pt>
 File: formBen01.JPG Graphic file (type jpg)
 
 <use formBen01.JPG>
 Package pdftex.def Info: formBen01.JPG used on input line 417.
 (pdftex.def)             Requested size: 441.01772pt x 127.39459pt.
- <Form1Ben.png, id=728, 1188.44pt x 448.67625pt>
+ <Form1Ben.png, id=730, 1188.44pt x 448.67625pt>
 File: Form1Ben.png Graphic file (type png)
 
 <use Form1Ben.png>
 Package pdftex.def Info: Form1Ben.png used on input line 423.
 (pdftex.def)             Requested size: 352.8155pt x 133.20042pt.
  [36 <./Form4.jpg>]
-<formBen02.JPG, id=733, 621.82312pt x 185.19188pt>
+<formBen02.JPG, id=735, 621.82312pt x 185.19188pt>
 File: formBen02.JPG Graphic file (type jpg)
  <use formBen02.JPG>
 Package pdftex.def Info: formBen02.JPG used on input line 430.
 (pdftex.def)             Requested size: 441.01772pt x 131.34584pt.
 
-<Form2Ben.png, id=734, 1195.46625pt x 444.66125pt>
+<Form2Ben.png, id=736, 1195.46625pt x 444.66125pt>
 File: Form2Ben.png Graphic file (type png)
  <use Form2Ben.png>
 Package pdftex.def Info: Form2Ben.png used on input line 436.
 (pdftex.def)             Requested size: 352.8155pt x 131.22821pt.
  [37 <./formBen01.JPG> <./Form1Ben.png> <./formBen02.JPG>]
-<formBen03.JPG, id=740, 626.34pt x 184.43906pt>
+<formBen03.JPG, id=742, 626.34pt x 184.43906pt>
 File: formBen03.JPG Graphic file (type jpg)
  <use formBen03.JPG>
 Package pdftex.def Info: formBen03.JPG used on input line 443.
 (pdftex.def)             Requested size: 441.01772pt x 129.87195pt.
 
-<Form3Ben.png, id=741, 1185.42876pt x 442.65375pt>
+<Form3Ben.png, id=743, 1185.42876pt x 442.65375pt>
 File: Form3Ben.png Graphic file (type png)
  <use Form3Ben.png>
 Package pdftex.def Info: Form3Ben.png used on input line 449.
 (pdftex.def)             Requested size: 352.8155pt x 131.74345pt.
 
-<formBen04.JPG, id=742, 621.07031pt x 194.22563pt>
+<formBen04.JPG, id=744, 621.07031pt x 194.22563pt>
 File: formBen04.JPG Graphic file (type jpg)
  <use formBen04.JPG>
 Package pdftex.def Info: formBen04.JPG used on input line 456.
 (pdftex.def)             Requested size: 441.01772pt x 137.91893pt.
 
-<Form4Ben.png, id=743, 1192.455pt x 424.58624pt>
+<Form4Ben.png, id=745, 1192.455pt x 424.58624pt>
 File: Form4Ben.png Graphic file (type png)
  <use Form4Ben.png>
 Package pdftex.def Info: Form4Ben.png used on input line 462.
 (pdftex.def)             Requested size: 352.8155pt x 125.62114pt.
  [38 <./Form2Ben.png> <./formBen03.JPG> <./Form3Ben.png>]
-<formBen05.JPG, id=750, 638.385pt x 213.04594pt>
+<formBen05.JPG, id=752, 638.385pt x 213.04594pt>
 File: formBen05.JPG Graphic file (type jpg)
  <use formBen05.JPG>
 Package pdftex.def Info: formBen05.JPG used on input line 469.
 (pdftex.def)             Requested size: 441.01772pt x 147.18063pt.
 
-<Form5Ben.png, id=751, 1183.42125pt x 407.5225pt>
+<Form5Ben.png, id=753, 1183.42125pt x 407.5225pt>
 File: Form5Ben.png Graphic file (type png)
  <use Form5Ben.png>
 Package pdftex.def Info: Form5Ben.png used on input line 475.
@@ -1564,25 +1560,12 @@ Missing character: There is no ™ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-) [42] (./thesis.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-\OT1/cmtt/m/n/12 imgproc / gausian _ median _ blur _ bilateral _ filter / gausi
-an _ median _ blur _
- []
-
-[43
+) [42] (./thesis.bbl [43
 
 
 
 ]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmti12!
-Missing character: There is no € in font cmti12!
-Missing character: There is no “ in font cmti12!
-
-Underfull \hbox (badness 1596) in paragraph at lines 100--103
+Underfull \hbox (badness 1596) in paragraph at lines 105--108
 []\OT1/cmr/m/n/12 Training tesser-act.  []$\OT1/cmtt/m/n/12 https : / / github 
 . com / tesseract-[]ocr / tesseract / wiki /
  []
@@ -1603,29 +1586,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32043 strings out of 494985
- 717526 string characters out of 6180356
- 866415 words of memory out of 5000000
- 34398 multiletter control sequences out of 15000+600000
+ 32047 strings out of 494976
+ 717611 string characters out of 6180006
+ 866448 words of memory out of 5000000
+ 34404 multiletter control sequences out of 15000+600000
  10558 words of font info for 38 fonts, out of 8000000 for 9000
-<<<<<<< HEAD
- 1141 hyphenation exceptions out of 8191
- 62i,10n,77p,10393b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (52 pages, 1554893 bytes).
-=======
  36 hyphenation exceptions out of 8191
- 63i,10n,74p,10418b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,10n,74p,10418b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1637,11 +1604,10 @@ ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 12.pfb>
-Output written on thesis.pdf (53 pages, 1811841 bytes).
->>>>>>> d9db880e347edd2b002b70b8be525ffefd1565b4
+Output written on thesis.pdf (53 pages, 1808584 bytes).
 PDF statistics:
- 891 PDF objects out of 1000 (max. 8388607)
- 768 compressed objects within 8 object streams
- 210 named destinations out of 1000 (max. 500000)
+ 881 PDF objects out of 1000 (max. 8388607)
+ 758 compressed objects within 8 object streams
+ 211 named destinations out of 1000 (max. 500000)
  694 words of extra memory for PDF output out of 10000 (max. 10000000)
 

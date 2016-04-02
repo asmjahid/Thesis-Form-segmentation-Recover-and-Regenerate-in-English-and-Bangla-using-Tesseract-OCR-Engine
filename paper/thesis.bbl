@@ -1,32 +1,33 @@
 \begin{thebibliography}{10}
 
 \bibitem{Segmentation}
-Dr. Jenila Livingston~L.M. Santosh.
+Mr~Santosh, LM~Jenila~Livingston, et~al.
 \newblock Text detection from documented image using image segmentation.
-\newblock {\em INTERNATIONAL JOURNAL OF TECHNOLOGY ENHANCEMENTS AND EMERGING
-  ENGINEERING RESEARCH}, 1, 2013.
+\newblock In {\em International Journal of Engineering Research and
+  Technology}, volume~2. Citeseer, 2013.
 
 \bibitem{GrayScale}
-Wiki.
-\newblock Grayscale.
-\newblock \url{https://en.wikipedia.org/wiki/Grayscale}.
+Stephen Johnson.
+\newblock {\em Stephen Johnson on digital photography}.
+\newblock O'Reilly Media, Inc., 2006.
 
 \bibitem{GaussianSmoothing}
-OpenCv.
-\newblock Smoothing images.
-\newblock
-  \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html}.
+Richard~A Haddad and Ali~N Akansu.
+\newblock A class of fast gaussian binomial filters for speech and image
+  processing.
+\newblock {\em Signal Processing, IEEE Transactions on}, 39(3):723--727, 1991.
 
 \bibitem{Thresholding}
-Wiki.
-\newblock Thresholding.
-\newblock \url{https://en.wikipedia.org/wiki/Thresholding_(image_processing)}.
+Yudong Zhang and Lenan Wu.
+\newblock Optimal multi-level thresholding based on maximum tsallis entropy via
+  an artificial bee colony approach.
+\newblock {\em Entropy}, 13(4):841--859, 2011.
 
 \bibitem{EdgeDetection}
-Robin S~M Chrystie.
-\newblock Edge detection in image processing.
-\newblock
-  \url{http://cuens.soc.srcf.net/img/Academic_Material/Edge_Detection.pdf}.
+John Canny.
+\newblock A computational approach to edge detection.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, (6):679--698, 1986.
 
 \bibitem{CannyEdgeDetection}
 OpenCV.
@@ -35,9 +36,8 @@ OpenCV.
 
 \bibitem{TesseractORCEngine}
 Ray Smith.
-\newblock An overview of the tesseract ocr engine. in proceedings of document
-  analysis and recognition.
-\newblock {\em IEEE Ninth International Conference}, 2007.
+\newblock An overview of the tesseract ocr engine.
+\newblock In {\em icdar}, pages 629--633. IEEE, 2007.
 
 \bibitem{TesseractORCEngineOfficialWeb}
 Tesseract.
@@ -45,13 +45,14 @@ Tesseract.
 \newblock \url{https://github.com/tesseract-ocr/tesseract/wiki/Documentation}.
 
 \bibitem{CannyEdgeDetection3}
-Wiki.
-\newblock Canny edge detector.
-\newblock \url{https://en.wikipedia.org/wiki/Canny_edge_detector}.
+Rafael~C Gonzalez and Richard~E Woods.
+\newblock Digital image processing. addision-wesley.
+\newblock {\em Reading}, 1992.
 
 \bibitem{CannyEdgeDetection1}
-Canny edge detector.
-\newblock \url{http://homepages.inf.ed.ac.uk/rbf/HIPR2/canny.htm}.
+Roger~D Boyle and Richard~C Thomas.
+\newblock {\em Computer vision: A first course}.
+\newblock Blackwell Scientific Publications, Ltd., 1988.
 
 \bibitem{CannyEdgeDetection2}
 OpenCV.
@@ -66,17 +67,16 @@ OpenCV.
   \url{http://docs.opencv.org/trunk/d4/d73/tutorial_py_contours_begin.html}.
 
 \bibitem{DetectingShape}
-Detecting simple shapes in an image.
-\newblock
-  \url{http://opencv-code.com/tutorials/detecting-simple-shapes-in-an-image/}.
+Claudio~Rosito Jung and Rodrigo Schramm.
+\newblock Rectangle detection based on a windowed hough transform.
+\newblock In {\em Computer Graphics and Image Processing, 2004. Proceedings.
+  17th Brazilian Symposium on}, pages 113--120. IEEE, 2004.
 
 \bibitem{TesseractORCEngine2}
-Atul~Patel Chirag~Patel and Dharmendra Patel.
+Chirag Patel, Atul Patel, and Dharmendra Patel.
 \newblock Optical character recognition by open source ocr tool tesseract: A
   case study.
-\newblock {\em International Journal of Computer Applications 55(10):50-56,
-  October 2012. Published by Foundation of Computer Science, New York, USA.},
-  2013.
+\newblock {\em International Journal of Computer Applications}, 55(10), 2012.
 
 \bibitem{TesseractTrain}
 Tesseract.
@@ -84,17 +84,22 @@ Tesseract.
 \newblock
   \url{https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract}.
 
+\bibitem{hasnat2009open}
+Md~Abul Hasnat, Muttakinur~Rahman Chowdhury, and Mumit Khan.
+\newblock An open source tesseract based optical character recognizer for
+  bangla script.
+\newblock In {\em Document Analysis and Recognition, 2009. ICDAR'09. 10th
+  International Conference on}, pages 671--675. IEEE, 2009.
+
 \bibitem{OpenCVBook}
 Gary Bradski and Adrian Kaehler.
-\newblock {\em Learning OpenCV}.
-\newblock International series of monographs on physics. O’Reilly Media,
-  Inc., 2008.
+\newblock {\em Learning OpenCV: Computer vision with the OpenCV library}.
+\newblock " O'Reilly Media, Inc.", 2008.
 
 \bibitem{OCR}
-NirbhayKashyap Sravan~Ch, ShivankuMahna.
+Sravan Ch, Shivanku Mahna, and Nirbhay Kashyap.
 \newblock Optical character recognition on handheld devices.
-\newblock {\em International Journal of Computer Applications (0975 – 8887)},
-  115(22), 2015.
+\newblock {\em International Journal of Computer Applications}, 115(22), 2015.
 
 \bibitem{TrainingTesseract}
 Training tesseract.

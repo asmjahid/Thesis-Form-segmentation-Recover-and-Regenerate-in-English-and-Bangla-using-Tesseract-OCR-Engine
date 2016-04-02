@@ -9,44 +9,53 @@
 %% Use double curly brackets {{}} when you want to maintain your own
 %% capitalisation, otherwise bibtex will follow its own rules.
 %%
-@article{Segmentation,
-    author = "Santosh, Dr. Jenila Livingston L.M.",
-    title  =  "Text Detection From Documented Image Using
-Image Segmentation",
-    journal = "INTERNATIONAL JOURNAL OF TECHNOLOGY ENHANCEMENTS AND EMERGING ENGINEERING RESEARCH",
-    volume =       "1",
-    number =       "",
-    pages =        "",
-    year =         "2013",
-    DOI =          ""
+@inproceedings{Segmentation,
+  title={Text Detection from documented Image Using Image Segmentation},
+  author={Santosh, Mr and Jenila Livingston, LM and others},
+  booktitle={International Journal of Engineering Research and Technology},
+  volume={2},
+  number={11 (November-2013)},
+  year={2013},
+  organization={Citeseer}
 }
 
-@online{GrayScale,
-    author    	= {Wiki},
-    title     	= {Grayscale},
-    howpublished= "\url{https://en.wikipedia.org/wiki/Grayscale}",
-    keywords  	= {Image processing ,GrayScale}
+@book{GrayScale,
+  title={Stephen Johnson on digital photography},
+  author={Johnson, Stephen},
+  year={2006},
+  publisher={O'Reilly Media, Inc.}
 }
 
-@online{GaussianSmoothing,
-    author    		= {OpenCv},
-    title     		= {Smoothing Images},
-    howpublished	= "\url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/gausian_median_blur_bilateral_filter/gausian_median_blur_bilateral_filter.html}",
-    keywords  = 	{Image Processing,Blur}
+@article{GaussianSmoothing,
+  title={A class of fast Gaussian binomial filters for speech and image processing},
+  author={Haddad, Richard A and Akansu, Ali N},
+  journal={Signal Processing, IEEE Transactions on},
+  volume={39},
+  number={3},
+  pages={723--727},
+  year={1991},
+  publisher={IEEE}
 }
 
-@online{Thresholding,
-    author    		= {Wiki},
-    title     		= {Thresholding},
-    howpublished       	= "\url{https://en.wikipedia.org/wiki/Thresholding_(image_processing)}",
-    keywords  		= {Image Processing,Thresholding}
+@article{Thresholding,
+  title={Optimal multi-level thresholding based on maximum Tsallis entropy via an artificial bee colony approach},
+  author={Zhang, Yudong and Wu, Lenan},
+  journal={Entropy},
+  volume={13},
+  number={4},
+  pages={841--859},
+  year={2011},
+  publisher={Molecular Diversity Preservation International}
 }
 
-@online{EdgeDetection,
-    author =       "Robin S M Chrystie",
-    title =        "Edge Detection in Image Processing",
-    howpublished = "\url{http://cuens.soc.srcf.net/img/Academic_Material/Edge_Detection.pdf}",
-    keywords =     "Image processing"
+@article{EdgeDetection,
+  title={A computational approach to edge detection},
+  author={Canny, John},
+  journal={Pattern Analysis and Machine Intelligence, IEEE Transactions on},
+  number={6},
+  pages={679--698},
+  year={1986},
+  publisher={IEEE}
 }
 
 @online{CannyEdgeDetection,
@@ -55,18 +64,16 @@ Image Segmentation",
     howpublished = "\url{http://docs.opencv.org/trunk/da/d22/tutorial_py_canny.html}",
     keywords  = "Imageprocessing,canny"
 }
-@article{TesseractORCEngine,
-	author 	= "Ray Smith ",
-	title	= "An Overview of the Tesseract OCR Engine. In proceedings of Document
-analysis and Recognition",
-	journal = " IEEE Ninth International Conference",
-    	volume =       "",
-    	number =       "",
-    	pages =        "",
-    	year =         "2007",
-    	DOI = ""
 
+@inproceedings{TesseractORCEngine,
+  title={An overview of the Tesseract OCR engine},
+  author={Smith, Ray},
+  booktitle={icdar},
+  pages={629--633},
+  year={2007},
+  organization={IEEE}
 }
+
 @online{TesseractORCEngineOfficialWeb,
 	author 	= "Tesseract",
 	title	= "Documentation",
@@ -74,13 +81,14 @@ analysis and Recognition",
 	keywords = "OCR"
 
 }
-@online{CannyEdgeDetection1,
-	author 	= "",
-	title	= "Canny Edge Detector",
-	howpublished ="\url{http://homepages.inf.ed.ac.uk/rbf/HIPR2/canny.htm}",
-	keywords = "Image Processing"
 
+@book{CannyEdgeDetection1,
+  title={Computer vision: A first course},
+  author={Boyle, Roger D and Thomas, Richard C},
+  year={1988},
+  publisher={Blackwell Scientific Publications, Ltd.}
 }
+
 @online{CannyEdgeDetection2,
 	author 	= "OpenCV",
 	title	= "Canny Edge Detector",
@@ -88,13 +96,14 @@ analysis and Recognition",
 	keywords = "Image Processing"
 
 }
-@online{CannyEdgeDetection3,
-	author 	= "Wiki",
-	title	= "Canny Edge Detector",
-	howpublished ="\url{https://en.wikipedia.org/wiki/Canny_edge_detector}",
-	keywords = "Image Processing"
 
+@article{CannyEdgeDetection3,
+  title={Digital Image Processing. Addision-Wesley},
+  author={Gonzalez, Rafael C and Woods, Richard E},
+  journal={Reading},
+  year={1992}
 }
+
 @online{Contours,
 	author 	= "OpenCV",
 	title	= "Contours",
@@ -102,24 +111,26 @@ analysis and Recognition",
 	keywords = "Image Processing"
 
 }
-@online{DetectingShape,
-	author 	= "",
-	title	= "Detecting simple shapes in an image",
-	howpublished ="\url{http://opencv-code.com/tutorials/detecting-simple-shapes-in-an-image/}",
-	keywords = "Image Processing"
 
+@inproceedings{DetectingShape,
+  title={Rectangle detection based on a windowed Hough transform},
+  author={Jung, Claudio Rosito and Schramm, Rodrigo},
+  booktitle={Computer Graphics and Image Processing, 2004. Proceedings. 17th Brazilian Symposium on},
+  pages={113--120},
+  year={2004},
+  organization={IEEE}
 }
+
 @article{TesseractORCEngine2,
-	author 	= "Chirag Patel, Atul Patel and Dharmendra Patel",
-	title	= "Optical Character Recognition by Open source OCR Tool Tesseract: A Case Study",
-	journal = "International Journal of Computer Applications 55(10):50-56, October 2012. Published by Foundation of Computer Science, New York, USA.",
-    	volume =       "",
-    	number =       "",
-    	pages =        "",
-    	year =         "2013",
-    	DOI = ""
-
+  title={Optical character recognition by open source OCR tool tesseract: A case study},
+  author={Patel, Chirag and Patel, Atul and Patel, Dharmendra},
+  journal={International Journal of Computer Applications},
+  volume={55},
+  number={10},
+  year={2012},
+  publisher={Foundation of Computer Science}
 }
+
 @online{TesseractTrain,
 	author 	= "Tesseract",
 	title	= "TrainingTesseract",
@@ -127,15 +138,21 @@ analysis and Recognition",
 	keywords = "OCR"
 
 }
-@book{OpenCVBook,
-    title={Learning OpenCV},
-    author={Gary Bradski and Adrian Kaehler},
-    isbn={ 978-0-596-51613-0},
-    series={International series of monographs on physics},
-    year={2008},
-    publisher={O’Reilly Media, Inc.},
-    keywords = {Image Processing}
+@inproceedings{hasnat2009open,
+  title={An open source Tesseract based optical character recognizer for Bangla Script},
+  author={Hasnat, Md Abul and Chowdhury, Muttakinur Rahman and Khan, Mumit},
+  booktitle={Document Analysis and Recognition, 2009. ICDAR'09. 10th International Conference on},
+  pages={671--675},
+  year={2009},
+  organization={IEEE}
 }
+@book{OpenCVBook,
+  title={Learning OpenCV: Computer vision with the OpenCV library},
+  author={Bradski, Gary and Kaehler, Adrian},
+  year={2008},
+  publisher={" O'Reilly Media, Inc."}
+}
+
 @article{OCR,
     author =       "Sravan Ch,ShivankuMahna,NirbhayKashyap",
     title =        "Optical Character Recognition on Handheld Devices",
@@ -147,10 +164,10 @@ analysis and Recognition",
     DOI =          "",
     keywords =     "OCR"
 }
-@online{DetectingShape,
+@online{TrainingTesseract,
 	author 	= "",
 	title	= "Training Tesseract",
 	howpublished ="\url{https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract}",
-	keywords = "Image Processing"
+	keywords = "OCR"
 
 }
