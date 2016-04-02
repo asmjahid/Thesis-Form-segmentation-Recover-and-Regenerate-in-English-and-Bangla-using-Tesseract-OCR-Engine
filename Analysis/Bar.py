@@ -11,9 +11,9 @@ def BarchartPlot(N,X,Y,xticks,title,xlabel,ylabel,xlegend,ylegend):
     ind=np.arange(N)   #the x locations for the groups
     width=.4          #the width of the bars
 
-    fig,ax=plt.subplots(figsize=(20, 10))
-    rects1=ax.bar(ind,X,width,color='r')
-    rects2=ax.bar(ind+width,Y,width,color='y')
+    fig,ax=plt.subplots(figsize=(20, 8))
+    rects1=ax.bar(ind,X,width,color='g')
+    rects2=ax.bar(ind+width,Y,width,color='r')
 
     #add some text for labels,title and axes ticks
     ax.set_ylabel(ylabel)
