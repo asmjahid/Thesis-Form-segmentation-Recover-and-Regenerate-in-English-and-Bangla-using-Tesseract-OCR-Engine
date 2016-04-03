@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 17:52
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1660,7 +1660,7 @@ File: form4.pdf Graphic file (type QTm)
  <use  "form4.pdf" > [35]
 File: form5.png Graphic file (type QTm)
  <use  "form5.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1670,9 +1670,9 @@ Overfull \vbox (30.49904pt too high) has occurred while \output is active []
 
 [37]
 File: form5.pdf Graphic file (type QTm)
- <use  "form5.pdf" >
+ <use  "form5.pdf" > [38]
 File: formBen01.JPG Graphic file (type QTm)
- <use  "formBen01.JPG" > [38]
+ <use  "formBen01.JPG" >
 Underfull \hbox (badness 10000) in paragraph at lines 561--562
 []|\EU1/lmr/m/n/12 Output
  []
