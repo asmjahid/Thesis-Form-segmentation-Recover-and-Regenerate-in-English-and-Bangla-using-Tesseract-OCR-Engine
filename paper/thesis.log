@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 21:22
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1684,8 +1684,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 580--581
 [41]
 File: Bform1.pdf Graphic file (type QTm)
  <use  "Bform1.pdf" > [42]
+Overfull \hbox (2.57747pt too wide) in paragraph at lines 669--670
+\EU1/lmr/m/n/12 of sample Bangla form-01 for the characters \EU1/Akaash(0)/m/n/
+12 অ\EU1/lmr/m/n/12 , \EU1/Akaash(0)/m/n/12 উ\EU1/lmr/m/n/12 , \EU1/Akaash(0)/m
+/n/12 এ\EU1/lmr/m/n/12 , \EU1/Akaash(0)/m/n/12 ক\EU1/lmr/m/n/12 , \EU1/Akaash(0
+)/m/n/12 গ\EU1/lmr/m/n/12 , \EU1/Akaash(0)/m/n/12 ত\EU1/lmr/m/n/12 , \EU1/Akaas
+h(0)/m/n/12 ন\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 প\EU1/lmr/m/n/12 ,\EU1/Akaa
+sh(0)/m/n/12 ভ\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 ম\EU1/lmr/m/n/12 ,\EU1/Aka
+ash(0)/m/n/12 ষ\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 শ\EU1/lmr/m/n/12 ,\EU1/Ak
+aash(0)/m/n/12 হ\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 া\EU1/lmr/m/n/12 ,\EU1/A
+kaash(0)/m/n/12 ো\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 ১\EU1/lmr/m/n/12 ,\EU1/
+Akaash(0)/m/n/12 ২\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 ৫\EU1/lmr/m/n/12 ,\EU1
+/Akaash(0)/m/n/12 দ\EU1/lmr/m/n/12 ,\EU1/Akaash(0)/m/n/12 ৬
+ []
+
 File: formBen02.JPG Graphic file (type QTm)
- <use  "formBen02.JPG" >
+<use  "formBen02.JPG" >
 Underfull \hbox (badness 10000) in paragraph at lines 683--684
 []|\EU1/lmr/m/n/12 Output
  []
@@ -1719,7 +1733,7 @@ File: Bform4.pdf Graphic file (type QTm)
  <use  "Bform4.pdf" > [48]
 File: formBen05.JPG Graphic file (type QTm)
  <use  "formBen05.JPG" >
-Underfull \hbox (badness 10000) in paragraph at lines 988--989
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1727,16 +1741,24 @@ Missing character: There is no ’ in font AkaashNormal/OT:script=beng;language=
 FLT;!
 [49]
 File: Bform5.pdf Graphic file (type QTm)
- <use  "Bform5.pdf" > [50]) [51]
+ <use  "Bform5.pdf" > [50]
+File: BOccurance.pdf Graphic file (type QTm)
+ <use  "BOccurance.pdf" > [51]
+File: BError.pdf Graphic file (type QTm)
+
+<use  "BError.pdf" > [52]
+Missing character: There is no ’ in font AkaashNormal/OT:script=beng;language=D
+FLT;!
+) [53]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 6.
-[52
+[54
 
 
 
-]) [53] (./thesis.bbl [54
+]) [55] (./thesis.bbl [56
 
 
 ]
@@ -1747,7 +1769,7 @@ Underfull \hbox (badness 1484) in paragraph at lines 105--108
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
- [55]
+ [57]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
  (./thesis.aux (./intro.aux) (./background_study.aux)
 (./literature_review.aux) (./algorithm.aux) (./result.aux) (./conclusion.aux))
@@ -1759,12 +1781,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 41466 strings out of 495602
- 901983 string characters out of 6186212
+ 41472 strings out of 495602
+ 902059 string characters out of 6186212
  1052056 words of memory out of 5000000
- 43925 multiletter control sequences out of 15000+600000
+ 43929 multiletter control sequences out of 15000+600000
  6936 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  63i,10n,96p,10451b,902s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (65 pages).
+Output written on thesis.pdf (67 pages).
