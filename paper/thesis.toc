@@ -61,4 +61,4 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{54}{chapter.6}
 \contentsline {section}{\numberline {6.1}Discussion}{54}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Works}{55}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{56}{section.6.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{56}{section.6.2}
