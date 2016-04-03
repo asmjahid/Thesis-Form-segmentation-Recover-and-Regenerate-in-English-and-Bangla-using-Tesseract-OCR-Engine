@@ -1,7 +1,8 @@
-from Bar import *
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import xlsxwriter
 def GetData(Fname1,Fname2):
-    f1=open(Fname1)
+    f1=open(Fname1).read().decode('utf8')
     D=dict()
     for line in f1:
         for c in line:
@@ -12,7 +13,7 @@ def GetData(Fname1,Fname2):
             else:
                 D[c]=(1,0)
     
-    f2=open(Fname2)
+    f2=open(Fname2).read().decode('utf8')
     for line in f2:
         for c in line:
             if c==' ' or c=='\n':continue
@@ -34,13 +35,10 @@ def GetData(Fname1,Fname2):
 def GenTable(F1,F2):
     x,y,z=GetData(F1,F2)
     for i in range(0,len(x)):
-        print str(x[i]) + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
+        print x[i] + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
         print "\hline"
-def DrawFig(F1,F2):
-    x,y,z=GetData(F1,F2)
-    BarchartPlot(len(x),y,z,x,"Input Output Frequency","","Frequency","Input","Output")
 
-#GenTable("form1.in","form2.out")
+GenTable("form5.in","form5.out")
 def GenXLfile(F1,F2,XlName):
 
     # Create a workbook and add a worksheet.
@@ -59,8 +57,9 @@ def GenXLfile(F1,F2,XlName):
         worksheet.write(row, col + 2, Y[i])
         row += 1
     workbook.close()
-#GenXLfile("form1.in","form1.out","form1")
-#GenXLfile("form2.in","form2.out","form2")
-#GenXLfile("form3.in","form3.out","form3")
-#GenXLfile("form4.in","form4.out","form4")
-#GenXLfile("form5.in","form5.out","form5")
+
+#GenXLfile("Bform1.in","Bform1.out","Bform1")
+#GenXLfile("Bform2.in","Bform2.out","Bform2")
+#GenXLfile("Bform3.in","Bform3.out","Bform3")
+#GenXLfile("Bform4.in","Bform4.out","Bform4")
+#GenXLfile("Bform5.in","Bform5.out","Bform5")
