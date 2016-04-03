@@ -48,17 +48,17 @@
 \contentsline {section}{\numberline {5.1}Environments of Experiments}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}Performance for English form}{28}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Sample form 1}{28}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Sample form 2}{31}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Sample form 3}{34}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Sample form 4}{37}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Sample form 5}{40}{subsection.5.2.5}
-\contentsline {section}{\numberline {5.3}Performance for Bangla form}{42}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sample form 1}{43}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Sample form 2}{45}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Sample form 3}{47}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Sample form 4}{49}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}Sample form 5}{51}{subsection.5.3.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{54}{chapter.6}
-\contentsline {section}{\numberline {6.1}Discussion}{54}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Works}{55}{section.6.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{56}{section.6.2}
+\contentsline {subsection}{\numberline {5.2.2}Sample form 2}{30}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Sample form 3}{32}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Sample form 4}{34}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Sample form 5}{36}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Performance for Bangla form}{38}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sample form 1}{39}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Sample form 2}{41}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Sample form 3}{43}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Sample form 4}{45}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Sample form 5}{47}{subsection.5.3.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{50}{chapter.6}
+\contentsline {section}{\numberline {6.1}Discussion}{50}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Works}{51}{section.6.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{52}{section.6.2}
