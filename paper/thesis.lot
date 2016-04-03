@@ -1,3 +1,4 @@
+\select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -5,7 +6,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Comparison between Input and Output frequency of Sample Input 1\relax }}{29}{table.caption.21}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison between Input and Output frequency of Sample Input 2\relax }}{31}{table.caption.24}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison between Input and Output frequency of Sample Input 3\relax }}{33}{table.caption.27}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison between Input and Output frequency of Sample Input 4\relax }}{35}{table.caption.30}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison between Input and Output frequency of Sample Input 2\relax }}{32}{table.caption.24}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison between Input and Output frequency of Sample Input 3\relax }}{35}{table.caption.27}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Comparison between Input and Output frequency of Sample Input 4\relax }}{38}{table.caption.30}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Comparison between Input and Output frequency of Sample Input 5\relax }}{41}{table.caption.33}
 \addvspace {10\p@ }

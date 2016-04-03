@@ -38,7 +38,7 @@ def GenTable(F1,F2):
         print x[i] + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
         print "\hline"
 
-GenTable("form5.in","form5.out")
+GenTable("Bform5.in","Bform5.out")
 def GenXLfile(F1,F2,XlName):
 
     # Create a workbook and add a worksheet.
