@@ -1,76 +1,76 @@
-ঃ & 5 & 5\\
+{\bengalifont ঃ} & 5 & 5\\
 \hline
-0 & 1 & 0\\
+{\bengalifont 0} & 1 & 0\\
 \hline
-ই & 1 & 2\\
+{\bengalifont ই} & 1 & 2\\
 \hline
-আ & 1 & 1\\
+{\bengalifont আ} & 1 & 1\\
 \hline
-উ & 1 & 1\\
+{\bengalifont উ} & 1 & 1\\
 \hline
-এ & 3 & 3\\
+{\bengalifont এ} & 3 & 3\\
 \hline
-ক & 1 & 1\\
+{\bengalifont ক} & 1 & 1\\
 \hline
-গ & 1 & 1\\
+{\bengalifont গ} & 1 & 1\\
 \hline
-’ & 1 & 0\\
+{\bengalifont ’} & 1 & 0\\
 \hline
-চ & 1 & 0\\
+{\bengalifont চ} & 1 & 0\\
 \hline
-ত & 1 & 1\\
+{\bengalifont ত} & 1 & 1\\
 \hline
-' & 7 & 0\\
+{\bengalifont '} & 7 & 0\\
 \hline
-দ & 2 & 2\\
+{\bengalifont দ} & 2 & 2\\
 \hline
-ন & 4 & 3\\
+{\bengalifont ন} & 4 & 3\\
 \hline
-প & 1 & 1\\
+{\bengalifont প} & 1 & 1\\
 \hline
-ভ & 1 & 1\\
+{\bengalifont ভ} & 1 & 1\\
 \hline
-ব & 6 & 5\\
+{\bengalifont ব} & 6 & 5\\
 \hline
-য & 3 & 1\\
+{\bengalifont য} & 3 & 1\\
 \hline
-ম & 4 & 3\\
+{\bengalifont ম} & 4 & 3\\
 \hline
-র & 1 & 2\\
+{\bengalifont র} & 1 & 2\\
 \hline
-ল & 4 & 2\\
+{\bengalifont ল} & 4 & 2\\
 \hline
-ষ & 2 & 2\\
+{\bengalifont ষ} & 2 & 2\\
 \hline
-শ & 2 & 2\\
+{\bengalifont শ} & 2 & 2\\
 \hline
-হ & 2 & 2\\
+{\bengalifont হ} & 2 & 2\\
 \hline
-স & 1 & 3\\
+{\bengalifont স} & 1 & 3\\
 \hline
-় & 2 & 0\\
+{\bengalifont ়} & 2 & 0\\
 \hline
-ি & 6 & 6\\
+{\bengalifont ি} & 6 & 6\\
 \hline
-া & 5 & 4\\
+{\bengalifont া} & 5 & 4\\
 \hline
-ু & 1 & 1\\
+{\bengalifont ু} & 1 & 1\\
 \hline
-ে & 1 & 1\\
+{\bengalifont ে} & 1 & 1\\
 \hline
-ো & 1 & 1\\
+{\bengalifont ো} & 1 & 1\\
 \hline
-্ & 7 & 5\\
+{\bengalifont ্} & 7 & 5\\
 \hline
-য় & 0 & 2\\
+{\bengalifont য়} & 0 & 2\\
 \hline
-১ & 4 & 4\\
+{\bengalifont ১} & 4 & 4\\
 \hline
-০ & 2 & 3\\
+{\bengalifont ০} & 2 & 3\\
 \hline
-২ & 3 & 3\\
+{\bengalifont ২} & 3 & 3\\
 \hline
-৬ & 1 & 1\\
+{\bengalifont ৬} & 1 & 1\\
 \hline
-৯ & 1 & 1\\
+{\bengalifont ৯} & 1 & 1\\
 \hline

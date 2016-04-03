@@ -38,7 +38,13 @@ def GenTable(F1,F2):
         print x[i] + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
         print "\hline"
 
-GenTable("form5.in","form5.out")
+def GenTableBan(F1,F2):
+    x,y,z=GetData(F1,F2)
+    for i in range(0,len(x)):
+        print "{\\bengalifont " +x[i].encode('utf-8')+"}" + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
+        print "\hline"
+
+GenTableBan("Bform4.in","Bform4.out")
 def GenXLfile(F1,F2,XlName):
 
     # Create a workbook and add a worksheet.

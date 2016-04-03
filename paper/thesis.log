@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 14:10
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1509,13 +1509,13 @@ Overfull \hbox (12.81746pt too wide) in paragraph at lines 9--30
 
  [8
 
-] (./thesis.lof [9
-
-])
+] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [10]
+ [9
+
+]
 \openout2 = `intro.aux'.
 
  (./intro.tex
@@ -1672,40 +1672,58 @@ Overfull \vbox (30.49904pt too high) has occurred while \output is active []
 File: form5.pdf Graphic file (type QTm)
  <use  "form5.pdf" >
 File: formBen01.JPG Graphic file (type QTm)
- <use  "formBen01.JPG" >
-File: BTform1.pdf Graphic file (type QTm)
- <use  "BTform1.pdf" > [42]
-File: Bform1.pdf Graphic file (type QTm)
+ <use  "formBen01.JPG" > [42]
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+[]|\EU1/lmr/m/n/12 Output
+ []
 
-<use  "Bform1.pdf" > [43] [44]
+[43]
+File: Bform1.pdf Graphic file (type QTm)
+ <use  "Bform1.pdf" > [44]
 File: formBen02.JPG Graphic file (type QTm)
  <use  "formBen02.JPG" >
-File: BTform2.pdf Graphic file (type QTm)
- <use  "BTform2.pdf" >
-File: Bform2.pdf Graphic file (type QTm)
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
+[]|\EU1/lmr/m/n/12 Output
+ []
 
-<use  "Bform2.pdf" > [45] [46]
+Missing character: There is no ’ in font AkaashNormal/OT:script=beng;language=D
+FLT;!
+[45]
+File: Bform2.pdf Graphic file (type QTm)
+ <use  "Bform2.pdf" > [46]
 File: formBen03.JPG Graphic file (type QTm)
  <use  "formBen03.JPG" >
-File: BTform3.pdf Graphic file (type QTm)
- <use  "BTform3.pdf" >
-File: Bform3.pdf Graphic file (type QTm)
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
+[]|\EU1/lmr/m/n/12 Output
+ []
 
-<use  "Bform3.pdf" > [47] [48]
+Missing character: There is no ’ in font AkaashNormal/OT:script=beng;language=D
+FLT;!
+[47]
+File: Bform3.pdf Graphic file (type QTm)
+ <use  "Bform3.pdf" > [48]
 File: formBen04.JPG Graphic file (type QTm)
  <use  "formBen04.JPG" >
-File: BTform4.pdf Graphic file (type QTm)
- <use  "BTform4.pdf" >
-File: Bform4.pdf Graphic file (type QTm)
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+[]|\EU1/lmr/m/n/12 Output
+ []
 
-<use  "Bform4.pdf" > [49] [50]
+Missing character: There is no ’ in font AkaashNormal/OT:script=beng;language=D
+FLT;!
+[49]
+File: Bform4.pdf Graphic file (type QTm)
+ <use  "Bform4.pdf" > [50]
 File: formBen05.JPG Graphic file (type QTm)
  <use  "formBen05.JPG" >
-File: BTform5.pdf Graphic file (type QTm)
- <use  "BTform5.pdf" >
-File: Bform5.pdf Graphic file (type QTm)
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
+[]|\EU1/lmr/m/n/12 Output
+ []
 
-<use  "Bform5.pdf" > [51] [52]) [53]
+Missing character: There is no ’ in font AkaashNormal/OT:script=beng;language=D
+FLT;!
+[51]
+File: Bform5.pdf Graphic file (type QTm)
+ <use  "Bform5.pdf" > [52]) [53]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -1738,12 +1756,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 41465 strings out of 495602
- 901954 string characters out of 6186212
+ 41455 strings out of 495602
+ 901844 string characters out of 6186212
  1051056 words of memory out of 5000000
- 43921 multiletter control sequences out of 15000+600000
+ 43916 multiletter control sequences out of 15000+600000
  6936 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  63i,10n,96p,10451b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (67 pages).
+Output written on thesis.pdf (66 pages).
