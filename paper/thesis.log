@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 17:05
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.3.31)  3 APR 2016 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1633,7 +1633,7 @@ File: form1.pdf Graphic file (type QTm)
  <use  "form1.pdf" > [29]
 File: form2.png Graphic file (type QTm)
  <use  "form2.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1642,7 +1642,7 @@ File: form2.pdf Graphic file (type QTm)
  <use  "form2.pdf" > [31]
 File: form3.png Graphic file (type QTm)
  <use  "form3.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1651,7 +1651,7 @@ File: form3.pdf Graphic file (type QTm)
  <use  "form3.pdf" > [33]
 File: form4.png Graphic file (type QTm)
  <use  "form4.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1660,7 +1660,7 @@ File: form4.pdf Graphic file (type QTm)
  <use  "form4.pdf" > [35]
 File: form5.png Graphic file (type QTm)
  <use  "form5.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1673,7 +1673,7 @@ File: form5.pdf Graphic file (type QTm)
  <use  "form5.pdf" >
 File: formBen01.JPG Graphic file (type QTm)
  <use  "formBen01.JPG" > [38]
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1682,7 +1682,7 @@ File: Bform1.pdf Graphic file (type QTm)
  <use  "Bform1.pdf" > [40]
 File: formBen02.JPG Graphic file (type QTm)
  <use  "formBen02.JPG" >
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1693,7 +1693,7 @@ File: Bform2.pdf Graphic file (type QTm)
  <use  "Bform2.pdf" > [42]
 File: formBen03.JPG Graphic file (type QTm)
  <use  "formBen03.JPG" >
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1704,7 +1704,7 @@ File: Bform3.pdf Graphic file (type QTm)
  <use  "Bform3.pdf" > [44]
 File: formBen04.JPG Graphic file (type QTm)
  <use  "formBen04.JPG" >
-Underfull \hbox (badness 10000) in paragraph at lines 850--851
+Underfull \hbox (badness 10000) in paragraph at lines 872--873
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1715,7 +1715,7 @@ File: Bform4.pdf Graphic file (type QTm)
  <use  "Bform4.pdf" > [46]
 File: formBen05.JPG Graphic file (type QTm)
  <use  "formBen05.JPG" >
-Underfull \hbox (badness 10000) in paragraph at lines 947--948
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
 []|\EU1/lmr/m/n/12 Output
  []
 
@@ -1757,7 +1757,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  41460 strings out of 495602
  901909 string characters out of 6186212
- 1051056 words of memory out of 5000000
+ 1052056 words of memory out of 5000000
  43921 multiletter control sequences out of 15000+600000
  6936 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191

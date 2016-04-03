@@ -44,7 +44,7 @@ def GenTableBan(F1,F2):
         print "{\\bengalifont " +x[i].encode('utf-8')+"}" + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
         print "\hline"
 
-GenTableBan("Bform4.in","Bform4.out")
+GenTable("form4.in","form4.out")
 def GenXLfile(F1,F2,XlName):
 
     # Create a workbook and add a worksheet.

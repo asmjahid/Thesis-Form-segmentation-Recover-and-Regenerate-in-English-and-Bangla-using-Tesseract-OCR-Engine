@@ -1,0 +1,76 @@
+. & 1 & 0\\
+\hline
+1 & 5 & 7\\
+\hline
+0 & 2 & 1\\
+\hline
+3 & 4 & 4\\
+\hline
+2 & 3 & 3\\
+\hline
+8 & 0 & 4\\
+\hline
+: & 10 & 10\\
+\hline
+A & 1 & 1\\
+\hline
+C & 3 & 3\\
+\hline
+B & 2 & 2\\
+\hline
+E & 2 & 1\\
+\hline
+D & 1 & 1\\
+\hline
+F & 2 & 2\\
+\hline
+I & 0 & 4\\
+\hline
+H & 0 & 1\\
+\hline
+K & 2 & 2\\
+\hline
+O & 0 & 1\\
+\hline
+N & 1 & 1\\
+\hline
+P & 1 & 1\\
+\hline
+S & 3 & 3\\
+\hline
+R & 2 & 2\\
+\hline
+T & 2 & 2\\
+\hline
+Y & 1 & 2\\
+\hline
+a & 9 & 8\\
+\hline
+c & 5 & 5\\
+\hline
+e & 20 & 18\\
+\hline
+d & 3 & 3\\
+\hline
+g & 6 & 0\\
+\hline
+i & 9 & 7\\
+\hline
+m & 7 & 7\\
+\hline
+l & 6 & 1\\
+\hline
+o & 6 & 6\\
+\hline
+n & 10 & 6\\
+\hline
+p & 4 & 4\\
+\hline
+s & 3 & 4\\
+\hline
+r & 12 & 10\\
+\hline
+u & 3 & 3\\
+\hline
+t & 9 & 10\\
+\hline
