@@ -44,7 +44,7 @@ def GenTableBan(F1,F2):
         print "{\\bengalifont " +x[i].encode('utf-8')+"}" + " & "+str(y[i]) + " & "+str(z[i])+"\\\\"
         print "\hline"
 
-GenTable("form5.in","form5.out")
+#GenTable("form5.in","form5.out")
 def GenXLfile(F1,F2,XlName):
 
     # Create a workbook and add a worksheet.
@@ -69,3 +69,31 @@ def GenXLfile(F1,F2,XlName):
 #GenXLfile("Bform3.in","Bform3.out","Bform3")
 #GenXLfile("Bform4.in","Bform4.out","Bform4")
 #GenXLfile("Bform5.in","Bform5.out","Bform5")
+def GenXLfileAccuracy(F1,F2,XlName):
+
+    # Create a workbook and add a worksheet.
+    workbook = xlsxwriter.Workbook(XlName+'.xlsx')
+    worksheet = workbook.add_worksheet()
+
+    # Some data we want to write to the worksheet.
+    A,X,Y=GetData(F1,F2)
+
+    # Start from the first cell. Rows and columns are zero indexed.
+    row = col = 0
+    # Iterate over the data and write it out row by row.
+    for i in range(len(A)):
+        Error=abs(float(X[i]-Y[i]));
+        ErrorRate=0
+        if X[i]>Y[i]:ErrorRate=float((Error/X[i]))*100
+        elif X[i]<Y[i]: ErrorRate=float((Error/Y[i]))*100
+        if ErrorRate==0:continue
+        worksheet.write(row, col,     A[i])
+        worksheet.write(row, col + 1,Y[i]- X[i])
+        worksheet.write(row, col + 2, A[i])
+        worksheet.write(row, col + 3, str(ErrorRate)+"%")
+        worksheet.write(row, col + 4, X[i])
+        worksheet.write(row, col + 5, Y[i])
+        row += 1
+    workbook.close()
+
+GenXLfileAccuracy("BTotal.in","BTotal.out","Baccuracy")

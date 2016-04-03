@@ -2,10 +2,8 @@
 \label{chap:result}
 As we have described the proposed method in the chapter \ref{chap:algorithm}. In this chapter we will discuss about result and performance.
 \section{Environments of Experiments}
-Text examples in public datasets usually occur within high-quality (high-resolution, well-focused) imagery. In our setting, text often occurs at lower-resolution and with significant blur. Our focus is to achieve text spotting in a real-time system moving through an environment. We first examine how much the information is attached with an analogue image than we detect the text and extract the data. Next, we train the data. Finally, we evaluate the accuracy.
-We tested with many different categories of the images such as images are taken with mobile camera, scanning images, DSLR camera and handy cam. The accuracy of the output varied greatly. Accuracy varies mainly for image quality. An image is taken with DSLR camera produces most accurate results for it's picture quality. Image of DSLR camera is less noise free. So, it’s easy to extract data and OCR can detect the data perfectly. For handy cam images accuracy is slightly get down. Because picture quality is not good as DSLR camera and there is more noise.
-If we use scanned images, it it produces more accurate result than handy cam. Because there is less noise than handy cam images. But for mobile camera images the accuracy level is not so good as regarding the other three image categories. For mobile camera there is more noise and image quality is not good.   
-
+For this thesis computer generated forms are used to analysis the performance and forms images are captured by a computer generated system. This thesis is started form a scratch level, so computer generated forms are used to analysis the performance. For computer generated forms the results are quite good and the system doing quite well. But it can be assumed that for the high regulation images such as which images are captured by DSLR camera the output will become more perfect. Because DSLR camera has better picture quality. Image of DSLR camera is less noise free. For this we’ll test in different categories images in future.  
+   
 \section{Performance for English form}
 We test our proposed algorithm in different types of sample form. The result depends on the tesseract training data. For english we train "Arial","Courier","Calibri","Times New Roman" fonts. Here we show our some output result and analysis of our training data.
 \subsection{English Sample form 1}
@@ -542,7 +540,28 @@ y & 1 & 1\\
 \end{figure}
 According to the table \ref{tab:Table5} \& bar chart \ref{fig:bar5} we can say that, for sample English form-5 the input and output frequencies are perfect for the characters 2, 9, :, A, C, D, E, F, I, N, P, R, S, T, U, Y, a, c, d, f, i, l, m, n, r, s, u for sample English form-03. For the characters ., 0, 1, 8, E, H, I, O, V, Y, a, b, g, h, n, i, r, o, t and l input and output frequencies are not equal. 
 \section{Accuracy for English}
-According to these frequency table and bar chart we can say our tarined tesseract accuracy is upto 85\%. Here accuracy of character 'g' is below average. Most of the time character 'g' recognize as digit '8'. And double 'l' character (Ex: Roll) recognize as 'H'. It can be resolve with more frequent fonts training.
+With different types of form \& different types of data we test our system. For some character output accuracy was 100\% correct. For some character output occur more than input character and for some character output occur less than input character. Here we show some accuracy analysis.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{EOccurance.pdf}
+\caption {English miss match character occurace frequency}
+\label {fig:Accuracy}
+\end{figure}
+
+In the chart \ref{fig:Accuracy} we show which character gives wrong output. In this bar chart positive axis denoted the character more occurance than input character and negative axis denoted character less occurance than input character.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{EError.pdf}
+\caption {English miss match character error rate chart}
+\label {fig:Eerror}
+\end{figure}
+
+In the chart \ref{fig:Eerror} we show the miss match character error rate. Here we see that character ., 8, L, O, V, b, g gives maximum error.
+
+Cosidering these kind of error rate, we measure our system accouracy is 75.03\% for english.
+\newpage
 
 \section{Performance for Bangla form}
 The result of Bangla form depends on the tesseract training data same as English form. For Bangla we train "Siyam rupali" font. Here we show our some output result and analysis of our training data.

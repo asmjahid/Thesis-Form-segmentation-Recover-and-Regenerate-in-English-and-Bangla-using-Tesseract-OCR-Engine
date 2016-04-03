@@ -1,0 +1,23 @@
+\chapter{Conclusion}
+\label{chap:final}
+This chapter summarizes the work presented in this thesis and figure out the advantages and limitations of the proposed algorithm. It also discussed about the scope of future works related to the proposed algorithm.
+\section{Discussion}
+From our experiments, we see that our methods could achieve the image segmentation purpose. For simple images with just a little texture inside, the result is quite good, and this method could also performs well on natural and landscape images. 
+The above tests are based on the luminance or RGB based similarity measurement. When we test our algorithm on the texture images with the same similarity 
+measurement, we found the result become worse. And the main reason is that the pixel value variance is really large in the texture region, which means pixels in the 
+same texture region may have small similarities and are segmented into different groups.
+
+This problem could be solved by using text on based similarity measurement,while the boundary position between segments are not so accurate determined due to the 
+averaging operation by the sliding window.We knew that estimating the region properties is really an importance process. The Luminance-based method performs well on simple images with just a little texture inside.
+
+And there’s bit of noise with the output. We’ve tried to reduce noise as much as possible but it's the particular area that we've still to work a lot.
+
+Character recognition techniques associate a symbolic identity with the image of character. Character recognition is commonly referred to as optical character recognition (OCR), as it deals with the recognition of optically processed characters.
+
+Optical character recognition has many different practical applications. As	observed from the experimental results,    Tesseract OCR engine fares reasonably with respect to the	core    recognition	accuracy	on    user-specific	handwritten   samples   of isolated/free-flow text. Developing high accuracy, multi-font language data for robust, end-to-end processing for Tesseract was not within the scope of this study.
+
+\section{Future Works}
+
+There are still some things we can do for future works. At first, we will improve the stability of program. We want to modify the co de of function to let programs more stable. Secondly, its a chance to get a better adaptive method for image segmentation even that we have an adaptive method already.  
+As the computer technology develops new methods for character recognition are still expected to be appeared and hope that new methods will decrease the computational restrictions. For the recognition of joined and split characters integration of segmentation and contextual analysis can be improve. An important future work can be implemented, is to improve the training process to be able to use real data for training instead of just synthetic data with character bounding boxes. This will greatly help to improve the accuracy on Bengali handwritten forms.
+In future we want to experiment with different categories of images. Something like DSLR camera images, handy cam images, scanned images and mobile phone captured images. Hope that these categories of images will give a proper idea about character recognition which image category in good for form segmentation. After that we want to work on real data, something like real forms and we want to train our system for real data to get better result.   

@@ -29,6 +29,9 @@
 
 %%\usepackage{times}              %% Times PostScript font. Don't use
 				  %% if thesis contains lots of math.
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\newfontfamily\bengalifont[Script=Bengali]{Akaash}
 
 \usepackage{graphicx}             %% jpg, gif, tiff, and pdf graphics
 \usepackage{moreverb}             %% Verbatim Code Listings
@@ -44,6 +47,7 @@
 \usepackage{pgfplots}
 \usepackage{setspace}
 \newcommand{\ThesisName}{Form segmentation, Recover and Regenerate in English and Bangla using Tesseract OCR Engine}
+
 %%
 %% Set title, author and date.
 %%
@@ -104,10 +108,11 @@
 %% ``thesis.bib'' and that somewhere in the chapter material you have
 %% cited something from it.
 %%
-\cleardoublepage
+%\cleardoublepage
+\renewcommand\bibname{References}
 \bibliographystyle{unsrt}
 \bibliography{thesis}
-%%\include{appendices}
+%\include{appendices}
 
 \end{document}
 %% All Done!
